@@ -1,59 +1,9 @@
-# Browsertrix Crawler
-
-Browsertrix Crawler is a simplified (Chrome) browser-based high-fidelity crawling system, designed to run a complex, customizable browser-based crawl in a single Docker container. Browsertrix Crawler uses [Puppeteer](https://github.com/puppeteer/puppeteer) to control one or more browser windows in parallel.
-
-## Features
-
-Thus far, Browsertrix Crawler supports:
-
-- Single-container, browser based crawling with a headless/headful browser running pages in multiple windows.
-- Support for custom browser behaviors, using [Browsertrix Behaviors](https://github.com/webrecorder/browsertrix-behaviors) including autoscroll, video autoplay and site-specific behaviors.
-- YAML-based configuration, passed via file or via stdin.
-- Seed lists and per-seed scoping rules.
-- URL blocking rules to block capture of specific URLs (including by iframe URL and/or by iframe contents).
-- Screencasting: Ability to watch crawling in real-time (experimental).
-- Screenshotting: Ability to take thumbnails, full page screenshots, and/or screenshots of the initial page view.
-- Optimized (non-browser) capture of non-HTML resources.
-- Extensible Puppeteer driver script for customizing behavior per crawl or page.
-- Ability to create and reuse browser profiles interactively or via automated user/password login using an embedded browser.
-- Multi-platform support -- prebuilt Docker images available for Intel/AMD and Apple Silicon (M1/M2) CPUs.
-
-## Getting Started
-
-Browsertrix Crawler requires [Docker](https://docs.docker.com/get-docker/) to be installed on the machine running the crawl.
-
-Assuming Docker is installed, you can run a crawl and test your archive with the following steps.
-
-You don't even need to clone this repo, just choose a directory where you'd like the crawl data to be placed, and then run
-the following commands. Replace `[URL]` with the web site you'd like to crawl.
-
-1. Run `docker pull webrecorder/browsertrix-crawler`
-2. `docker run -v $PWD/crawls:/crawls/ -it webrecorder/browsertrix-crawler crawl --url [URL] --generateWACZ --text --collection test`
-3. The crawl will now run and logs in [JSON Lines](https://jsonlines.org/) format will be output to the console. Depending on the size of the site, this may take a bit!
-4. Once the crawl is finished, a WACZ file will be created in `crawls/collection/test/test.wacz` from the directory you ran the crawl!
-5. You can go to [ReplayWeb.page](https://replayweb.page) and open the generated WACZ file and browse your newly crawled archive!
-
-Here's how you can use some of the command-line options to configure the crawl:
-
-- To include automated text extraction for full text search, add the `--text` flag.
-
-- To limit the crawl to a maximum number of pages, add `--pageLimit P` where P is the number of pages that will be crawled.
-
-- To limit the crawl to a maximum size, set `--sizeLimit` (size in bytes)
-
-- To limit the crawl time, set `--timeLimit` (in seconds)
-
-- To run more than one browser worker and crawl in parallel, and `--workers N` where N is number of browsers to run in parallel. More browsers will require more CPU and network bandwidth, and does not guarantee faster crawling.
-
-- To crawl into a new directory, specify a different name for the `--collection` param, or, if omitted, a new collection directory based on current time will be created. Adding the `--overwrite` flag will delete the collection directory at the start of the crawl, if it exists.
-
-Browsertrix Crawler includes a number of additional command-line options, explained below.
 
 ## Crawling Configuration Options
 
 
 <details>
-      <summary><b>The Browsertrix Crawler docker image currently accepts the following parameters:</b></summary>
+      <summary><b>Th Crawler docker image currently accepts the following parameters:</b></summary>
 
 ```
 Options:
@@ -284,13 +234,13 @@ The YAML file can contain the same parameters as the command-line arguments. If 
 
 
 ```
-docker run -v $PWD/crawl-config.yaml:/app/crawl-config.yaml -v $PWD/crawls:/crawls/ webrecorder/browsertrix-crawler crawl --config /app/crawl-config.yaml
+docker run -v $PWD/crawl-config.yaml:/app/crawl-config.yaml -v $PWD/crawls:/crawls/ webrecorder/-crawler crawl --config /app/crawl-config.yaml
 ```
 
 The config can also be passed via stdin, which can simplify the command. Note that this require running `docker run` with the `-i` flag. To read config from stdin, pass `--config stdin`
 
 ```
-cat ./crawl-config.yaml | docker run -i -v $PWD/crawls:/crawls/ webrecorder/browsertrix-crawler crawl --config stdin
+cat ./crawl-config.yaml | docker run -i -v $PWD/crawls:/crawls/ webrecorder/-crawler crawl --config stdin
 ```
 
 
@@ -313,7 +263,7 @@ The URL seed file should be a text file formatted so that each line of the file 
 The seed file must be passed as a volume to the docker container. To do that, you can format your docker command similar to the following:
 
 ```
-docker run -v $PWD/seedFile.txt:/app/seedFile.txt -v $PWD/crawls:/crawls/ webrecorder/browsertrix-crawler crawl --seedFile /app/seedFile.txt
+docker run -v $PWD/seedFile.txt:/app/seedFile.txt -v $PWD/crawls:/crawls/ webrecorder/-crawler crawl --seedFile /app/seedFile.txt
 ```
 
 #### Per-Seed Settings
@@ -364,7 +314,7 @@ Extracted links that match the regular expression will be considered 'in scope' 
 
 #### Custom Scope Exclusion Rules
 
-In addition to the inclusion rules, Browsertrix Crawler supports a separate list of exclusion regexes, that if match, override an exclude a URL from the crawl.
+In addition to the inclusion rules,  Crawler supports a separate list of exclusion regexes, that if match, override an exclude a URL from the crawl.
 
 The exclusion regexes are often used with a custom scope, but could be used with a predefined scopeType as well.
 
@@ -460,7 +410,7 @@ These rules can not be used to prevent entire pages for loading -- use the scope
 
 ### Ad blocking
 
-With version 0.8.0, Browsertrix Crawler supports blocking ads from being loaded during capture based on [Stephen Black's list of known ad hosts](https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts). To enable ad blocking, use the `--blockAds` option. If `--adBlockMessage` is set, a record with the specified error message will be added in the ad's place.
+With version 0.8.0,  Crawler supports blocking ads from being loaded during capture based on [Stephen Black's list of known ad hosts](https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts). To enable ad blocking, use the `--blockAds` option. If `--adBlockMessage` is set, a record with the specified error message will be added in the ad's place.
 
 
 ### Custom Warcinfo Fields
@@ -487,30 +437,30 @@ via command-line:
 
 ### Behaviors
 
-Browsertrix Crawler also supports automatically running customized in-browser behaviors. The behaviors auto-play videos (when possible), and auto-fetch content that is not loaded by default, and also run custom behaviors on certain sites.
+ Crawler also supports automatically running customized in-browser behaviors. The behaviors auto-play videos (when possible), and auto-fetch content that is not loaded by default, and also run custom behaviors on certain sites.
 
 Behaviors to run can be specified via a comma-separated list passed to the `--behaviors` option. All behaviors are enabled by default, the equivalent of `--behaviors autoscroll,autoplay,autofetch,siteSpecific`. To enable only a single behavior, such as autoscroll, use `--behaviors autoscroll`.
 
 The site-specific behavior (or autoscroll) will start running after the page is finished its initial load (as defined by the `--waitUntil` settings). The behavior will then run until finished or until the behavior timeout is exceeded. This timeout can be set (in seconds) via the `--behaviorTimeout` flag (90 seconds by default). Setting the timeout to 0 will allow the behavior to run until it is finished.
 
-See [Browsertrix Behaviors](https://github.com/webrecorder/browsertrix-behaviors) for more info on all of the currently available behaviors.
+See [ Behaviors](https://github.com/webrecorder/-behaviors) for more info on all of the currently available behaviors.
 
-With version 0.9.0, Browsertrix Crawler includes a `--pageExtraDelay`/`--delay` option, which can be used to have the crawler sleep for a configurable number of seconds after behaviors before moving on to the next page.
+With version 0.9.0,  Crawler includes a `--pageExtraDelay`/`--delay` option, which can be used to have the crawler sleep for a configurable number of seconds after behaviors before moving on to the next page.
 
 ### Additional Custom Behaviors
 
 Custom behaviours can now also be mounted into the crawler and loaded from there. For example:
 
 ```sh
-docker run -v $PWD/test-crawls:/crawls -v $PWD/tests/custom-behaviors/:/custom-behaviors/ webrecorder/browsertrix-crawler crawl --url https://example.com/ --customBehaviors /custom-behaviors/
+docker run -v $PWD/test-crawls:/crawls -v $PWD/tests/custom-behaviors/:/custom-behaviors/ webrecorder/-crawler crawl --url https://example.com/ --customBehaviors /custom-behaviors/
 ```
 
 This will load all the custom behaviors stored in the `tests/custom-behaviors` directory. The first behavior which returns true for `isMatch()` will be run on a given page.
-Each behavior should container a single class that implements the behavior interface. See [the behaviors tutorial](https://github.com/webrecorder/browsertrix-behaviors/blob/main/docs/TUTORIAL.md) for more info on how to write behaviors.
+Each behavior should container a single class that implements the behavior interface. See [the behaviors tutorial](https://github.com/webrecorder/-behaviors/blob/main/docs/TUTORIAL.md) for more info on how to write behaviors.
 
 ### Screenshots
 
-With version 0.8.0, Browsertrix Crawler includes the ability to take screenshots of each page crawled via the `--screenshot` option.
+With version 0.8.0,  Crawler includes the ability to take screenshots of each page crawled via the `--screenshot` option.
 
 Three screenshot options are available:
 
@@ -524,19 +474,19 @@ Screenshots are written into a `screenshots.warc.gz` WARC file in the `archives/
 
 ### Watching the crawl -- Screencasting
 
-With version 0.4.0, Browsertrix Crawler includes an experimental 'screencasting' option, which allows watching the crawl in real-time via screencast (connected via a websocket).
+With version 0.4.0,  Crawler includes an experimental 'screencasting' option, which allows watching the crawl in real-time via screencast (connected via a websocket).
 
 To enable, add `--screencastPort` command-line option and also map the port on the docker container. An example command might be:
 
 ```
-docker run -p 9037:9037 -v $PWD/crawls:/crawls/ webrecorder/browsertrix-crawler crawl  --url https://www.example.com --screencastPort 9037
+docker run -p 9037:9037 -v $PWD/crawls:/crawls/ webrecorder/-crawler crawl  --url https://www.example.com --screencastPort 9037
 ```
 
 Then, you can open `http://localhost:9037/` and watch the crawl.
 
 ### Uploading crawl output to S3-Compatible Storage
 
-Browsertrix Crawler also includes support for uploading WACZ files to S3-compatible storage, and notifying a webhook when the upload succeeds.
+ Crawler also includes support for uploading WACZ files to S3-compatible storage, and notifying a webhook when the upload succeeds.
 
 (At this time, S3 upload is supported only when WACZ output is enabled, but WARC uploads may be added in the future).
 
@@ -577,7 +527,7 @@ The webhook URL can be an HTTP URL which receives a JSON POST request OR a Redis
 
 There is a few environment variables you can set to configure chromium and pywb:
 
-- CHROME_FLAGS will be split by spaces and passed to Chromium (via `args` in Puppeteer). Note that setting some options is not supported such as `--proxy-server` since they are set by browsertrix itself.
+- CHROME_FLAGS will be split by spaces and passed to Chromium (via `args` in Puppeteer). Note that setting some options is not supported such as `--proxy-server` since they are set by  itself.
 - SOCKS_HOST and SOCKS_PORT are read by pywb to proxy upstream traffic
 
 Here's some examples use cases:
@@ -618,13 +568,13 @@ or `never` respectively, to control when the crawl state file should be written.
 
 ### Periodic State Saving
 
-When the `--saveState` is set to always, Browsertrix Crawler will also save the state automatically during the crawl, as set by the `--saveStateInterval` setting.
+When the `--saveState` is set to always,  Crawler will also save the state automatically during the crawl, as set by the `--saveStateInterval` setting.
 When The crawler will keep the last `--saveStateHistory` save states and delete older ones. This provides extra backup, in case the crawl fails unexpectedly, or is not terminated via Ctrl-C, several previous crawl states are still available.
 
 
 ## Creating and Using Browser Profiles
 
-Browsertrix Crawler also includes a way to use existing browser profiles when running a crawl. This allows pre-configuring the browser, such as by logging in
+ Crawler also includes a way to use existing browser profiles when running a crawl. This allows pre-configuring the browser, such as by logging in
 to certain sites or setting other settings, and running a crawl exactly with those settings. By creating a logged in profile, the actual login credentials are not included in the crawl, only (temporary) session cookies.
 
 
@@ -634,15 +584,15 @@ For creating profiles of more complex sites, or logging in to multiple sites at 
 To use this mode, don't specify --username or --password flags and expose two ports on the Docker container to allow DevTools to connect to the browser and to serve
 a status page.
 
-In profile creation mode, Browsertrix Crawler launches a browser which uses VNC (via noVNC) server running on port 6080 to provide a 'remote desktop' for interacting with the browser.
+In profile creation mode,  Crawler launches a browser which uses VNC (via noVNC) server running on port 6080 to provide a 'remote desktop' for interacting with the browser.
 
 After interactively logging into desired sites or configuring other settings, the 'Create Profile' should be clicked to initiate profile creation.
-Browsertrix Crawler will then stop the browser, and save the browser profile.
+ Crawler will then stop the browser, and save the browser profile.
 
 For example, to start in interactive profile creation mode, run:
 
 ```
-docker run -p 6080:6080 -p 9223:9223 -v $PWD/crawls/profiles:/crawls/profiles/ -it webrecorder/browsertrix-crawler create-login-profile --url "https://example.com/"
+docker run -p 6080:6080 -p 9223:9223 -v $PWD/crawls/profiles:/crawls/profiles/ -it webrecorder/-crawler create-login-profile --url "https://example.com/"
 ```
 
 Then, open a browser pointing to `http://localhost:9223/` and use the embedded browser to log in to any sites or configure any settings as needed.
@@ -651,31 +601,31 @@ Click 'Create Profile at the top when done. The profile will then be created in 
 It is also possible to extend an existing profiles by also passing in an existing profile via the `--profile` flag. In this way, it is possible to build new profiles by extending previous browsing sessions as needed.
 
 ```
-docker run -p 6080:6080 -p 9223:9223 -v $PWD/crawls/profiles:/crawls/profiles -it webrecorder/browsertrix-crawler create-login-profile --url "https://example.com/" --filename "/crawls/profiles/newProfile.tar.gz" --profile "/crawls/profiles/oldProfile.tar.gz"
+docker run -p 6080:6080 -p 9223:9223 -v $PWD/crawls/profiles:/crawls/profiles -it webrecorder/-crawler create-login-profile --url "https://example.com/" --filename "/crawls/profiles/newProfile.tar.gz" --profile "/crawls/profiles/oldProfile.tar.gz"
 ```
 
 #### Headless vs Headful Profiles
 
-Browsertrix Crawler supports both 'headful' and headless crawling. We recommend using headful crawling to be most accurate to user experience, however,
+ Crawler supports both 'headful' and headless crawling. We recommend using headful crawling to be most accurate to user experience, however,
 headless crawling may be faster.
 
 To use profiles in headless mode, profiles should also be created with `--headless` flag.
 
-When creating browser profile in headless mode, Browsertrix will use the devtools protocol on port 9222 to stream the browser interface (previously, this was also used
+When creating browser profile in headless mode,  will use the devtools protocol on port 9222 to stream the browser interface (previously, this was also used
 in headful mode as well).
 
 To create a profile in headless mode, run:
 
 ```
-docker run -p 9222:9222 -p 9223:9223 -v $PWD/crawls/profiles:/crawls/profiles/ -it webrecorder/browsertrix-crawler create-login-profile --headless --url "https://example.com/"
+docker run -p 9222:9222 -p 9223:9223 -v $PWD/crawls/profiles:/crawls/profiles/ -it webrecorder/-crawler create-login-profile --headless --url "https://example.com/"
 ```
 
 ### Automated Profile Creation for User Login
 
-If the `--automated` flag is provided, Browsertrix Crawler will attempt to create a profile automatically after logging in to sites with a username and password.
+If the `--automated` flag is provided,  Crawler will attempt to create a profile automatically after logging in to sites with a username and password.
 The username and password can be provided via `--username` and `--password` flags or, if omitted, from a command-line prompt.
 
-When using `--automated` or `--username` / `--password`, Browsertrix Crawler will not launch an interactive browser and instead will attempt to finish automatically.
+When using `--automated` or `--username` / `--password`,  Crawler will not launch an interactive browser and instead will attempt to finish automatically.
 
 The automated profile creation system will log in to a single website with supplied credentials and then save the profile
 The script profile creation system also take a screenshot so you can check if the login succeeded.
@@ -683,7 +633,7 @@ The script profile creation system also take a screenshot so you can check if th
 For example, to launch a browser, and login to the digipres.club Mastodon instance, run:
 
 ```bash
-docker run -v $PWD/crawls/profiles:/crawls/profiles -it webrecorder/browsertrix-crawler create-login-profile --url "https://digipres.club/"
+docker run -v $PWD/crawls/profiles:/crawls/profiles -it webrecorder/-crawler create-login-profile --url "https://digipres.club/"
 ```
 
 The script will then prompt you for login credentials, attempt to login and create a tar.gz file in `./crawls/profiles/profile.tar.gz`.
@@ -701,40 +651,10 @@ The script will then prompt you for login credentials, attempt to login and crea
 
 The current profile creation script is still experimental and the script attempts to detect the username and password fields on a site as generically as possible, but may not work for all sites. Additional automated profile creation functionality, such as support for custom profile creation scripts, may be added in the future.
 
-### Using Browser Profile with a Crawl
-
-To use a previously created profile with a crawl, use the `--profile` flag or `profile` option. The `--profile` flag can then be used to specify any Chrome profile stored as a tarball. Using profiles created with same or older version of Browsertrix Crawler is recommended to ensure compatibility. This option allows running a crawl with the browser already pre-configured, logged in to certain sites, language settings configured, etc...
-
-After running the above command, you can now run a crawl with the profile, as follows:
-
-```bash
-
-docker run -v $PWD/crawls:/crawls/ -it webrecorder/browsertrix-crawler crawl --profile /crawls/profiles/profile.tar.gz --url https://digipres.club/ --generateWACZ --collection test-with-profile
-```
-
-Profiles can also be loaded from an http/https URL, eg. `--profile https://example.com/path/to/profile.tar.gz`
-
-## Published Releases / Production Use
-
-When using Browsertrix Crawler in production, it is recommended to use a specific, published version of the image, eg. `webrecorder/browsertrix-crawler:[VERSION]` instead of `webrecorder/browsertrix-crawler` where `[VERSION]` corresponds to one of the published release tag.
-
-All released Docker Images are available from Docker Hub, listed by release tag here: https://hub.docker.com/r/webrecorder/browsertrix-crawler/tags?page=1&ordering=last_updated
-
-Details for each corresponding release tag are also available on GitHub at: https://github.com/webrecorder/browsertrix-crawler/releases
-
-
-## Architecture
-
-The Docker container provided here packages up several components used in Browsertrix.
-
-The system uses `pywb` in recording mode for capturing the content. The crawl produces a single pywb collection, at `/crawls/collections/<collection name>` in the Docker container.
-
-To access the contents of the crawl, the `/crawls` directory in the container should be mounted to a volume (default in the Docker Compose setup).
-
 
 ### Usage with Docker Compose
 
-Many examples in this README demonstrate running Browsertrix Crawler with `docker run`.
+Many examples in this README demonstrate running  Crawler with `docker run`.
 
 Docker Compose is recommended for building the image and for simple configurations.
 
@@ -760,45 +680,20 @@ While the crawl is running, the status of the crawl prints the progress to the J
 
 ### Multi-Platform Build / Support for Apple Silicon (M1/M2)
 
-Browsertrix Crawler uses a browser image which supports amd64 and arm64.
+ Crawler uses a browser image which supports amd64 and arm64.
 
-This means Browsertrix Crawler can be built natively on Apple Silicon systems using the default settings. Simply running `docker-compose build` on an Apple Silicon should build a native version that should work for development.
+This means  Crawler can be built natively on Apple Silicon systems using the default settings. Simply running `docker-compose build` on an Apple Silicon should build a native version that should work for development.
 
 On an Apple Silicon system, the browser used will be Chromium instead of Chrome since there is no Linux build of Chrome for ARM, and this now is handled automatically as part of the build. Note that Chromium is different than Chrome, and for example, some video codecs may not be supported in the ARM / Chromium-based version that would be in the amd64 / Chrome version. For production crawling, it is recommended to run on an amd64 Linux environment.
 
 
 ### Modifying Browser Image
 
-It is also possible to build Browsertrix Crawler with a different browser image. Currently, browser images using Chrome/Chromium (depending on host system chip architecture) and Brave Browser are supported via [browsertrix-browser-base](https://github.com/webrecorder/browsertrix-browser-base).
+It is also possible to build  Crawler with a different browser image. Currently, browser images using Chrome/Chromium (depending on host system chip architecture) and Brave Browser are supported via [-browser-base](https://github.com/webrecorder/-browser-base).
 
 The browser base image used is specified and can be changed at the top of the Dockerfile in this repo.
 
-Custom browser images can be used by forking [browsertrix-browser-base](https://github.com/webrecorder/browsertrix-browser-base), locally building or publishing an image, and then modifying the Dockerfile in this repo to build from that image.
+Custom browser images can be used by forking [-browser-base](https://github.com/webrecorder/-browser-base), locally building or publishing an image, and then modifying the Dockerfile in this repo to build from that image.
 
 
-### Viewing crawled data with pywb
 
-When a crawler is done, another browsertrix-crawler image can be started with a local [pywb](https://github.com/webrecorder/pywb) instance to view crawl:
-
-```
-docker run -it -v $(pwd)/crawls:/crawls -p 8080:8080 webrecorder/browsertrix-crawler pywb
-```
-
-Then, loading the `http://localhost:8080/wr-net/https://webrecorder.net/` should load a recent crawl of the `https://webrecorder.net/` site.
-
-(Previewing crawl results while a crawl its still running should also be possible soon!)
-
-
-Support
--------
-
-Initial support for development of Browsertrix Crawler, was provided by [Kiwix](https://kiwix.org/). The initial functionality for Browsertrix Crawler was developed to support the [zimit](https://github.com/openzim/zimit) project in a collaboration between. Webrecorder and Kiwix, and this project has been split off from Zimit into a core component of Webrecorder.
-
-Additional support for Browsertrix Crawler, including for the development of the 0.4.x version has been provided by [Portico](https://www.portico.org/).
-
-
-License
--------
-
-[AGPLv3](https://www.gnu.org/licenses/agpl-3.0) or later, see
-[LICENSE](LICENSE) for more details.
