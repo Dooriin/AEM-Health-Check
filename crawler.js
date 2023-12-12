@@ -1426,9 +1426,20 @@ self.__bx_behaviors.selectMainBehavior();
       return {isHTML: isHTMLContent, statusCode: resp.status};
 
     } catch (e) {
-      // can't confirm not html, so try in browser
-      logger.debug("HEAD request failed for URL", {url});
-      return {isHTML: true, statusCode: null}; // statusCode is null here because the fetch failed
+      try {
+        const resp = await fetch(url, {
+          method: "HEAD", headers: this.headers, agent: this.resolveAgent
+        });
+
+        const isHTMLContent = this.isHTMLContentType(resp.headers.get("Content-Type"));
+
+        return {isHTML: isHTMLContent, statusCode: resp.status};
+
+      } catch (e) {
+        // can't confirm not html, so try in browser
+        logger.debug("HEAD request failed for URL", {url});
+        return {isHTML: true, statusCode: null}; // statusCode is null here because the fetch failed
+      }
     }
   }
 
