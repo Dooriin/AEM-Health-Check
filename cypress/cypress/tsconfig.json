@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "strict": true,
+    "target": "es5",
+    "lib": ["es2018", "dom", "DOM.Iterable"],
+    "types": [
+      "cypress",
+      "cypress-wait-until",
+      "cypress-mailosaur",
+      "@cypress/grep",
+      "cypress-axe",
+      "node"
+    ]
+  },
+  "include": ["**/*.ts"]
+}
