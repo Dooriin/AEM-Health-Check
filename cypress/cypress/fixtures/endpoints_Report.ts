@@ -51,7 +51,6 @@ export module ReportEndpoints {
     'https://www.moodys.com/web/en/us/about/who-we-are/bio-section/rich-steele.html',
     'https://www.moodys.com/web/en/us/about/who-we-are/bio-section/caroline-sullivan.html',
     'https://www.moodys.com/web/en/us/about/who-we-are/careers.html',
-    'https://www.moodys.com/web/en/us/about/who-we-are/investor-relations.html',
     'https://www.moodys.com/web/en/us/about/what-we-do.html',
     'https://www.moodys.com/web/en/us/about/what-we-do/overview.html',
     'https://www.moodys.com/web/en/us/about/what-we-do/climate.html',
@@ -1003,6 +1002,5 @@ export module ReportEndpoints {
     'https://www.moodys.com/web/en/us/capabilities/esg/resources/insights/global-taxonomies-canadas-sustainability-journey.html',
     'https://www.moodys.com/web/en/us/capabilities/esg/resources/insights/the-importance-of-granular-data-for-asset-allocation-in-the-electricity-gas-utilities-sector.html',
     'https://www.moodys.com/web/en/us/capabilities/esg/thank-you.html',
-    'https://www.moodys.com/web/en/us/private-credit-topic.html',
   ]
 }

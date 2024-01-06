@@ -22,5 +22,6 @@ export module EndpointsV3 {
     'https://www.moodys.com/web/en/us/capabilities/structured-finance.html',
     'https://www.moodys.com/web/en/us/help-support.html',
     'https://www.moodys.com/web/en/us/about/who-we-are/about-us.html',
+    'https://www.moodys.com/web/en/us/secure-topic.html',
   ]
 }
