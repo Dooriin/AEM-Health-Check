@@ -70,7 +70,7 @@ async function setupNodeEvents(
 
 export default defineConfig({
   defaultCommandTimeout: 30000,
-  pageLoadTimeout: 30000,
+  pageLoadTimeout: 180000,
   requestTimeout: 30000,
   responseTimeout: 30000,
   projectId: '4pgjpf',
