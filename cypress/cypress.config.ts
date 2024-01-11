@@ -70,16 +70,14 @@ async function setupNodeEvents(
 
 export default defineConfig({
   defaultCommandTimeout: 30000,
-  pageLoadTimeout: 180000,
+  numTestsKeptInMemory: 10,
+  pageLoadTimeout: 60000,
   requestTimeout: 30000,
   responseTimeout: 30000,
-  projectId: '4pgjpf',
-  retries: 0,
-  videoCompression: 32,
-  viewportHeight: 1500,
-  viewportWidth: 1980,
+  retries: 2,
   scrollBehavior: 'center',
   video: false,
+  projectId: '33f6hf',
   e2e: {
     specPattern:
       'cypress/**/*.{feature,api.ts,ftp.ts,util.ts,bei.ts,fei.ts,e2e.ts,bvt.ts,stub.ts}',
