@@ -3,8 +3,6 @@
   "version": "0.12.0-beta.1",
   "main": "browsertrix-crawler",
   "type": "module",
-  "repository": "https://github.com/webrecorder/browsertrix-crawler",
-  "author": "Ilya Kreymer <ikreymer@gmail.com>, Webrecorder Software",
   "license": "AGPL-3.0-or-later",
   "scripts": {
     "lint": "eslint *.js util/*.js tests/*.test.js",

@@ -1,6 +1,6 @@
 seeds:
   - url: https://www.moodys.com
-    include: moodys.com/web/
+    include: moodys.com/web/en
     host: "https://www.moodys.com/"
     prefix: '/web/'
     exclude:
