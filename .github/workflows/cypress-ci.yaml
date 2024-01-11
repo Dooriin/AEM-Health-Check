@@ -1,0 +1,25 @@
+name: Cypress CI
+
+on:
+  schedule:
+    - cron: '0 * * * *'
+
+jobs:
+  cypress-test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18.x
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Split and Generate Tests
+        run: cd cypress && npx ts-node splitAndGenerateTests.ts
+
+      - name: Run Cypress tests
+        run: npx cypress run --record --key b8a9a6da-a109-471c-85a7-0131d9aa7b2f

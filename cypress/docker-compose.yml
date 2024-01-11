@@ -1,0 +1,14 @@
+version: '3'
+services:
+  chrome:
+    build: .
+    environment:
+      - CYPRESS_BROWSER=chrome
+  firefox:
+    build: .
+    environment:
+      - CYPRESS_BROWSER=firefox
+  edge:
+    build: .
+    environment:
+      - CYPRESS_BROWSER=edge
