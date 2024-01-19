@@ -7,9 +7,7 @@ interface CrawledData {
 }
 
 const crawledData = require('./cypress/fixtures/crawledEndpoints')
-
 const endpoints = crawledData.CrawledData.endpoints
-
 const chunkSize = 30
 const fixtureDir = path.join(__dirname, 'cypress/fixtures/splitEndpoints')
 const testDir = path.join(__dirname, 'cypress/e2e/splitTests')
@@ -29,105 +27,127 @@ for (let i = 0; i < endpoints.length; i += chunkSize) {
   )
 
   const testFileContent = `
-    import { endpoints } from '../../fixtures/splitEndpoints/${fixtureFileName}';
+  import { endpoints } from '../../fixtures/splitEndpoints/${fixtureFileName}';
 
-    describe('Endpoint Health Checks - Part ${chunkIndex + 1}', () => {
-      const allFailedAssets: string[] = [];
-      const failedPages: string[] = [];
-      const fileName = 'downloads/failedAssetsV3.txt';
-      const pageFileName = 'downloads/failedPagesV3.txt';
-      const allLogs: string[] = [];
-      const verifyCSS = true;
-      const verifyJS = true;
-      const verifyLogo = true;
-      const verifyImages = true;
+  describe('Endpoint Health Checks - Part ${chunkIndex + 1}', () => {
+    const allFailedAssets = [];
+    const failedPages = [];
+    const fileName = 'downloads/failedAssetsV3.txt';
+    const pageFileName = 'downloads/failedPagesV3.txt';
+    const allLogs = [];
+    const verifyCSS = true;
+    const verifyJS = true;
+    const verifyLogo = true;
+    const verifyImages = true;
 
-      function customLog(message: string) {
-        allLogs.push(message);
-        cy.log(message);
-      }
+    function customLog(message) {
+      allLogs.push(message);
+      cy.log(message);
+    }
 
-      function checkAssets(url: string, retry = false) {
-        cy.visit(url);
-    cy.get('footer').scrollIntoView()
-       
-        cy.document().then((document) => {
-          const assets = Array.from(document.querySelectorAll('link, script, img'))
-            .map((el) => {
-              let assetUrl = '';
+    function checkAssets(url, retry = false) {
+    cy.visit(url)
 
-              if (el.tagName === 'LINK' && el.getAttribute('rel') === 'stylesheet') {
-                assetUrl = el.href;
-              } else if (el.tagName === 'SCRIPT' && el.getAttribute('src')) {
-                assetUrl = el.src;
-              } else if (el.tagName === 'IMG') {
-                const src = el.src;
-                // eslint-disable-next-line max-len
-                if (src.endsWith('.svg') || src.endsWith('.png') || src.endsWith('.jpg') || src.endsWith('.jpeg') || src.endsWith('.gif')) {
-                  assetUrl = src;
-                }
-              }
+    cy.get('footer').should('be.visible')
+      cy.document().then((document) => {
+        const assets = Array.from(document.querySelectorAll('link, script, img'))
+          .map((el) => {
+          let assetUrl = ''
 
-              if (assetUrl && !assetUrl.startsWith('http')) {
-                assetUrl = new URL(assetUrl, url).href;
-              }
+          if (
+            verifyCSS &&
+            el.tagName === 'LINK' &&
+            el.getAttribute('rel') === 'stylesheet'
+          ) {
+            assetUrl = (el as HTMLLinkElement).href
+          } else if (
+            verifyJS &&
+            el.tagName === 'SCRIPT' &&
+            el.getAttribute('src')
+          ) {
+            assetUrl = (el as HTMLScriptElement).src
+          } else if (el.tagName === 'IMG') {
+            const src = (el as HTMLImageElement).src
 
-              return assetUrl;
-            })
-            .filter(Boolean);
+            if (
+              (verifyLogo && src.endsWith('.svg')) ||
+              (verifyImages &&
+                (src.endsWith('.png') ||
+                  src.endsWith('.jpg') ||
+                  src.endsWith('.jpeg') ))
+            ) {
+              assetUrl = src
+            }
+          }
+          if (assetUrl && !assetUrl.startsWith('http')) {
+            assetUrl = new URL(assetUrl, url).href
+          }
 
-          if (assets.length === 0 && !retry) {
-            customLog(\`No assets found, retrying for URL: \${url}\`);
-            cy.wait(5000);
-            return checkAssets(url, true);
-          } else if (assets.length === 0) {
-            customLog(\`No assets found after retry for URL: \${url}\`);
-            expect(assets.length, \`At least one asset should be present for \${url}\`).to.be.greaterThan(0);
-          } else {
-            assets.forEach((asset) => {
-              customLog(\`Checking asset: \${asset}\`);
-              cy.request({ url: asset, failOnStatusCode: false }).then((response) => {
+          return assetUrl
+        })
+          .filter(Boolean);
+
+        if (assets.length === 0 && !retry) {
+          customLog(\`No assets found, retrying for URL: \${url}\`);
+          cy.wait(5000);
+          return checkAssets(url, true);
+        } else if (assets.length === 0) {
+          customLog(\`No assets found after retry for URL: \${url}\`);
+          expect(assets.length, \`At least one asset should be present for \${url}\`).to.be.greaterThan(0);
+        } else {
+          const processAsset = (index) => {
+            if (index >= assets.length) {
+              return;
+            }
+
+            const asset = assets[index];
+            customLog(\`Checking asset: \${asset}\`);
+
+            cy.request({ url: asset, failOnStatusCode: false })
+              .then((response) => {
                 if (response.status !== 200) {
                   const errorMessage = \`Failed Asset: \${asset} from \${url}, Status: \${response.status}\`;
                   allFailedAssets.push(errorMessage);
                 }
+              })
+              .then(() => {
+                processAsset(index + 1);
               });
-            });
-          }
-        });
-      }
+          };
 
-      before(() => {
-        cy.writeFile(fileName, '');
-        cy.writeFile(pageFileName, '');
-      });
-
-      endpoints.forEach((url) => {
-        it(\`Validating page and assets for - \${url}\`, () => {
-          if (url.endsWith('.pdf')) {
-            customLog(\`Skipping PDF endpoint: \${url}\`);
-            return;
-          }
-          checkAssets(url);
-        });
-      });
-
-      after(() => {
-        cy.writeFile('downloads/testLogs.txt', allLogs.join('\
-'));
-        if (failedPages.length > 0) {
-          cy.writeFile(pageFileName, failedPages.join('\
-'));
+          processAsset(0);
         }
-        if (allFailedAssets.length > 0) {
-          cy.writeFile(fileName, allFailedAssets.join('\
-'));
+      });
+    }
+
+    before(() => {
+      cy.writeFile(fileName, '');
+      cy.writeFile(pageFileName, '');
+    });
+
+    endpoints.forEach((url) => {
+      it(\`Validating page and assets for - \${url}\`, () => {
+        if (url.endsWith('.pdf')) {
+          customLog(\`Skipping PDF endpoint: \${url}\`);
+          return;
         }
-        cy.clearCookies()
-  cy.clearLocalStorage()
+        checkAssets(url);
       });
     });
-  `
+
+    after(() => {
+      cy.writeFile('downloads/testLogs.txt', allLogs.join('\\n'));
+      if (failedPages.length > 0) {
+        cy.writeFile(pageFileName, failedPages.join('\\n'));
+      }
+      if (allFailedAssets.length > 0) {
+        cy.writeFile(fileName, allFailedAssets.join('\\n'));
+      }
+      cy.clearCookies();
+      cy.clearLocalStorage();
+    });
+  });
+`
 
   fs.writeFileSync(path.join(testDir, testFileName), testFileContent)
 }
