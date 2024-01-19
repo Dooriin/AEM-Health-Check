@@ -1,17 +1,25 @@
-version: '3.5'
-  
+version: '3.8'
+
 services:
-    crawler:
-        image: ${REGISTRY}webrecorder/browsertrix-crawler:latest
-        build:
-          context: ./
+  crawler:
+    image: ${REGISTRY}webrecorder/browsertrix-crawler:latest
+    build:
+      context: ./
+    volumes:
+      - ./crawls:/crawls
+    cap_add:
+      - NET_ADMIN
+      - SYS_ADMIN
+    shm_size: 1gb
 
-        volumes:
-          - ./crawls:/crawls
+  jenkins:
+    image: jenkins/jenkins:lts
+    ports:
+      - "8080:8080"
+    volumes:
+      - jenkins_home:/var/jenkins_home
+      - ./cypress:/home/cypress
+      - ./crawls:/crawls
 
-        cap_add:
-          - NET_ADMIN
-          - SYS_ADMIN
-
-        shm_size: 1gb
-
+volumes:
+  jenkins_home:

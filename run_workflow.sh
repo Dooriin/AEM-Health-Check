@@ -26,6 +26,24 @@ check_file() {
     exit 1
 }
 
+# New Steps
+# Step 0.1: Install all yarn dependencies
+yarn install
+
+# Step 0.2: Build docker container
+docker-compose build --no-cache
+
+# Step 0.3: Give tag to docker container
+docker tag webrecorder/browsertrix-crawler:latest moodys-crawler:latest
+
+# Step 0.4: Navigate into Cypress folder and do npm install
+cd $cypress_dir
+npm install
+
+# Step 0.5: Go back to the root directory
+cd -
+
+# Existing Steps
 # Step 1: Delete 'crawls' directory and crawledEndpoints.ts file
 rm -rf $crawls_dir
 rm -f $endpoints_ts_file
