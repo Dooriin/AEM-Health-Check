@@ -3,19 +3,15 @@ pipeline {
     stages {
         stage('Run Cypress Tests') {
             steps {
-                dir('/home/cypress') {
-                    sh 'npm install' // Install Cypress and dependencies
-                    sh 'npx cypress run' // Run Cypress tests
+                script {
+                    // Run Cypress tests in the Cypress Docker container
+                    docker.image('cypress/included:13.6.3').inside('--entrypoint=""') {
+                        dir('/home/project/cypress') {
+                            sh 'npx cypress run'
+                        }
+                    }
                 }
             }
-        }
-    }
-    post {
-        success {
-            // Add steps for Slack notification on success
-        }
-        failure {
-            // Add steps for Slack notification on failure
         }
     }
 }

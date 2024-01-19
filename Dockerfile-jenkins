@@ -1,0 +1,10 @@
+FROM jenkins/jenkins:lts
+USER root
+
+# Install Node.js, npm and Docker
+RUN apt-get update && \
+    apt-get install -y nodejs npm && \
+    curl -fsSL https://get.docker.com -o get-docker.sh && \
+    sh get-docker.sh
+
+USER jenkins

@@ -1,0 +1,41 @@
+pipeline {
+    agent any
+    stages {
+        stage('Checkout') {
+            steps {
+                git 'https://your-repo-url.git' // Replace with your repository URL
+            }
+        }
+        stage('Install Dependencies') {
+            steps {
+                sh 'npm install'
+            }
+        }
+        stage('Run Cypress Tests') {
+            parallel {
+                stage('Test Run 1') {
+                    steps {
+                        sh 'npx cypress run --record --parallel --group 1-of-2'
+                    }
+                }
+                stage('Test Run 2') {
+                    steps {
+                        sh 'npx cypress run --record --parallel --group 2-of-2'
+                    }
+                }
+                // Add more parallel stages if needed
+            }
+        }
+    }
+    post {
+        always {
+            // Commands to clean up, archive results, etc.
+        }
+        success {
+            // Slack notification for success
+        }
+        failure {
+            // Slack notification for failure
+        }
+    }
+}
