@@ -5,6 +5,7 @@ services:
     build:
       context: .
       dockerfile: Dockerfile-jenkins  # Specify the custom Dockerfile for Jenkins
+    image: my-custom-jenkins
     user: root
     ports:
       - "8080:8080"

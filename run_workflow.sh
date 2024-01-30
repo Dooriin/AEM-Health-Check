@@ -1,6 +1,6 @@
 #!/bin/bash
-
-# Directories and files
+#
+## Directories and files
 crawls_dir="${PWD}/crawls"
 endpoints_ts_file="${PWD}/cypress/cypress/fixtures/crawledEndpoints.ts"
 pages_jsonl_file="${PWD}/crawls/collections/moodys/pages/pages.jsonl"
@@ -25,31 +25,13 @@ check_file() {
     echo "$file not found after $retries attempts."
     exit 1
 }
-
-# New Steps
-# Step 0.1: Install all yarn dependencies
-yarn install
-
-# Step 0.2: Build docker container
-docker-compose build --no-cache
-
-# Step 0.3: Give tag to docker container
-docker tag webrecorder/browsertrix-crawler:latest moodys-crawler:latest
-
-# Step 0.4: Navigate into Cypress folder and do npm install
-cd $cypress_dir
-npm install
-
-# Step 0.5: Go back to the root directory
-cd -
-
 # Existing Steps
 # Step 1: Delete 'crawls' directory and crawledEndpoints.ts file
-rm -rf $crawls_dir
+#rm -rf $crawls_dir
 rm -f $endpoints_ts_file
 
 # Step 2: Run the crawler container
-docker run -v ${PWD}/crawls:/crawls/ -v ${PWD}/crawl-config.yaml:/config -v ${PWD}/crawler.js:/app/crawler.js -v ${PWD}/util:/app/util -it moodys-crawler crawl --config /config/main.yaml --generateWACZ --workers 10 --saveState always --collection moodys --statsFilename stats.json
+docker run -v ${PWD}/crawls:/crawls/ -v ${PWD}/crawl-config.yaml:/config -v ${PWD}/crawler.js:/app/crawler.js -v ${PWD}/util:/app/util -it moodys-crawler crawl --config /config/main.yaml --workers 10 --saveState always --collection moodys --statsFilename stats.json
 
 # Step 3: Check if the pages.jsonl file is generated
 check_file $pages_jsonl_file
@@ -62,6 +44,7 @@ check_file $endpoints_ts_file
 
 # Step 6: Change directory to Cypress folder and run Cypress tests
 cd $cypress_dir
+npx ts-node splitAndGenerateTests.ts
 npx cypress run
 
 # Change back to the original directory

@@ -1,4 +1,6 @@
 // import { CrawledData } from '../fixtures/crawledEndpoints'
+// import { generalPages } from '../pageObjects/general.pageObjects'
+// import { whitelistPages } from '../fixtures/whitelistPages'
 //
 // describe('Endpoint Health Checks', () => {
 //   const endpoints = CrawledData.endpoints
@@ -20,7 +22,11 @@
 //   function checkAssets(url: string, retry = false) {
 //     cy.visit(url)
 //
-//     cy.get('footer').should('be.visible')
+//     if (!whitelistPages.includes(url)) {
+//       // generalPages.header().should('be.visible')
+//       generalPages.footer().should('be.visible')
+//     }
+//
 //     cy.document().then((document) => {
 //       const assets = Array.from(document.querySelectorAll('link, script, img'))
 //         .map((el) => {

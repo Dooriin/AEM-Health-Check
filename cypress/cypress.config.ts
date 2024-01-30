@@ -1,6 +1,7 @@
 import { defineConfig } from 'cypress'
 import { addCucumberPreprocessorPlugin } from '@badeball/cypress-cucumber-preprocessor'
 
+const cypressSplit = require('cypress-split')
 const webpackPreprocessor = require('@cypress/webpack-preprocessor')
 
 async function setupNodeEvents(
@@ -66,6 +67,8 @@ async function setupNodeEvents(
 
   config.baseUrl = new URL(hostString).href
 
+  cypressSplit(on, config)
+
   return config
 }
 
@@ -83,6 +86,7 @@ export default defineConfig({
   e2e: {
     numTestsKeptInMemory: 0,
     experimentalMemoryManagement: true,
+    screenshotOnRunFailure: false,
     specPattern:
       'cypress/**/*.{feature,api.ts,ftp.ts,util.ts,bei.ts,fei.ts,e2e.ts,bvt.ts,stub.ts}',
     setupNodeEvents,

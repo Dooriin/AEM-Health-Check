@@ -28,6 +28,9 @@ for (let i = 0; i < endpoints.length; i += chunkSize) {
 
   const testFileContent = `
   import { endpoints } from '../../fixtures/splitEndpoints/${fixtureFileName}';
+import { whitelistPages } from '../../fixtures/whitelistPages'
+import { generalPages } from '../../pageObjects/general.pageObjects'
+
 
   describe('Endpoint Health Checks - Part ${chunkIndex + 1}', () => {
     const allFailedAssets = [];
@@ -47,8 +50,9 @@ for (let i = 0; i < endpoints.length; i += chunkSize) {
 
     function checkAssets(url, retry = false) {
     cy.visit(url)
-
-    cy.get('footer').should('be.visible')
+    if (!whitelistPages.includes(url)) {
+      generalPages.footer().should('be.visible')
+    }
       cy.document().then((document) => {
         const assets = Array.from(document.querySelectorAll('link, script, img'))
           .map((el) => {
