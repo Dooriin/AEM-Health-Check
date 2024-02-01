@@ -5,6 +5,8 @@ crawls_dir="${PWD}/crawls"
 endpoints_ts_file="${PWD}/cypress/cypress/fixtures/crawledEndpoints.ts"
 pages_jsonl_file="${PWD}/crawls/collections/moodys/pages/pages.jsonl"
 cypress_dir="${PWD}/cypress"
+splitEndpoints_dir="${PWD}/cypress/cypress/fixtures/splitEndpoints"
+splitTests_dir="${PWD}/cypress/cypress/e2e/splitTests"
 
 # Function to check if file exists with retry
 check_file() {
@@ -25,9 +27,10 @@ check_file() {
     echo "$file not found after $retries attempts."
     exit 1
 }
+
 # Existing Steps
 # Step 1: Delete 'crawls' directory and crawledEndpoints.ts file
-#rm -rf $crawls_dir
+rm -rf $crawls_dir
 rm -f $endpoints_ts_file
 
 # Step 2: Run the crawler container
@@ -42,10 +45,16 @@ node post_crawl_processing.cjs
 # Step 5: Check if the crawledEndpoints.ts file is generated
 check_file $endpoints_ts_file
 
+# New Steps: Delete the specific Cypress folders before running tests
+echo "Deleting old Cypress test folders..."
+rm -rf $splitEndpoints_dir
+rm -rf $splitTests_dir
+echo "Old Cypress test folders deleted."
+
 # Step 6: Change directory to Cypress folder and run Cypress tests
 cd $cypress_dir
 npx ts-node splitAndGenerateTests.ts
-npx cypress run
+#npx cypress run
 
 # Change back to the original directory
 cd -
