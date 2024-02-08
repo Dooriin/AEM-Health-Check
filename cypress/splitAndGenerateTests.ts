@@ -30,6 +30,8 @@ for (let i = 0; i < endpoints.length; i += chunkSize) {
 import { endpoints } from '../../fixtures/splitEndpoints/${fixtureFileName}';
 import { whitelistPages } from '../../fixtures/whitelistPages'
 import { generalPages } from '../../pageObjects/general.pageObjects'
+import { skipPages } from '../../fixtures/skipPages'; 
+
 
 describe('Endpoint Health Checks - Part ${chunkIndex + 1}', () => {
   const allFailedAssets = [];
@@ -50,7 +52,10 @@ describe('Endpoint Health Checks - Part ${chunkIndex + 1}', () => {
   function checkAssets(url, retry = false) {
     let assetCheckFailed = false;
     let currentFailedAssets = []; // Array to store failed assets for the current URL
-
+ if (skipPages.includes(url)) {
+      customLog(\`Skipping entire verification for URL: \${url}\`);
+      return; // Skip the rest of the function
+    }
     cy.visit(url);
 
     if (!whitelistPages.includes(url)) {
@@ -149,9 +154,7 @@ describe('Endpoint Health Checks - Part ${chunkIndex + 1}', () => {
     }
   });
 });
-`;
-
-
+`
 
   // You can now use 'testScript' as a string variable containing the entire script.
 
