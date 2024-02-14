@@ -86,7 +86,7 @@ export default defineConfig({
   e2e: {
     numTestsKeptInMemory: 0,
     experimentalMemoryManagement: true,
-    screenshotOnRunFailure: false,
+    screenshotOnRunFailure: true,
     specPattern:
       'cypress/**/*.{feature,api.ts,ftp.ts,util.ts,bei.ts,fei.ts,e2e.ts,bvt.ts,stub.ts}',
     setupNodeEvents,
