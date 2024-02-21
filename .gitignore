@@ -11,3 +11,4 @@ cypress/cypress/screenshots
 cypress/cypress/fixtures/splitEndpoints
 cypress/cypress/e2e/splitTests
 cypress/cypress.env.json
+cypress/mochawesome-report
