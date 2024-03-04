@@ -9,4 +9,5 @@ export const skipPages = [
   "https://www.moodys.com/web/en/us/solutions/compliance-third-party-risk.html",
   "https://www.moodys.com/web/en/us/about/insights/data-stories/rapid-growth-of-virtual-banks-puts-new-verve-into-old-banking-systems.html",
   "https://www.moodys.com/web/en/us/about/who-we-are/careers.html",
+
 ]
