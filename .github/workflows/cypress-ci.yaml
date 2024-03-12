@@ -1,42 +1,29 @@
-name: ci
+name: Run Cypress Tests in Parallel
 on: push
 
 jobs:
-  prepare:
-    runs-on: ubuntu-22.04
-    outputs:
-      matrix: ${{ steps.prepare.outputs.matrix }}
-    steps:
-      - name: Create matrix ⊹
-        id: prepare
-        uses: bahmutov/gh-build-matrix@main
-        with:
-          n: 3 # This dynamically sets the number of parallel jobs.
-
-      - name: Print result 🖨
-        run: echo '${{ steps.prepare.outputs.matrix }}'
-
-  test-split:
-    needs: prepare
+  cypress-tests:
     runs-on: ubuntu-22.04
     strategy:
       fail-fast: false
-      matrix: ${{ fromJSON(needs.prepare.outputs.matrix) }}
+      matrix:
+        include:
+          - index: 0
+          - index: 1
+          - index: 2
     steps:
-      - name: Checkout 🛎
-        uses: actions/checkout@v4
+      - name: Checkout repository
+        uses: actions/checkout@v2
 
       - name: Set up Node.js
         uses: actions/setup-node@v2
         with:
-          node-version: '16' # Adjust according to your project's requirements.
+          node-version: '16'
 
       - name: Install dependencies
         run: npm ci
-        working-directory: cypress # Adjust this path based on where your Cypress project is located.
+        working-directory: cypress
 
-      - name: Run Cypress Tests in Parallel
-        run: npx cypress run --env SPLIT=${{ strategy.matrix.n }},SPLIT_INDEX=${{ strategy.matrix.index }}
-        working-directory: cypress # Make sure this points to your Cypress project directory.
-        env:
-        # Define any other environment variables your tests might need.
+      - name: Run Cypress Tests
+        run: npx cypress run --env SPLIT=3,SPLIT_INDEX=${{ matrix.index }}
+        working-directory: cypress
