@@ -1,42 +1,24 @@
-name: Cypress Tests
-
-on: [push, pull_request]
-
+name: ci
+on: push
 jobs:
-  test:
-    runs-on: ubuntu-latest
+  test-split:
+    runs-on: ubuntu-22.04
+    # use two containers to run the tests
     strategy:
       fail-fast: false
       matrix:
-        containers: [1, 2, 3] # Define the number of parallel containers you want. Adjust this number based on your needs.
-
+        containers: [1, 2]
     steps:
-      - uses: actions/checkout@v2
+      - name: Checkout 🛎
+        uses: actions/checkout@v4
 
-      - name: Use Node.js
-        uses: actions/setup-node@v1
+      - name: Run split Cypress tests 🧪
+        # https://github.com/cypress-io/github-action
+        uses: cypress-io/github-action@v6
         with:
-          node-version: '14' # Set this to your project's node version
-
-      - name: Cache Node modules
-        uses: actions/cache@v2
+          # we don't need Cypress own runner summary
+          publish-summary: false
         env:
-          cache-name: cache-node-modules
-        with:
-          path: ./cypress/node_modules
-          key: ${{ runner.os }}-build-${{ env.cache-name }}-${{ hashFiles('**/package-lock.json') }}
-          restore-keys: |
-            ${{ runner.os }}-build-${{ env.cache-name }}-
-            ${{ runner.os }}-build-
-            ${{ runner.os }}-
-
-      - name: Install Dependencies
-        run: npm ci
-        working-directory: ./cypress
-
-      - name: Split and Run Tests
-        run: npx cypress-split run --group ${{ matrix.containers }} --total ${{ strategy.matrix.containers.length }}
-        working-directory: ./cypress
-        env:
-          CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          SPLIT: ${{ strategy.job-total }}
+          SPLIT_INDEX: ${{ strategy.job-index }}
+          working-directory: cypress
