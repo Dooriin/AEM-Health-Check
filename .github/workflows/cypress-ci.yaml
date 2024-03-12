@@ -16,11 +16,11 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v2
         with:
-          node-version: '14' # Adjust this to your project's Node.js version
+          node-version: '18' # Adjust this to your project's Node.js version
 
       - name: Install Dependencies
         run: npm i
-        working-directory: ./cypress
+        working-directory: cypress
 
       - name: Run split Cypress tests 🧪
         uses: cypress-io/github-action@v6
