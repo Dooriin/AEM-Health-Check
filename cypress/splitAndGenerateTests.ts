@@ -257,11 +257,6 @@ describe('Endpoint Health Checks - Part ${chunkIndex + 1}', () => {
     });
   }
 
-  before(() => {
-    cy.writeFile(fileName, '', { flag: 'w' });
-    cy.writeFile(pageFileName, '', { flag: 'w' });
-  });
-
   endpoints.forEach(url => {
     it(\`Validating page and assets for - \${url}\`, () => {
       if (url.endsWith('.pdf')) {
@@ -273,18 +268,6 @@ describe('Endpoint Health Checks - Part ${chunkIndex + 1}', () => {
     });
   });
 
-  after(() => {
-    cy.writeFile('cypress/downloads/testLogs.txt', allLogs.join('\\n'), { flag: 'w+' });
-
-    if (failedPages.length > 0) {
-      const pageLogContent = failedPages.join('\\n');
-      cy.writeFile(pageFileName, pageLogContent, { flag: 'a+' });
-    }
-    if (allFailedAssets.length > 0) {
-      const assetLogContent = allFailedAssets.join('\\n');
-      cy.writeFile(fileName, assetLogContent, { flag: 'a+' });
-    }
-  });
 });
 `
 
