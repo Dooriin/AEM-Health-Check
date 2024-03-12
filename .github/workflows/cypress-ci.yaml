@@ -23,8 +23,8 @@ jobs:
           node-version: '16'
       - name: Install Dependencies
         run: npm install
-        working-directory: ./cypress
+        working-directory: cypress
       - name: Run Cypress Tests
         run: npx cypress run --env split=true,SPLIT=${{ matrix.include.length }},SPLIT_INDEX=${{ matrix.container }}
-        working-directory: ./cypress
+        working-directory: cypress
         # Make sure to adjust 'SPLIT' and 'SPLIT_INDEX' as per your specific setup and splitting strategy
