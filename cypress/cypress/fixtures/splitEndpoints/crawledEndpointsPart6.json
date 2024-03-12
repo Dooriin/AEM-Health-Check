@@ -1,14 +1,9 @@
 {
   "endpoints": [
-    "https://www.moodys.com/web/en/us/site-assets/ma-kyc-a-new-frontier-in-sanctions-awareness-and-compliance.pdf",
-    "https://www.moodys.com/web/en/us/capabilities/company-reference-data/data-applications/trade-credit.html",
-    "https://www.moodys.com/web/en/us/kyc/sectors/government.html",
-    "https://www.moodys.com/web/en/us/coverage-expansion.html",
-    "https://www.moodys.com/web/en/us/esgview.html",
-    "https://www.moodys.com/web/en/us/kyc/sectors/asset-management.html",
-    "https://www.moodys.com/web/en/us/capabilities/company-reference-data/data-applications/tax-and-transfer-pricing-solutions.html",
-    "https://www.moodys.com/web/en/us/v3/pdf/banking-momentum-metropolitan-chooses-portfoliostudio-for-confident-portfolio-steering.pdf",
-    "https://www.moodys.com/web/en/us/v3/pdf/banking-teachers-federal-credit-union-builds-a-robust-credit-and-treasury-function-enabled-by-moodys.pdf",
-    "https://www.moodys.com/web/en/us/kyc/sectors/insurance.html"
+    "https://www.moodys.com/web/en/us/insights/exponential-risk.html",
+    "https://www.moodys.com/web/en/us/capabilities/company-reference-data.html",
+    "https://www.moodys.com/web/en/us/about-us/gender-finance.html",
+    "https://www.moodys.com/web/en/us/help-support.html",
+    "https://www.moodys.com/web/en/us/private-credit.html"
   ]
 }

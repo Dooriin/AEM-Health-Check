@@ -1,14 +1,9 @@
 {
   "endpoints": [
-    "https://www.moodys.com/web/en/us/innovation/ai-principles.html",
-    "https://www.moodys.com/web/en/us/insights/exponential-risk/commercial-real-estate.html",
-    "https://www.moodys.com/web/en/us/kyc/resources/insights/new-research-moodys-analytics-reveals-far-reaching-risk-shell-companies.html",
-    "https://www.moodys.com/web/en/us/kyc/products/kompany/ubo-discovery.html",
-    "https://www.moodys.com/web/en/us/insights/exponential-risk/russias-war-in-ukraine.html",
-    "https://www.moodys.com/web/en/us/insights/exponential-risk/cybersecurity.html",
-    "https://www.moodys.com/web/en/us/kyc/resources/insights/look-in-shell-3-benefits-using-moodys-shell-company-indicator.html",
-    "https://www.moodys.com/web/en/us/kyc/resources/insights/a-hidden-threat-financial-grooming-scams.html",
-    "https://www.moodys.com/web/en/us/datahub.html",
-    "https://www.moodys.com/web/en/us/kyc/resources/insights/executive-order-14114-creates-new-secondary-sanctions-risks.html"
+    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-inside-economics/humble-forecasting-hopeful-outlook.html",
+    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-inside-economics/debating-jobs-debating-forecasts.html",
+    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-inside-economics/kahn-on-climate.html",
+    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-inside-economics/inflation-head-fakes-and-heartbreaks.html",
+    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-inside-economics/marks-references-moderating-inflation-and-the-midterms.html"
   ]
 }

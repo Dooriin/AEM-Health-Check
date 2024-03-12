@@ -1,14 +1,9 @@
 {
   "endpoints": [
-    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-inside-economics/catch-up-and-ketchup.html",
-    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-inside-economics/cpi-and-ccar.html",
-    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-inside-economics/cpi-cyber-and-colyar-colly-yer.html",
-    "https://www.moodys.com/web/en/us/about-us/innovation-technology/quantum.html",
-    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-inside-economics/episode-148.html",
-    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-inside-economics/jaw-dropping-january-jobs-redux.html",
-    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-inside-economics/robert-dietz.html",
-    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-inside-economics/episode-150-bill-adams.html",
-    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-inside-economics/carl-tannenbaum.html",
-    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-inside-economics/a-tour-around-credit-land.html"
+    "https://www.moodys.com/web/en/us/kyc/request-a-demo.html",
+    "https://www.moodys.com/web/en/us/kyc/products/review.html",
+    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-focus-on-finance/global-outlook-for-non-bank-finance-companies-negative-on-continued-asset-quality-strains-and-weak-profitability.html",
+    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-focus-on-finance/convective-storms-batter-us-pc-insurers.html",
+    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-focus-on-finance/banks-will-feel-the-squeeze-from-tight-financial-conditions-slowing-economies-in-2024.html"
   ]
 }

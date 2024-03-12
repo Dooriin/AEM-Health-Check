@@ -1,14 +1,9 @@
 {
   "endpoints": [
-    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-emerging-markets-decoded/us-bank-failures-have-ripple-effects-worldwide.html",
-    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-emerging-markets-decoded/emerging-market-banks-asset-risks-rising-mexican-banks-benefit-from-rising-rates.html",
-    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-emerging-markets-decoded/credit-risks-for-sub-saharan-african-sovereigns-and-banks-are-rising-telecoms-sector-is-a-bright-spot.html",
-    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-emerging-markets-decoded/chinas-path-to-net-zero-emissions-will-become-increasingly-difficult.html",
-    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-emerging-markets-decoded/negative-global-credit-conditions-will-weigh-on-weaker-emerging-market-debt-issuers-in-2023.html",
-    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-emerging-markets-decoded/emerging-markets-climate-financing-falls-short-deforestation-in-brazil-weighs-on-businesses.html",
-    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-emerging-markets-decoded/emerging-markets-will-face-multispeed-recovery-even-as-credit-conditions-stabilize.html",
-    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-emerging-markets-decoded/escalating-russia-ukraine-tensions-will-weigh-on-sovereigns-banks-with-spillovers-to-europe.html",
-    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-emerging-markets-decoded/chinas-zero-covid-policy-and-property-sector-challenges-weigh-on-growth-with-global-spillovers.html",
-    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-emerging-markets-decoded/inflation-risks-are-high-for-emerging-markets-islamic-finance-issuance-steadies.html"
+    "https://www.moodys.com/web/en/us/kyc/resources/insights/looking-inside-the-shell.html",
+    "https://www.moodys.com/web/en/us/hosted-assets/Gov_KYC_Data_Trusted_Intelligence_Capabilities_for_National_Security.pdf",
+    "https://www.moodys.com/web/en/us/kyc/resources/insights/what-do-public-understand-peps-and-peps-by-association.html",
+    "https://www.moodys.com/web/en/us/kyc/resources/insights/digital-transformation-kyc-effective-client-lifecycle-management.html",
+    "https://www.moodys.com/web/en/us/kyc/resources/insights/supply-chain-due-diligence.html"
   ]
 }

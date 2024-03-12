@@ -1,14 +1,9 @@
 {
   "endpoints": [
-    "https://www.moodys.com/web/en/us/kyc/resources/insights/regulations-boost-fight-against-modern-slavery.html",
-    "https://www.moodys.com/web/en/us/kyc/products/grid.html?cid=62EFF960F8A17507&gclid=CjwKCAjw-vmkBhBMEiwAlrMeF-F9MJxFZwHcGt7mH2zFwL0HoHtUfPoGRkv4er-xqf0DhZ88k5gSCRoCEJQQAvD_BwE&gclsrc=aw.ds",
-    "https://www.moodys.com/web/en/us/kyc/resources/insights/blockchain-based-solutions-combat-modern-slavery.html",
-    "https://www.moodys.com/web/en/us/datahub/faq.html",
-    "https://www.moodys.com/web/en/us/kyc/resources/insights/detecting-modern-slavery-crypto-transactions.html",
-    "https://www.moodys.com/web/en/us/kyc/resources/insights/modern-slavery-financial-crime-global-humanitarian-crisis.html",
-    "https://www.moodys.com/web/en/us/kyc/resources/insights/drivers-risk-trends-modern-slavery-human-trafficking.html",
-    "https://www.moodys.com/web/en/us/kyc/resources/insights/modern-slavery-how-root-it-out-supply-chain.html",
-    "https://www.moodys.com/web/en/us/kyc/resources/insights/six-crucial-facts-you-need-know-modern-slavery.html",
-    "https://www.moodys.com/web/en/us/kyc/resources/insights/connecting-dots-in-ultimate-beneficial-ownership-ubo.html"
+    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-inside-economics/poor-policy-plunging-home-prices-and-a-plummeting-pound.html",
+    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-inside-economics/remote-work-and-rising-prices.html",
+    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-inside-economics/recession-lessons.html",
+    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-inside-economics/monthly-jobs-and-marks-journey.html",
+    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-inside-economics/sahm-on-the-soft-landing.html"
   ]
 }

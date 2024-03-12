@@ -1,14 +1,9 @@
 {
   "endpoints": [
-    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-inside-economics/shortages-and-supply-chains.html",
-    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-inside-economics/lng-and-long-tail-its-a-groundhog-not-a-chipmunk.html",
-    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-inside-economics/housing-and-happy-birthday.html",
-    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-inside-economics/cpi-and-census.html",
-    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-inside-economics/work-and-work-from-anywhere.html",
-    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-inside-economics/delta-and-debt.html",
-    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-inside-economics/rates-and-reflation.html",
-    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-inside-economics/inflection-points-and-inflation.html",
-    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-inside-economics/moodys-talks-inside-economics-trailer.html",
-    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-inside-economics/back-to-normal-and-build-back-better.html"
+    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-focus-on-finance/inflations-return-is-a-net-positive-for-global-banks-us-life-insurers.html",
+    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-focus-on-finance/covid-19-resurgence-raises-asset-risks-for-southeast-asian-and-indian-banks.html",
+    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-focus-on-finance/reinsurance-outlook-is-back-to-stable-fintech-adoption-jolts-koreas-insurers.html",
+    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-focus-on-finance/stablecoins-multiply-adding-competition-in-financial-services.html",
+    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-focus-on-finance/transformation-of-us-health-insurers-brings-greater-revenue-higher-leverage.html"
   ]
 }

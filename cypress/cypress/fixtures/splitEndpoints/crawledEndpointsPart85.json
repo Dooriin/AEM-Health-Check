@@ -1,14 +1,9 @@
 {
   "endpoints": [
-    "https://www.moodys.com/web/en/us/site-assets/kompanyapi-brochure-february2023-LOWRES.pdf",
-    "https://www.moodys.com/web/en/us/site-assets/kompanykycworkspace-brochure-february2023-LOWRES.pdf",
-    "https://www.moodys.com/web/en/us/insights/exponential-risk/baby-formula.html",
-    "https://www.moodys.com/web/en/us/site-assets/passfort-lifecycle-brochure-february2023-LOWRES.pdf",
-    "https://www.moodys.com/web/en/us/site-assets/ma-kyc-sanctions360-brochure.pdf",
-    "https://www.moodys.com/web/en/us/kyc/resources/insights/towards-interactive-smart-screening-with-generative-ai-in-kyc-workflows.html",
-    "https://www.moodys.com/web/en/us/site-assets/ma-kyc-looking-inside-shell-moodys-shell-company-indicator.pdf",
-    "https://www.moodys.com/web/en/us/site-assets/ma-kyc-shell-company-indicator-brochure.pdf",
-    "https://www.moodys.com/web/en/us/innovation/digital-asset-monitor.html",
-    "https://www.moodys.com/web/en/us/digital-transformation/what-is-digital-finance.html"
+    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-inside-economics/crazy-data-claims-and-cowbells.html",
+    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-inside-economics/bonus-episode-the-yield-curve-whisperer-weighs-in.html",
+    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-inside-economics/david-wessel-on-the-debt-ceiling.html",
+    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-inside-economics/full-employment-failing-banks.html",
+    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-inside-economics/ho-hum-savings-and-happy-holidays.html"
   ]
 }

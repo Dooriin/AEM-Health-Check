@@ -1,14 +1,9 @@
 {
   "endpoints": [
-    "https://www.moodys.com/web/en/us/kyc/products/grid.html?cid=62EFF960F8A17507&gclsrc=aw.ds",
-    "https://www.moodys.com/web/en/us/kyc/resources/insights/customer-due-diligence-explained.html",
-    "https://www.moodys.com/web/en/us/kyc/resources/insights/rise-machines-what-landmark-dutch-ai-ruling-means-aml-compliance.html",
-    "https://www.moodys.com/web/en/us/about/insights/infographics.html?p=6",
-    "https://www.moodys.com/web/en/us/hosted-assets/BX13199_DE_I%20infographic_FINAL.pdf",
-    "https://www.moodys.com/web/en/us/hosted-assets/MESG_Insights_080122_MCO_SSR-esg-integration.pdf",
-    "https://www.moodys.com/web/en/us/hosted-assets/BX13089_SSR%20Net-zero%20infographic_FINAL.pdf",
-    "https://www.moodys.com/web/en/us/about/insights/infographics.html?p=7",
-    "https://www.moodys.com/web/en/us/about/insights/infographics.html?p=8",
-    "https://www.moodys.com/web/en/us/about/insights/infographics.html?p=9"
+    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-inside-economics/canberra-and-cpi.html",
+    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-inside-economics/christmas-movies-and-currencies.html",
+    "https://www.moodys.com/web/en/us/about/insights/data-stories/rapid-growth-of-virtual-banks-puts-new-verve-into-old-banking-systems.html",
+    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-inside-economics/data-deep-dive-gross-domestic-product.html",
+    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-inside-economics/cpi-consumers-and-cosmo.html"
   ]
 }

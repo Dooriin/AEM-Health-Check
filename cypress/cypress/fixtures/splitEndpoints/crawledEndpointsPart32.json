@@ -1,14 +1,9 @@
 {
   "endpoints": [
-    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-the-big-picture/after-covid-whats-next-for-government-debt.html",
-    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-the-big-picture/central-bank-digital-currencies-the-future-of-cash.html",
-    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-the-big-picture/covid-19-and-inequality-same-storm-different-boats.html",
-    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-the-big-picture/the-future-of-work-destination-unknown.html",
-    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-the-big-picture/will-rising-food-and-fuel-costs-inflame-social-tensions.html",
-    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-the-big-picture/moodys-talks-the-big-picture-trailer.html",
-    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-the-big-picture/new-technologies-will-drive-the-worlds-net-zero-ambitions.html",
-    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-the-big-picture/storms-droughts-and-wildfires-point-to-rising-global-climate-risks.html",
-    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-inside-economics/bonus-episode-divergence-to-convergence.html",
-    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-inside-economics/housing-market-360.html"
+    "https://www.moodys.com/web/en/us/kyc/resources/insights.html?type=blog",
+    "https://www.moodys.com/web/en/us/kyc/resources/insights.html",
+    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-focus-on-finance/ais-transformation-of-banking-plus-fhlbank-reforms-fallout-from-evergrande-liquidation.html",
+    "https://www.moodys.com/web/en/us/kyc/about/terms-conditions-ma.html",
+    "https://www.moodys.com/web/en/us/kyc/about/passfort-terms-and-conditions.html"
   ]
 }

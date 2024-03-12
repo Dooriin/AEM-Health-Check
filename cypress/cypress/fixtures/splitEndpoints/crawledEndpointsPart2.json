@@ -1,14 +1,9 @@
 {
   "endpoints": [
-    "https://www.moodys.com/web/en/us/solutions/regulatory-calculation-reporting.html",
-    "https://www.moodys.com/web/en/us/capabilities/commercial-properties.html",
+    "https://www.moodys.com/web/en/us/solutions/ratings.html",
+    "https://www.moodys.com/web/en/us/who-we-serve/corporations.html",
     "https://www.moodys.com/web/en/us/solutions/compliance-third-party-risk.html",
     "https://www.moodys.com/web/en/us/solutions/lending.html",
-    "https://www.moodys.com/web/en/us/capabilities/company-reference-data.html",
-    "https://www.moodys.com/web/en/us/solutions/portfolio-management.html",
-    "https://www.moodys.com/web/en/us/capabilities/company-reference-data/data-applications.html",
-    "https://www.moodys.com/web/en/us/about/insights/data-stories.html",
-    "https://www.moodys.com/web/en/us/about/insights/infographics.html",
-    "https://www.moodys.com/web/en/us/capabilities/company-reference-data/orbis.html"
+    "https://www.moodys.com/web/en/us/who-we-serve/public-sector.html"
   ]
 }

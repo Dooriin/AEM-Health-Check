@@ -1,14 +1,9 @@
 {
   "endpoints": [
-    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-inside-economics/resilient-jobs-risky-times.html",
-    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-inside-economics/full-employment-failing-banks.html",
-    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-inside-economics/shaky-credit-shifting-consumers.html",
-    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-inside-economics/healthy-job-markets-unhealthy-hosts.html",
-    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-inside-economics/systemic-threats-supervisory-shortfalls.html",
-    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-inside-economics/bonus-episode-us-economic-outlook-qa.html",
-    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-inside-economics/us-bull-china-bear.html",
-    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-inside-economics/be-patient-and-beer-inflation.html",
-    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-inside-economics/crazy-data-claims-and-cowbells.html",
-    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-inside-economics/inflation-head-fakes-and-heartbreaks.html"
+    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-focus-on-finance/with-markets-on-edge-credit-suisse-rescue-protects-senior-creditors-plus-some-fintechs-thrive.html",
+    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-focus-on-finance/chinas-post-covid-reopening-is-positive-for-domestic-mortgage-borrowers-some-asia-pacific-banks-fof.html",
+    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-focus-on-finance/crypto-firms-fortunes-ebb-but-technology-advances-russias-aircraft-seizures-grip-stakeholders.html",
+    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-focus-on-finance/fed-policy-tightening-will-keep-clamps-on-us-banks-credit-change-may-be-afoot-in-global-payments.html",
+    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-focus-on-finance/emerging-markets-banks-face-foreign-currency-risks-shockwaves-spread-in-crypto-asset-markets.html"
   ]
 }

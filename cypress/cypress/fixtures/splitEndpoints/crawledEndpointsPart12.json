@@ -1,14 +1,9 @@
 {
   "endpoints": [
-    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-credit-in-perspective.html",
-    "https://www.moodys.com/web/en/us/hosted-assets/2023-03-16-Welcoming-3.4-Million-Ukrainian-Women-Into-the-EU.pdf",
-    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-behind-the-bonds.html",
-    "https://www.moodys.com/web/en/us/insights/exponential-risk/navigating-the-new-era-of-risk.html",
-    "https://www.moodys.com/web/en/us/insights/exponential-risk/the-future-of-risk.html",
-    "https://www.moodys.com/web/en/us/insights/exponential-risk/the-new-risk-landscape.html",
-    "https://www.moodys.com/web/en/us/about/what-we-do/quantum-computing/quantum-survey-report.html",
-    "https://www.moodys.com/web/en/us/digital-transformation.html",
-    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-magnify.html",
-    "https://www.moodys.com/web/en/us/kyc/resources/insights/study-ai-compliance.html"
+    "https://www.moodys.com/web/en/us/kyc/resources/insights/research-reveals-low-public-understanding-politically-exposed-persons-peps.html",
+    "https://www.moodys.com/web/en/us/kyc/resources/insights/complexities-shell-company-operation.html",
+    "https://www.moodys.com/web/en/us/capabilities/company-reference-data/data-applications/trade-credit.html",
+    "https://www.moodys.com/web/en/us/kyc/resources/insights/peps-screening-using-integrated-risk-assessment.html",
+    "https://www.moodys.com/web/en/us/kyc/resources/insights/financial-fraud-fight-many-fronts.html"
   ]
 }

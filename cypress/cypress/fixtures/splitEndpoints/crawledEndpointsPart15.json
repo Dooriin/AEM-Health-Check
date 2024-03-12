@@ -1,14 +1,9 @@
 {
   "endpoints": [
-    "https://www.moodys.com/web/en/us/kyc/resources.html",
-    "https://www.moodys.com/web/en/us/kyc/sectors/professional-services.html",
-    "https://www.moodys.com/web/en/us/kyc/sectors/fintech.html",
-    "https://www.moodys.com/web/en/us/kyc/sectors/banking.html",
-    "https://www.moodys.com/web/en/us/kyc/solutions/screen-monitor.html",
-    "https://www.moodys.com/web/en/us/kyc/solutions/fraud-prevention.html",
-    "https://www.moodys.com/web/en/us/kyc/resources/alliances.html",
-    "https://www.moodys.com/web/en/us/kyc/resources/insights.html?type=blog",
-    "https://www.moodys.com/web/en/us/kyc/about/help.html",
-    "https://www.moodys.com/web/en/us/kyc/about/contact-us.html"
+    "https://www.moodys.com/web/en/us/kyc/sectors/government.html",
+    "https://www.moodys.com/web/en/us/about/insights/data-stories/kyc-ai-risk-and-compliance-survey.html",
+    "https://www.moodys.com/web/en/us/who-we-serve/buy-side.html",
+    "https://www.moodys.com/web/en/us/about/insights/data-stories/changing-shape-of-supply-chain-risk.html",
+    "https://www.moodys.com/web/en/us/about/insights/data-stories.html?p=2"
   ]
 }

@@ -1,14 +1,9 @@
 {
   "endpoints": [
-    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-inside-economics/taiwan-straits-tough-geopolitics.html",
-    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-inside-economics/bonus-episode-heather-boushey-on-climate-and-the-economy.html",
-    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-inside-economics/banks-bonds-and-beige-book.html",
-    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-inside-economics/what-could-go-wrong.html",
-    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-inside-economics/cpi-silver-lining-debt-limit-timing.html",
-    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-inside-economics/new-construction-and-niche-y-nerds.html",
-    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-inside-economics/pinto-prices-and-policy.html",
-    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-inside-economics/do-we-have-a-deal.html",
-    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-inside-economics/bonus-episode-the-yield-curve-whisperer-weighs-in.html",
-    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-inside-economics/financial-fragility-the-fed.html"
+    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-focus-on-finance/china-property-outlook-turns-stable-from-negative-insurers-and-mortgage-lenders-face-limited-credit-risk-from-the-property.html",
+    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-focus-on-finance/moodys-us-insurance-and-asset-management-conference-featuring-guggenheim-cio-anne-walsh.html",
+    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-focus-on-finance/middle-market-clos-bdcs-and-closed-end-funds-present-different-credit-risks-fof.html",
+    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-focus-on-finance/antitrust-fears-weaken-insurers-net-zero-alliance.html",
+    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-focus-on-finance/emerging-markets-banks-go-digital-to-counter-fintech-threat.html"
   ]
 }

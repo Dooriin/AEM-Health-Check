@@ -1,14 +1,9 @@
 {
   "endpoints": [
-    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-kyc-decoded/investigative-journalism-miniseries-part-1-house-of-cards.html",
-    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-kyc-decoded/bonus-episode-acams-vegas-2022-in-less-than-22-minutes.html",
-    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-kyc-decoded/sanctions-update-bonus-episode.html",
-    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-kyc-decoded/community-in-aml-the-ffe-story.html",
-    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-kyc-decoded/book-club-the-betrayal.html",
-    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-kyc-decoded/investigative-journalism-miniseries-part-2-crazy-rich-whale.html",
-    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-kyc-decoded/crypto-miniseries-part-2.html",
-    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-kyc-decoded/crypto-miniseries-part-3.html",
-    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-kyc-decoded/know-your-tech-know-your-experts-know-your-potential.html",
-    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-kyc-decoded/book-club-the-lazarus-heist.html"
+    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-kyc-decoded/third-party-risk-management-control-culture-and-competitive-advantage.html",
+    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-kyc-decoded/third-party-risk-management-knowing-the-right-thing-doing-the-right-thing.html",
+    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-kyc-decoded/pkyc-miniseries-part-2.html",
+    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-kyc-decoded/pkyc-miniseries-part-3.html",
+    "https://www.moodys.com/web/en/us/site-assets/ma-kyc-whitepaper-beneficial-ownership_LOWRES.pdf"
   ]
 }

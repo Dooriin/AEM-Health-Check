@@ -1,14 +1,9 @@
 {
   "endpoints": [
-    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-inside-economics/firewall-and-faltering-feelings.html",
-    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-inside-economics/bair-on-balance-sheets.html",
-    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-inside-economics/negative-sentiments-and-new-statistics-champion.html",
-    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-inside-economics/dissecting-cpi-ditching-hoagies.html",
-    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-inside-economics/unscripted-fed-and-unpacking-diversity-in-economics.html",
-    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-inside-economics/resilient-job-market-and-remote-work.html",
-    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-inside-economics/lousy-inflation-and-life-lessons.html",
-    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-inside-economics/bonus-episode-state-of-the-states.html",
-    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-inside-economics/return-to-work-and-recession-odds.html",
-    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-inside-economics/careening-markets-and-cre-mash-up.html"
+    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-focus-on-finance/apple-wades-deeper-into-finance-australias-super-sector-flourishes.html",
+    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-focus-on-finance/bleak-house-swedish-banks-us-mortgage-insurers-face-weakening-property-sectors.html",
+    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-focus-on-finance/high-oil-prices-economic-recovery-boost-prospects-for-islamic-banks-gcc-funds.html",
+    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-focus-on-finance/reinsurers-price-hikes-counterbalance-rising-losses-from-natural-catastrophes-claims-inflation.html",
+    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-focus-on-finance/russian-energy-squeeze-raises-risks-for-european-banks-credit-suisse-restructures.html"
   ]
 }

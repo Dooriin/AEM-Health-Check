@@ -1,14 +1,9 @@
 {
   "endpoints": [
-    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-kyc-decoded/ubos-and-why-they-matter.html",
-    "https://www.moodys.com/web/en/us/kyc/resources/insights/how-uncover-shell-companies-use-money-laundering-techniques.html",
-    "https://www.moodys.com/web/en/us/v3/about-us/master",
-    "https://www.moodys.com/web/en/us/kyc/resources/insights/nrrp-anti-fraud-measures-intensify-across-eu.html",
-    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-inside-economics/lumber-and-labor-force.html",
-    "https://www.moodys.com/web/en/us/kyc/resources/insights/how-spot-sanctions-evasion.html",
-    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-kyc-decoded/pkyc-miniseries-part-2.html",
-    "https://www.moodys.com/web/en/us/kyc/resources/insights/sanctions-compliance-sanctions-evasion-increased-enforcement-evolving-tactics.html",
-    "https://www.moodys.com/web/en/us/site-assets/ma-kyc-JAP-final-money-laundering-101.pdf",
-    "https://www.moodys.com/web/en/us/site-assets/ma-kyc-kor-money-laundering-101-how-criminals-launder-money.pdf"
+    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-focus-on-finance/outlook-for-many-banking-sectors-across-the-globe-turns-stable-as-economies-start-to-recover.html",
+    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-focus-on-finance/as-china-opens-markets-foreign-securities-asset-management-firms-seek-rewards.html",
+    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-focus-on-finance/financial-regulators-sharpen-climate-risk-focus-asset-managers-see-esg-investments-bloom.html",
+    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-focus-on-finance/outlook-stable-for-global-investment-banks-negative-for-most-global-finance-companies.html",
+    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-focus-on-finance/outlook-negative-for-global-banks-life-insurance-reinsurance-stable-for-pc-insurance.html"
   ]
 }

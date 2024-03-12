@@ -1,14 +1,9 @@
 {
   "endpoints": [
-    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-focus-on-finance/global-pc-insurance-outlook-is-negative-global-life-insurance-outlook-is-stable.html",
-    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-focus-on-finance/private-lenders-pile-up-cash-compete-for-lbos-driving-up-risk-fof.html",
-    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-focus-on-finance/china-property-outlook-turns-stable-from-negative-insurers-and-mortgage-lenders-face-limited-credit-risk-from-the-property.html",
-    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-focus-on-finance/chinas-soft-economic-recovery-raises-contingent-liability-risks-from-lgfvs-fof.html",
-    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-focus-on-finance/commercial-real-estate-downturn-could-weaken-us-life-insurers-portfolio-asset-quality.html",
-    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-focus-on-finance/rising-rates-create-risks-for-banks-globally-universal-banks-have-sound-funding-and-liquidity.html",
-    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-focus-on-finance/digital-bonds-a-potentially-disruptive-technology-slowly-gets-off-the-ground.html",
-    "https://www.moodys.com/web/en/us/credit-risk-insights.html",
-    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-focus-on-finance/emerging-markets-banks-face-decarbonization-risks-global-reinsurers-price-hikes-boost-profits.html",
-    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-focus-on-finance/real-estate-sector-stress-raises-risks-for-banks-in-china-and-vietnam.html"
+    "https://www.moodys.com/web/en/us/coverage-expansion.html",
+    "https://www.moodys.com/web/en/us/hosted-assets/WeWork-CMBS-Exposure-Update-09-25-23.pdf",
+    "https://www.moodys.com/web/en/us/hosted-assets/bx22159-esg-incidents-2023-in-review.pdf",
+    "https://www.moodys.com/web/en/us/about/insights/data-stories/stablecoins-instability.html",
+    "https://www.moodys.com/web/en/us/about/insights/data-stories/us-rental-housing-affordability.html"
   ]
 }

@@ -1,14 +1,9 @@
 {
   "endpoints": [
-    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-perspectivas-latinoamerica/perspectiva-estable-para-la-mayoria-de-los-sistemas-bancarios-de-america-latina-pese-a-un-entorno-de-mayores-tasas-de-interes-y-desaceleracion-del-crecimiento.html",
-    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-perspectivas-latinoamerica/cfg-outlook-2023-pt.html",
-    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-perspectivas-latinoamerica/el-nino-un-fenomeno-climatico-com-consequencias-variadas-para-a-regiao.html",
-    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-perspectivas-latinoamerica/inflacion.html",
-    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-credit-in-perspective/evolution-of-commercial-banking.html",
-    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-credit-in-perspective/modern-quantification-of-credit-risk.html",
-    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-credit-in-perspective/origins-of-the-edf.html",
-    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-credit-in-perspective/the-world-of-economic-forecasting.html",
-    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-emerging-markets-decoded/a-focus-on-emerging-markets-as-bond-yields-and-oil-prices-oscillate-plus-a-deep-dive-on-egypt.html",
-    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-credit-in-perspective/welcome-to-credit-in-perspective.html"
+    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-kyc-decoded/investigative-journalism-miniseries-part-2-crazy-rich-whale.html",
+    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-kyc-decoded/one-year-on-ukraine-russia-and-a-radically-evolved-sanctions-ecosystem.html",
+    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-kyc-decoded/key-insights-from-acams-hollywood-2023.html",
+    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-kyc-decoded/assessing-risk-assessment.html",
+    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-kyc-decoded/book-club-the-betrayal.html"
   ]
 }

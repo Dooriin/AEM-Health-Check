@@ -1,14 +1,9 @@
 {
   "endpoints": [
-    "https://www.moodys.com/web/en/us/site-assets/ma-kyc-whitepaper-Transparent-Trade.pdf",
-    "https://www.moodys.com/web/en/us/site-assets/ma-kyc-whitepaper-Put-more-PEP-in-your-step.pdf",
-    "https://www.moodys.com/web/en/us/kyc/resources/insights/ai-set-transform-compliance.html",
-    "https://www.moodys.com/web/en/us/kyc/resources/insights/as-ai-transforms-risk-compliance-what-role-regulation-play.html",
-    "https://www.moodys.com/web/en/us/kyc/resources/insights/transformative-potential-ai-compliance-third-party-risk-management.html",
-    "https://www.moodys.com/web/en/us/kyc/resources/insights/ai-risk-and-compliance-intersection-ai-and-human-expertise.html",
-    "https://www.moodys.com/web/en/us/kyc/resources/insights/moodys-analytics-sentry-collaborate-drive-greater-transparency-criminal-activities-business.html",
-    "https://www.moodys.com/web/en/us/about/insights/infographics.html?p=5",
-    "https://www.moodys.com/web/en/us/kyc/resources/insights/mounting-approval-use-ai-machine-learning-fight-against-financial-crime.html",
-    "https://www.moodys.com/web/en/us/kyc/resources/insights/whats-difference-between-kyc-aml.html"
+    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-inside-economics/bonus-episode-data-deep-dive-consumer-price-index.html",
+    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-inside-economics/seroka-and-supply-chains.html",
+    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-inside-economics/bonus-episode-russia-ukraine-conflict.html",
+    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-inside-economics/bonus-episode-update-on-russian-invasion-of-the-ukraine.html",
+    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-inside-economics/bonus-episode-ask-us-anything.html"
   ]
 }

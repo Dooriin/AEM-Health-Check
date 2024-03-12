@@ -1,14 +1,9 @@
 {
   "endpoints": [
-    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-inside-economics/episode-01-a-booming-economy-and-bubbles.html",
-    "https://www.moodys.com/web/en/us/site-assets/ma-kyc-grid-brochure-feb2024.pdf",
-    "https://www.moodys.com/web/en/us/site-assets/pkyc-report.pdf",
-    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-kyc-decoded/pkyc-miniseries-part-1.html",
-    "https://www.moodys.com/web/en/us/site-assets/ma-kyc-whitepaper-beneficial-ownership_LOWRES.pdf",
-    "https://www.moodys.com/web/en/us/kyc/resources/insights/new-frontier-sanctions-awareness-compliance.html",
-    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-inside-economics/jobs-and-more-jobs.html",
-    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-kyc-decoded/the-abcs-of-cta.html",
-    "https://www.moodys.com/web/en/us/site-assets/AI-Review-Intelligent-Screening.pdf",
-    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-inside-economics/diffusion-indices-and-deficits.html"
+    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-focus-on-finance/asset-managers-find-new-frontiers-for-growth-african-banks-environmental-risk-rises.html",
+    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-focus-on-finance/cybersecurity-is-strongest-at-larger-financial-institutions-and-those-with-good-cyber-communication.html",
+    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-focus-on-finance/inflation-rattles-emerging-markets-finance-government-support-slips-for-petro-state-banks.html",
+    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-focus-on-finance/us-life-insurance-industry-transforms-itself-through-ma.html",
+    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-focus-on-finance/regulators-again-try-to-rein-in-money-market-funds-systemic-risks.html"
   ]
 }

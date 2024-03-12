@@ -1,14 +1,9 @@
 {
   "endpoints": [
-    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-behind-the-bonds/regional-credit-outlooks-for-2024.html",
-    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-behind-the-bonds/retailers-look-past-inflation-fatigue-and-high-inventories-while-conditions-worsen-for-seaborne-shipping.html",
-    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-behind-the-bonds/refinancing-needs-will-intensify-over-the-next-three-years-spurring-issuance-and-defaults.html",
-    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-behind-the-bonds/chinas-soft-economic-recovery-raises-contingent-liability-risks-from-lgfvs-btb.html",
-    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-behind-the-bonds/global-information-technology-outlook-remains-stable-eu-chips-act-will-help-semiconductor-sector.html",
-    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-behind-the-bonds/2023-outlook-is-negative-for-most-regions-as-growth-and-consumer-demand-slows.html",
-    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-behind-the-bonds/private-lenders-pile-up-cash-compete-for-lbos-driving-up-risk.html",
-    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-behind-the-bonds/global-electric-vehicle-surge-is-a-bumpy-ride-for-insurance-auto-finance-state-highway-bonds-btb.html",
-    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-behind-the-bonds/whats-the-outlook-and-why-global-real-estate-has-gone-negative.html",
-    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-behind-the-bonds/china-property-outlook-turns-stable-from-negative-insurers-and-mortgage-lenders-face-limited-credit-risk-from-the-property-sector.html"
+    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-kyc-decoded/kyc-origins-stories-chapter-5-kyc-unit-the-making-of-a-compliance-giant.html",
+    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-kyc-decoded/todays-global-sanctions-environment-whats-new-in-russian-sanctions.html",
+    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-kyc-decoded/feel-the-burn-why-compliance-professionals-are-struggling-with-burnout.html",
+    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-kyc-decoded/tapping-into-aml-in-the-legal-sector.html",
+    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-kyc-decoded/navigating-the-ai-landscape-insights-from-compliance-and-risk-management-leaders.html"
   ]
 }

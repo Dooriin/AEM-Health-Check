@@ -1,14 +1,9 @@
 {
   "endpoints": [
-    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-emerging-markets-decoded/corporate-liquidity-in-latin-america-is-adequate-brazil-faces-tough-policy-choices.html",
-    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-emerging-markets-decoded/em-government-revenue-is-unlikely-to-return-to-pre-pandemic-levels-in-2021.html",
-    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-emerging-markets-decoded/emerging-markets-poised-for-a-rocky-and-uneven-recovery-from-pandemic.html",
-    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-emerging-markets-decoded/rising-commodity-prices-political-risk-and-inflation-reshape-latam-credit-conditions.html",
-    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-emerging-markets-decoded/climate-risks-and-income-inequality-are-prime-esg-risks-for-em-governments.html",
-    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-emerging-markets-decoded/government-stress-weighs-on-african-banks-lebanons-economic-conditions-deteriorate.html",
-    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-emerging-markets-decoded/credit-conditions-will-be-mixed-across-emerging-markets-amid-uneven-covid-19-recovery.html",
-    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-emerging-markets-decoded/credit-stress-will-persist-in-sub-saharan-africa-amid-bumpy-economic-recovery.html",
-    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-emerging-markets-decoded/latin-america-grapples-with-slow-economic-recovery-rising-social-demands.html",
-    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-emerging-markets-decoded/sovereign-wealth-fund-drawdowns-will-help-meet-elevated-funding-needs-across-gcc.html"
+    "https://www.moodys.com/web/en/us/v3/about-us/master",
+    "https://www.moodys.com/web/en/us/kyc/resources/insights/towards-interactive-smart-screening-with-generative-ai-in-kyc-workflows.html",
+    "https://www.moodys.com/web/en/us/about/insights/data-stories/us-consumer-spending.html",
+    "https://www.moodys.com/web/en/us/about/insights/data-stories.html?p=1",
+    "https://www.moodys.com/web/en/us/about/insights/data-stories/china-property-sector-woes.html"
   ]
 }

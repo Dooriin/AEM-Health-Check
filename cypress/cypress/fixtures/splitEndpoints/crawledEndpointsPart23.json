@@ -1,14 +1,9 @@
 {
   "endpoints": [
-    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-focus-on-finance/russias-invasion-of-ukraine-shocks-banking-systems.html",
-    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-focus-on-finance/russian-energy-squeeze-raises-risks-for-european-banks-credit-suisse-restructures.html",
-    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-focus-on-finance/us-health-insurers-tackle-mental-health-asian-insurers-under-revised-capital-rules.html",
-    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-focus-on-finance/us-public-pension-funds-risk-more-than-insurers-with-private-market-investments.html",
-    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-focus-on-finance/african-banks-begin-to-emerge-from-pandemic-gloom.html",
-    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-focus-on-finance/tesla-launches-auto-insurance-sanctions-on-russia-rattle-aircraft-lessors-abs.html",
-    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-focus-on-finance/economy-drives-stable-2022-outlooks-for-global-asset-managers-emerging-markets-banks.html",
-    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-focus-on-finance/global-banks-2022-outlook-is-stable-on-strong-capital-low-credit-losses.html",
-    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-focus-on-finance/global-cybersecurity-rules-tighten-digital-banks-expand-worldwide.html",
-    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-focus-on-finance/growth-of-private-credit-has-systemic-implications.html"
+    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-perspectivas-latinoamerica.html",
+    "https://www.moodys.com/web/en/us/insights/exponential-risk/the-new-risk-landscape.html",
+    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-credit-in-perspective.html",
+    "https://www.moodys.com/web/en/us/help-support/use-of-moodys-content.html",
+    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-magnify.html"
   ]
 }

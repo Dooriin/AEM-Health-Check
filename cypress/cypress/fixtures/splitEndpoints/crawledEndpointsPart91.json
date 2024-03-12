@@ -1,14 +1,9 @@
 {
   "endpoints": [
-    "https://www.moodys.com/web/en/us/kyc/resources/insights/next-generation-sanctions-screening-against-ip-addresses.html",
-    "https://www.moodys.com/web/en/us/kyc/resources/insights.html?topic=Politically+Exposed+Persons+%28PEPs%29",
-    "https://www.moodys.com/web/en/us/kyc/resources/insights/five-areas-ai-could-transform-compliance-and-risk-management.html",
-    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-behind-the-bonds/www.moodys.com",
-    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-muniland/moodys.com",
-    "https://www.moodys.com/web/en/us/hosted-assets/Moodys-Deloitte-Case-Study.pdf",
-    "https://www.moodys.com/web/en/us/about/insights/infographics.html?p=4",
-    "https://www.moodys.com/web/en/us/kyc/resources/insights/meet-regulatory-expectations-on-artificial-intelligence-led-aml.html",
-    "https://www.moodys.com/web/en/us/kyc/resources/insights/three-questions-driving-efficiency-ai-powered-screening.html",
-    "https://www.moodys.com/web/en/us/kyc/resources/insights/power-natural-language-processing.html"
+    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-inside-economics/economic-update-and-ellens-climate-top-5.html",
+    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-inside-economics/energy-expectations-and-estonia.html",
+    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-inside-economics/firewall-and-faltering-feelings.html",
+    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-inside-economics/debating-policy-doug-disagrees.html",
+    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-inside-economics/hot-cpi-and-hail-mary-outlook.html"
   ]
 }

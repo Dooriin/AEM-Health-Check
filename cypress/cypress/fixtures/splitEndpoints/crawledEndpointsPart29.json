@@ -1,14 +1,9 @@
 {
   "endpoints": [
-    "https://www.moodys.com/web/en/us/kyc/resources/insights/transforming-risk-compliance-perpetual-kyc.html",
-    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-the-big-picture/higher-for-longer-rates-cloud-economic-and-credit-outlook-for-2024.html",
-    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-the-big-picture/elections-heighten-risks-for-the-green-investment-boom.html",
-    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-the-big-picture/higher-interest-rates-will-test-the-shadow-banking-sector.html",
-    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-the-big-picture/unpacking-our-negative-outlook-on-the-us-sovereign-rating.html",
-    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-the-big-picture/us-dollar-will-remain-at-the-centre-of-a-more-multipolar-world.html",
-    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-the-big-picture/aging-will-lead-to-a-resurgence-in-labor-shortages.html",
-    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-the-big-picture/closing-the-gender-gap-would-add-trillions-of-dollars-to-global-gdp.html",
-    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-the-big-picture/europes-economic-challenges-are-growing-as-the-war-in-ukraine-reaches-a-grim-milestone.html",
-    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-the-big-picture/population-ageing-is-set-to-reshape-asias-credit-landscape.html"
+    "https://www.moodys.com/web/en/us/kyc/sectors.html",
+    "https://www.moodys.com/web/en/us/kyc/sectors/professional-services.html",
+    "https://www.moodys.com/web/en/us/kyc/sectors/fintech.html",
+    "https://www.moodys.com/web/en/us/kyc/sectors/banking.html",
+    "https://www.moodys.com/web/en/us/kyc/about.html"
   ]
 }

@@ -1,14 +1,9 @@
 {
   "endpoints": [
-    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-focus-on-finance/transformation-of-us-health-insurers-brings-greater-revenue-higher-leverage.html",
-    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-focus-on-finance/asset-managers-find-new-frontiers-for-growth-african-banks-environmental-risk-rises.html",
-    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-focus-on-finance/cyber-insurance-as-losses-rise-the-industry-ponders-uninsurable-risks.html",
-    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-focus-on-finance/reinsurance-outlook-is-back-to-stable-fintech-adoption-jolts-koreas-insurers.html",
-    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-focus-on-finance/what-are-the-opportunities-for-growth-that-beckon-for-financial-institutions-as-they-embark-on-decarbonization.html",
-    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-focus-on-finance/cybersecurity-is-strongest-at-larger-financial-institutions-and-those-with-good-cyber-communication.html",
-    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-focus-on-finance/banks-confront-rising-climate-threats.html",
-    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-focus-on-finance/ep23.html",
-    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-focus-on-finance/inflation-rattles-emerging-markets-finance-government-support-slips-for-petro-state-banks.html",
-    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-focus-on-finance/outlook-for-many-banking-sectors-across-the-globe-turns-stable-as-economies-start-to-recover.html"
+    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-muniland.html",
+    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-outlook-connections.html",
+    "https://www.moodys.com/web/en/us/kyc/products/orbis-compliance.html",
+    "https://www.moodys.com/web/en/us/kyc/resources/insights/study-ai-compliance.html",
+    "https://www.moodys.com/web/en/us/about/what-we-do/quantum-computing/quantum-survey-report.html"
   ]
 }

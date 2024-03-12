@@ -1,14 +1,9 @@
 {
   "endpoints": [
-    "https://www.moodys.com/web/en/us/kyc/about/passfort-terms-and-conditions.html",
-    "https://www.moodys.com/web/en/us/kyc/resources/thought-leadership.html",
-    "https://www.moodys.com/web/en/us/kyc/about/terms-conditions-ma.html",
-    "https://www.moodys.com/web/en/us/kyc/about.html",
-    "https://www.moodys.com/web/en/us/kyc/resources/faq.html",
-    "https://www.moodys.com/web/en/us/kyc/resources/case-studies.html",
-    "https://www.moodys.com/web/en/us/kyc/request-a-demo.html",
-    "https://www.moodys.com/web/en/us/outlooks/videos-podcasts-infographics.html",
-    "https://www.moodys.com/web/en/us/kyc/resources/insights.html",
-    "https://www.moodys.com/web/en/us/coverage-expansion.html?cid=em-mlt-16435"
+    "https://www.moodys.com/web/en/us/esgview.html",
+    "https://www.moodys.com/web/en/us/capabilities/company-reference-data/data-applications/corporate-finance.html",
+    "https://www.moodys.com/web/en/us/about/insights/data-stories/oil-and-gas-2023-windfall.html",
+    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-kyc-decoded.html",
+    "https://www.moodys.com/web/en/us/about/insights/data-stories/reinsurers-mitigate-lower-profits.html"
   ]
 }

@@ -1,14 +1,9 @@
 {
   "endpoints": [
-    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-emerging-markets-decoded/gloomy-outlook-for-emerging-market-credit-conditions-with-some-bright-spots.html",
-    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-emerging-markets-decoded/heatwaves-undermine-renewable-energy-production-utilities-in-asia-pacific-and-latin-america.html",
-    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-emerging-markets-decoded/more-emerging-market-sovereigns-pursue-debt-for-nature-swaps-to-reduce-debt-burdens.html",
-    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-emerging-markets-decoded/policy-shifts-loom-as-colombias-presidential-election-heads-to-a-run-off.html",
-    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-emerging-markets-decoded/russia-ukraine-crisis-exacerbates-food-price-inflation-financial-conditions-tighten-for-emerging-markets.html",
-    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-emerging-markets-decoded/mark-zandi-on-fed-rate-hike-banking-stress-recession-risks-and-implications-for-emerging-markets.html",
-    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-emerging-markets-decoded/chinas-soft-economic-recovery-raises-contingent-liability-risks-from-lgfvs.html",
-    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-emerging-markets-decoded/african-sovereigns-and-banks-will-face-significant-challenges-in-2022.html",
-    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-emerging-markets-decoded/china-evergrandes-financial-stress-raises-challenges-for-chinas-property-market-and-economy.html",
-    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-emerging-markets-decoded/chinas-economic-rebalancing-will-reduce-social-risks-but-transition-will-be-bumpy.html"
+    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-kyc-decoded/moodys-talks-kyc-decoded.html",
+    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-kyc-decoded/suisse-secrets-reaction.html",
+    "https://www.moodys.com/web/en/us/kyc/resources/insights/trade-based-money-laundering-do-you-know-signs.html",
+    "https://www.moodys.com/web/en/us/kyc/resources/insights/new-ubo-rule-changes-in-asia-pacific.html",
+    "https://www.moodys.com/web/en/us/kyc/resources/insights/changes-eu-aml-framework.html"
   ]
 }

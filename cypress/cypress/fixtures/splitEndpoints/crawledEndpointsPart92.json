@@ -1,14 +1,9 @@
 {
   "endpoints": [
-    "https://www.moodys.com/web/en/us/hosted-assets/Moodys-DataHub-Brochure.pdf",
-    "https://www.moodys.com/web/en/us/kyc/resources/insights.html?topic=Artificial+Intelligence",
-    "https://www.moodys.com/web/en/us/kyc/resources/insights/journey-to-perpetual-kyc.html",
-    "https://www.moodys.com/web/en/us/datahub/contact-us.html",
-    "https://www.moodys.com/web/en/us/datahub/data-sets.html",
-    "https://www.moodys.com/web/en/us/kyc/resources/insights/human-trafficking-forced-labor-in-food-supply-chain.html",
-    "https://www.moodys.com/web/en/us/hosted-assets/MA_DS_Data-Interoperability-FinlSvcs-Report.pdf",
-    "https://www.moodys.com/web/en/us/kyc/resources/insights/are-you-ready-to-meet-bill-s-211-requirements.html",
-    "https://www.moodys.com/web/en/us/kyc/resources/insights/ensuring-ethical-conflict-minerals-supply-chain.html",
-    "http://moodys.com/web/en/us/about/insights/podcasts/moodys-talks-kyc-decoded/todays-global-sanctions-environment-whats-new-in-russian-sanctions.html"
+    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-inside-economics/in-person-recording-increased-probability-of-recession.html",
+    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-inside-economics/glass-half-full-or-half-empty.html",
+    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-inside-economics/jobs-and-jogging-in-boston.html",
+    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-inside-economics/klein-on-threats-to-the-global-financial-system.html",
+    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-inside-economics/lousy-inflation-and-life-lessons.html"
   ]
 }

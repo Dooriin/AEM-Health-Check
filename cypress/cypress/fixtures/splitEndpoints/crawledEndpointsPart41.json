@@ -1,14 +1,9 @@
 {
   "endpoints": [
-    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-inside-economics/remote-work-and-rising-prices.html",
-    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-inside-economics/in-person-recording-increased-probability-of-recession.html",
-    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-inside-economics/bonus-episode-stagflation-deep-dive.html",
-    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-inside-economics/blinder-baseball-and-business-cycles.html",
-    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-inside-economics/jobs-and-jogging-in-boston.html",
-    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-inside-economics/consumers-hang-tough-and-confidence-off-bottom.html",
-    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-inside-economics/poor-policy-plunging-home-prices-and-a-plummeting-pound.html",
-    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-inside-economics/cooling-inflation-and-confounding-housing-riddles.html",
-    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-inside-economics/marks-references-moderating-inflation-and-the-midterms.html",
-    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-inside-economics/economic-update-and-ellens-climate-top-5.html"
+    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-focus-on-finance/european-and-uk-banks-asia-pacific-insurers-grapple-with-rising-interest-rates.html",
+    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-focus-on-finance/strong-balance-sheets-keep-global-banks-on-stable-outlook-despite-macroeconomic-gloom.html",
+    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-focus-on-finance/cryptoasset-regulation-putting-the-stable-back-in-stablecoin.html",
+    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-focus-on-finance/positive-outlook-for-vietnamese-banks-moderate-inflation-will-boost-southeast-asian-banks-margins.html",
+    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-focus-on-finance/chinas-financial-institutions-help-stabilize-economy-inflation-boosts-some-emerging-markets-banks.html"
   ]
 }

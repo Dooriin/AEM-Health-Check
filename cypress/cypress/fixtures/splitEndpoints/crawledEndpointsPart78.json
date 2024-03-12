@@ -1,14 +1,9 @@
 {
   "endpoints": [
-    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-securitization-spotlight/ucrc-securitizations-evolving-with-utility-sector-as-climate-change-intensifies.html",
-    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-securitization-spotlight/structured-finance-exposure-to-recent-banking-stresses-includes-collateral-and-counterparties.html",
-    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-securitization-spotlight/global-structured-finance-markets-brace-for-performance-deterioration-in-2023.html",
-    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-securitization-spotlight/commercial-real-estate-borrowers-adjust-to-high-rates.html",
-    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-securitization-spotlight/rmbs-performance-holds-up-as-housing-markets-cool.html",
-    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-securitization-spotlight/chinas-post-covid-reopening-is-positive-for-domestic-mortgage-borrowers-some-asia-pacific-banks-ss.html",
-    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-securitization-spotlight/us-and-european-clo-markets-continue-to-converge-in-key-ways-in-wake-of-pandemic.html",
-    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-securitization-spotlight/refi-and-other-risks-rise-for-cre-properties.html",
-    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-securitization-spotlight/abs-performance-normalizing-as-auto-price-growth-hits-the-brakes.html",
-    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-securitization-spotlight/banks-and-covered-bonds-both-benefit-from-framework-harmony.html"
+    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-inside-economics/economic-threats-exponential-risk.html",
+    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-inside-economics/gigawatts-and-ev-jitters.html",
+    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-inside-economics/good-report-great-music.html",
+    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-inside-economics/healthy-inflation-unhealthy-housing.html",
+    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-inside-economics/near-perfect-new-probability.html"
   ]
 }

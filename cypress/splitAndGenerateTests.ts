@@ -8,7 +8,7 @@ interface CrawledData {
 
 const crawledData = require('./cypress/fixtures/crawledEndpoints')
 const endpoints = crawledData.CrawledData.endpoints
-const chunkSize = 10
+const chunkSize = 5
 const fixtureDir = path.join(__dirname, 'cypress/fixtures/splitEndpoints')
 const testDir = path.join(__dirname, 'cypress/e2e/splitTests')
 

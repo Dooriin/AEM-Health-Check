@@ -1,14 +1,9 @@
 {
   "endpoints": [
-    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-kyc-decoded/reflecting-on-the-ecjs-ruling-on-access-to-beneficial-ownership-information-one-year-on.html",
-    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-kyc-decoded/crypto-miniseries-part-1.html",
-    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-kyc-decoded/ai-transparent-boxes.html",
-    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-kyc-decoded/sanctions-miniseries-part-4-sanctions-crypto.html",
-    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-kyc-decoded/kyc-officer-of-the-future.html",
-    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-kyc-decoded/afc-enforcement-in-the-usa-2022-retrospective.html",
-    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-kyc-decoded/building-networks-to-fight-financial-crime-the-role-of-data-sharing.html",
-    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-kyc-decoded/assessing-risk-assessment.html",
-    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-kyc-decoded/regtech-research-report.html",
-    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-kyc-decoded/entity-resolution-data.html"
+    "https://www.moodys.com/web/en/us/coverage-expansion.html?cid=em-mlt-16435",
+    "https://www.moodys.com/web/en/us/kyc/resources/insights/sanctions-compliance-sanctions-evasion-increased-enforcement-evolving-tactics.html",
+    "https://www.moodys.com/web/en/us/research-assistant.html?cid=web-ntrnlbnnr-16727",
+    "https://www.moodys.com/web/en/us/outlooks/videos-podcasts-infographics.html",
+    "https://www.moodys.com/web/en/us/site-assets/AI-Review-Intelligent-Screening.pdf"
   ]
 }

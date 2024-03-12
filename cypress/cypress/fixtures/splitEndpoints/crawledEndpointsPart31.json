@@ -1,14 +1,9 @@
 {
   "endpoints": [
-    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-the-big-picture/taking-the-temperature-of-emerging-markets-amid-economic-tumult.html",
-    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-the-big-picture/post-cop27-focus-turns-to-climate-financing.html",
-    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-the-big-picture/who-will-be-most-vulnerable-as-europes-energy-crunch-deepens.html",
-    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-the-big-picture/is-the-age-of-globalization-over.html",
-    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-the-big-picture/russia-ukraine-military-conflict-creates-cascade-of-geopolitical-risks.html",
-    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-the-big-picture/russias-ukraine-invasion-stirs-new-inflation-worries.html",
-    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-the-big-picture/cyber-risks-growing-intersection-with-credit-risk.html",
-    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-the-big-picture/whats-driving-chinas-growth-slowdown.html",
-    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-the-big-picture/soaring-inflation-and-rising-interest-rates-temper-global-economic-outlook.html",
-    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-the-big-picture/no-easy-solutions-to-europes-energy-security-challenges.html"
+    "https://www.moodys.com/web/en/us/kyc/resources/thought-leadership.html",
+    "https://www.moodys.com/web/en/us/kyc/resources/faq.html",
+    "https://www.moodys.com/web/en/us/kyc/resources/alliances.html",
+    "https://www.moodys.com/web/en/us/kyc/resources/case-studies.html",
+    "https://www.moodys.com/web/en/us/kyc/about/contact-us.html"
   ]
 }

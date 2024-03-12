@@ -1,14 +1,9 @@
 {
   "endpoints": [
-    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-securitization-spotlight/clos-turn-to-sofr-at-end-of-slow-march-away-from-libor.html",
-    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-securitization-spotlight/middle-market-clos-bdcs-and-closed-end-funds-present-different-credit-risks-ss.html",
-    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-outlook-connections/moodys-talks-outlook-connections-trailer.html",
-    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-securitization-spotlight/sme-abs-remains-particularly-vulnerable-to-economic-turbulence.html",
-    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-securitization-spotlight/multifamily-real-estate-performing-well-but-faces-some-obstacles.html",
-    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-securitization-spotlight/auto-sector-transformation-economic-turbulence-weakening-abs-performance.html",
-    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-outlook-connections/lower-rated-leveraged-loans-junior-clo-tranches-to-bear-brunt-of-coronavirus-impact.html",
-    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-outlook-connections/global-economies-face-policy-challenges-in-2021-as-pandemic-fallout-continues.html",
-    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-securitization-spotlight/european-sme-abs-remains-highly-vulnerable-as-economies-weaken.html",
-    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-outlook-connections/uneven-recovery-rising-debt-and-tough-policy-choices-will-shape-credit-in-2021.html"
+    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-inside-economics/ai-and-a-bit-of-advertising.html",
+    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-inside-economics/bonus-episiode-mark-donovan.html",
+    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-inside-economics/approaching-shutdown-asian-flip-flop.html",
+    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-inside-economics/gangbuster-gdp.html",
+    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-inside-economics/forecast-surprises-successes-and-slip-ups.html"
   ]
 }

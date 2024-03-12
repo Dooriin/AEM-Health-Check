@@ -1,14 +1,9 @@
 {
   "endpoints": [
-    "https://www.moodys.com/web/en/us/kyc/resources/insights/peps-screening-using-integrated-risk-assessment.html",
-    "https://www.moodys.com/web/en/us/kyc/resources/insights/money-laundering-101-how-criminals-launder-money.html",
-    "https://www.moodys.com/web/en/us/capabilities/climate-risk.html",
-    "https://www.moodys.com/web/en/us/kyc/resources/insights/research-reveals-low-public-understanding-politically-exposed-persons-peps.html",
-    "https://www.moodys.com/web/en/us/kyc/resources/insights.html?type=whitepaper",
-    "https://www.moodys.com/web/en/us/solutions/balance-sheet-management.html",
-    "https://www.moodys.com/web/en/us/kyc/resources/infographics.html",
-    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-the-big-picture.html",
-    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-inside-economics.html",
-    "https://www.moodys.com/web/en/us/solutions/underwriting.html"
+    "https://www.moodys.com/web/en/us/about-us/innovation-technology.html",
+    "https://www.moodys.com/web/en/us/innovation.html",
+    "https://www.moodys.com/web/en/us/research-assistant.html",
+    "https://www.moodys.com/web/en/us/media-relations.html",
+    "https://www.moodys.com/web/en/us/innovation/research-assistant.html"
   ]
 }
