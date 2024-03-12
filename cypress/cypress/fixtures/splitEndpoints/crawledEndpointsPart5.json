@@ -1,0 +1,14 @@
+{
+  "endpoints": [
+    "https://www.moodys.com/web/en/us/outlooks.html",
+    "https://www.moodys.com/web/en/us/kyc/sectors/corporates.html",
+    "https://www.moodys.com/web/en/us/private-credit.html?cid=7380D0F05C817753",
+    "https://www.moodys.com/web/en/us/kyc/solutions/third-party-risk-management.html",
+    "https://www.moodys.com/web/en/us/kyc/resources/insights/uk-ministry-of-defence-will-use-moodys-analytics-support-its-supplier-risk-program.html",
+    "https://www.moodys.com/web/en/us/supplier-risk.html",
+    "https://www.moodys.com/web/en/us/kyc/resources/insights/european-commission-moodys-analytics-modernise-anti-fraud-activity.html",
+    "https://www.moodys.com/web/en/us/hosted-assets/ma-kyc-shell-company-indicator-brochure.pdf",
+    "https://www.moodys.com/web/en/us/trending-topics.html",
+    "https://www.moodys.com/web/en/us/hosted-assets/trusted-intelligence-capabilities-for-national-security_brochure.pdf"
+  ]
+}

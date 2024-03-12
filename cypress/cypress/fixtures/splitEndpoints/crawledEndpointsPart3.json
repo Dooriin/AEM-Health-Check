@@ -1,0 +1,14 @@
+{
+  "endpoints": [
+    "https://www.moodys.com/web/en/us/capabilities/structured-finance.html",
+    "https://www.moodys.com/web/en/us/about/insights/podcasts.html",
+    "https://www.moodys.com/web/en/us/capabilities/economic-data.html",
+    "https://www.moodys.com/web/en/us/capabilities/esg-risk.html",
+    "https://www.moodys.com/web/en/us/commercial-real-estate.html",
+    "https://www.moodys.com/web/en/us/insights/exponential-risk.html",
+    "https://www.moodys.com/web/en/us/banking-system.html",
+    "https://www.moodys.com/web/en/us/about-us/gender-finance.html",
+    "https://www.moodys.com/web/en/us/about-us.html",
+    "https://www.moodys.com/web/en/us/innovation.html"
+  ]
+}
