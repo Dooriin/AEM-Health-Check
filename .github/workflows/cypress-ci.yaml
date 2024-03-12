@@ -1,9 +1,10 @@
 name: ci
+
 on: push
+
 jobs:
   test-split:
     runs-on: ubuntu-22.04
-    # use two containers to run the tests
     strategy:
       fail-fast: false
       matrix:
@@ -12,13 +13,20 @@ jobs:
       - name: Checkout 🛎
         uses: actions/checkout@v4
 
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '14' # Adjust this to your project's Node.js version
+
+      - name: Install Dependencies
+        run: npm ci
+        working-directory: ./cypress
+
       - name: Run split Cypress tests 🧪
-        # https://github.com/cypress-io/github-action
         uses: cypress-io/github-action@v6
         with:
-          # we don't need Cypress own runner summary
+          working-directory: cypress
           publish-summary: false
         env:
           SPLIT: ${{ strategy.job-total }}
           SPLIT_INDEX: ${{ strategy.job-index }}
-          working-directory: cypress
