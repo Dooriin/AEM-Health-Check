@@ -1,0 +1,14 @@
+{
+  "endpoints": [
+    "https://www.moodys.com/web/en/us/kyc/products/compliance-catalyst.html",
+    "https://www.moodys.com/web/en/us/kyc/products/kompany.html",
+    "https://www.moodys.com/web/en/us/kyc/products/passfort.html",
+    "https://www.moodys.com/web/en/us/private-credit/moodys-ratings-capabilities.html",
+    "https://www.moodys.com/web/en/us/kyc/solutions.html",
+    "https://www.moodys.com/web/en/us/kyc/sectors.html",
+    "https://www.moodys.com/web/en/us/kyc/solutions/entity-ownership.html",
+    "https://www.moodys.com/web/en/us/kyc/products/sanctions360.html",
+    "https://www.moodys.com/web/en/us/kyc/products/shell-company-indicator.html",
+    "https://www.moodys.com/web/en/us/kyc/solutions/automation.html"
+  ]
+}
