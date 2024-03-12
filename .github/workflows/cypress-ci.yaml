@@ -5,26 +5,24 @@ name: Run Cypress Tests Hourly in Parallel
 on: [push]
 
 jobs:
-  run-tests:
+  cypress-test:
     runs-on: ubuntu-latest
     strategy:
       fail-fast: false
       matrix:
-        # Adjust 'include' array based on how many parallel jobs you want
-        include:
-          - container: 1
-          - container: 2
-          - container: 3
+        container: [0, 1, 2] # Define 3 parallel jobs, indexed from 0
     steps:
       - uses: actions/checkout@v3
-      - name: Setup Node.js
+
+      - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: '16'
-      - name: Install Dependencies
+          node-version: '16' # Specify your project's Node.js version
+
+      - name: Install dependencies
         run: npm install
         working-directory: cypress
-      - name: Run Cypress Tests
-        run: npx cypress run --env split=true,SPLIT=${{ matrix.include.length }},SPLIT_INDEX=${{ matrix.container }}
+
+      - name: Run Cypress Tests in Parallel
+        run: npx cypress run --env split=true,SPLIT=3,SPLIT_INDEX=${{ matrix.container }}
         working-directory: cypress
-        # Make sure to adjust 'SPLIT' and 'SPLIT_INDEX' as per your specific setup and splitting strategy
