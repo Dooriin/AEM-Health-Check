@@ -1,29 +1,34 @@
-name: Run Cypress Tests in Parallel
-on: push
+# https://cypress.tips/courses/cypress-plugins/lessons/m3
+stages:
+  - build
+  - test
 
-jobs:
-  cypress-tests:
-    runs-on: ubuntu-22.04
-    strategy:
-      fail-fast: false
-      matrix:
-        include:
-          - index: 0
-          - index: 1
-          - index: 2
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v2
+## Set environment variables for folders in "cache" job settings for npm modules and Cypress binary
+variables:
+  npm_config_cache: '$CI_PROJECT_DIR/.npm'
+  CYPRESS_CACHE_FOLDER: '$CI_PROJECT_DIR/cache/Cypress'
 
-      - name: Set up Node.js
-        uses: actions/setup-node@v2
-        with:
-          node-version: '16'
+# Cache using branch name
+# https://gitlab.com/help/ci/caching/index.md
+cache:
+  key: ${CI_COMMIT_REF_SLUG}
+  paths:
+    - .cache/*
+    - .npm/*
+    - cache/Cypress
+    - node_modules
 
-      - name: Install dependencies
-        run: npm ci
-        working-directory: cypress
+install:
+  image: cypress/base:16.14.2-slim
+  stage: build
+  script:
+    # install dependencies
+    - npm ci
 
-      - name: Run Cypress Tests
-        run: npx cypress run --env SPLIT=3,SPLIT_INDEX=${{ matrix.index }}
-        working-directory: cypress
+test:
+  image: cypress/base:16.14.2-slim
+  stage: test
+  parallel: 3
+  script:
+    - npm start &
+    - npx cypress run --env split=true
