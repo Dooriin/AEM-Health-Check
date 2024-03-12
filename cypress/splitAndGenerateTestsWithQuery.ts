@@ -26,11 +26,12 @@ for (let i = 0; i < endpoints.length; i += chunkSize) {
     JSON.stringify({ endpoints: chunk }, null, 2)
   )
 
-  //   const testFileContent = `
+  // const testFileContent = `
   // import { endpoints } from '../../fixtures/splitEndpoints/${fixtureFileName}';
-  // import { whitelistPages } from '../../fixtures/whitelistPages';
-  // import { generalPages } from '../../pageObjects/general.pageObjects';
+  // import { whitelistPages } from '../../fixtures/whitelistPages'
+  // import { generalPages } from '../../pageObjects/general.pageObjects'
   // import { skipPages } from '../../fixtures/skipPages';
+  //
   //
   // describe('Endpoint Health Checks - Part ${chunkIndex + 1}', () => {
   //   const allFailedAssets = [];
@@ -48,14 +49,15 @@ for (let i = 0; i < endpoints.length; i += chunkSize) {
   //     cy.log(message);
   //   }
   //
+  // function appendRandomQueryParam(url) {
+  //   const randomParamValue = Math.floor(Math.random() * 100000); // Generates a random number between 0 and 99999
+  //   const urlWithParam = new URL(url);
+  //   urlWithParam.searchParams.append('p', randomParamValue);
+  //   return urlWithParam.toString();
+  // }
   //   function checkAssets(url, retry = false) {
   //     let assetCheckFailed = false;
   //     let currentFailedAssets = []; // Array to store failed assets for the current URL
-  //
-  //     if (skipPages.includes(url)) {
-  //       customLog(\`Skipping entire verification for URL: \${url}\`);
-  //       return; // Skip the rest of the function
-  //     }
   //
   //     cy.visit(url);
   //
@@ -64,29 +66,29 @@ for (let i = 0; i < endpoints.length; i += chunkSize) {
   //     }
   //
   //     cy.document().then(document => {
-  //       const assets = Array.from(document.querySelectorAll('link[rel="stylesheet"], script[src], img'))
+  //       const assets = Array.from(document.querySelectorAll('link, script, img'))
   //         .map(el => {
   //           let assetUrl = '';
   //
-  //           if (el.tagName === 'LINK' && verifyCSS) {
+  //           if (verifyCSS && el.tagName === 'LINK' && el.getAttribute('rel') === 'stylesheet') {
   //             assetUrl = el.href;
-  //           } else if (el.tagName === 'SCRIPT' && verifyJS) {
+  //           } else if (verifyJS && el.tagName === 'SCRIPT' && el.getAttribute('src')) {
   //             assetUrl = el.src;
   //           } else if (el.tagName === 'IMG') {
   //             const src = el.src;
-  //             if (verifyLogo && src.endsWith('.svg') || verifyImages && (src.endsWith('.png') || src.endsWith('.jpg') || src.endsWith('.jpeg'))) {
+  //
+  //             if ((verifyLogo && src.endsWith('.svg')) || (verifyImages && (src.endsWith('.png') || src.endsWith('.jpg') || src.endsWith('.jpeg')))) {
   //               assetUrl = src;
   //             }
   //           }
   //
   //           if (assetUrl && !assetUrl.startsWith('http')) {
-  //             assetUrl = new URL(assetUrl, document.baseURI).href;
+  //             assetUrl = new URL(assetUrl, url).href;
   //           }
   //
   //           return assetUrl;
   //         })
-  //         .filter(Boolean)
-  //         .filter(assetUrl => new URL(assetUrl).hostname.endsWith('moodys.com')); // Only keep assets from moodys.com
+  //         .filter(Boolean);
   //
   //       if (assets.length === 0 && !retry) {
   //         customLog(\`No assets found, retrying for URL: \${url}\`);
@@ -137,13 +139,17 @@ for (let i = 0; i < endpoints.length; i += chunkSize) {
   //         customLog(\`Skipping PDF endpoint: \${url}\`);
   //         return;
   //       }
+  //       if (skipPages.includes(url)) {
+  //       console.log(\`Skipping entire verification for URL: \${url}\`)
+  //       return // Skip the rest of the function
+  //     }
   //
-  //       checkAssets(url);
+  //       const urlWithRandomParam = appendRandomQueryParam(url); // Append random query param to the URL
+  //     checkAssets(urlWithRandomParam);
   //     });
   //   });
   // });
   // `
-
   const testFileContent = `
 import { endpoints } from '../../fixtures/splitEndpoints/${fixtureFileName}';
 import { whitelistPages } from '../../fixtures/whitelistPages';
@@ -188,6 +194,13 @@ describe('Endpoint Health Checks - Part ${chunkIndex + 1}', () => {
     }
   }
 
+  function appendRandomQueryParam(url) {
+    const randomParamValue = Math.floor(Math.random() * 100000); // Generates a random number between 0 and 99999
+    const urlWithParam = new URL(url);
+    urlWithParam.searchParams.append('p', randomParamValue);
+    return urlWithParam.toString();
+  }
+  
   function checkAssets(url, retry = false) {
     let assetCheckFailed = false;
     let currentFailedAssets = []; // Array to store failed assets for the current URL
@@ -257,19 +270,38 @@ describe('Endpoint Health Checks - Part ${chunkIndex + 1}', () => {
     });
   }
 
+  before(() => {
+    cy.writeFile(fileName, '', { flag: 'w' });
+    cy.writeFile(pageFileName, '', { flag: 'w' });
+  });
+
   endpoints.forEach(url => {
     it(\`Validating page and assets for - \${url}\`, () => {
       if (url.endsWith('.pdf')) {
         customLog(\`Skipping PDF endpoint: \${url}\`);
         return;
       }
-
-      checkAssets(url);
+      const urlWithRandomParam = appendRandomQueryParam(url); // Append random query param to the URL
+      checkAssets(urlWithRandomParam);
+     
     });
   });
 
+  after(() => {
+    cy.writeFile('cypress/downloads/testLogs.txt', allLogs.join('\\n'), { flag: 'w+' });
+
+    if (failedPages.length > 0) {
+      const pageLogContent = failedPages.join('\\n');
+      cy.writeFile(pageFileName, pageLogContent, { flag: 'a+' });
+    }
+    if (allFailedAssets.length > 0) {
+      const assetLogContent = allFailedAssets.join('\\n');
+      cy.writeFile(fileName, assetLogContent, { flag: 'a+' });
+    }
+  });
 });
 `
+
 
   fs.writeFileSync(path.join(testDir, testFileName), testFileContent)
 }

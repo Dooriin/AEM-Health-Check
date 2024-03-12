@@ -2,6 +2,7 @@ ARG BROWSER_VERSION=1.58.135
 ARG BROWSER_IMAGE_BASE=webrecorder/browsertrix-browser-base:brave-${BROWSER_VERSION}
 
 FROM ${BROWSER_IMAGE_BASE}
+USER root
 
 # needed to add args to main build stage
 ARG BROWSER_VERSION

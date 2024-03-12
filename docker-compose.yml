@@ -1,17 +1,29 @@
-version: '3.5'
-  
+version: '3.8'
+
 services:
-    crawler:
-        image: ${REGISTRY}webrecorder/browsertrix-crawler:latest
-        build:
-          context: ./
+  jenkins:
+    build:
+      context: .
+      dockerfile: Dockerfile-jenkins  # Specify the custom Dockerfile for Jenkins
+    image: my-custom-jenkins
+    user: root
+    ports:
+      - "8080:8080"
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      - jenkins_home:/var/jenkins_home
+      - .:/home/project  # Mounts the current directory to /home/project in the container
 
-        volumes:
-          - ./crawls:/crawls
+  crawler:
+    image: ${REGISTRY}webrecorder/browsertrix-crawler:latest
+    build:
+      context: ./
+    volumes:
+      - ./crawls:/crawls
+    cap_add:
+      - NET_ADMIN
+      - SYS_ADMIN
+    shm_size: 1gb
 
-        cap_add:
-          - NET_ADMIN
-          - SYS_ADMIN
-
-        shm_size: 1gb
-
+volumes:
+  jenkins_home:

@@ -1,6 +1,7 @@
 import { defineConfig } from 'cypress'
 import { addCucumberPreprocessorPlugin } from '@badeball/cypress-cucumber-preprocessor'
 
+const cypressSplit = require('cypress-split')
 const webpackPreprocessor = require('@cypress/webpack-preprocessor')
 
 async function setupNodeEvents(
@@ -46,7 +47,6 @@ async function setupNodeEvents(
     })
   )
 
-  // Simplified configuration for two environments
   let hostString
 
   switch (config.env.fixture) {
@@ -56,31 +56,46 @@ async function setupNodeEvents(
     case 'stage':
       hostString = 'https://stg.moodys.com'
       break
+    case 'production':
+      hostString = 'https://www.moodys.com'
+      break
     default:
       throw new Error(
-        'Invalid environment. Please set fixture to either "dev" or "stg".'
+        'Invalid environment. Please set fixture to "development", "stage", or "production".'
       )
   }
 
-  // Set base URL
   config.baseUrl = new URL(hostString).href
+
+  cypressSplit(on, config)
 
   return config
 }
 
 export default defineConfig({
   defaultCommandTimeout: 30000,
-  numTestsKeptInMemory: 10,
   pageLoadTimeout: 60000,
   requestTimeout: 30000,
   responseTimeout: 30000,
+  viewportHeight: 1500,
+  projectId: '33f6hf',
+  viewportWidth: 1980,
   retries: 2,
   scrollBehavior: 'center',
   video: false,
-  projectId: '33f6hf',
   e2e: {
+    numTestsKeptInMemory: 0,
+    experimentalMemoryManagement: true,
+    screenshotOnRunFailure: true,
     specPattern:
       'cypress/**/*.{feature,api.ts,ftp.ts,util.ts,bei.ts,fei.ts,e2e.ts,bvt.ts,stub.ts}',
     setupNodeEvents,
+    reporter: 'mochawesome',
+    reporterOptions: {
+      reportDir: 'cypress/reports/mocha',
+      overwrite: false,
+      html: false,
+      json: true,
+    },
   },
 })
