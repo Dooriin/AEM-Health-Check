@@ -1,49 +1,44 @@
-name: Node.js CI
-
+name: Prepare Cypress Tests
 on: [push]
 
 jobs:
-  lint:
-
+  prepare-tests:
     runs-on: ubuntu-latest
-
-    strategy:
-      matrix:
-        node-version: [18.x]
-
     steps:
-    - uses: actions/checkout@v3
-    - name: Use Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v3
-      with:
-        node-version: ${{ matrix.node-version }}
-    - name: install requirements
-      run: yarn install
-    - name: run linter
-      run: yarn lint
-  
-  build:
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0 # Necessary for commits history
 
-    runs-on: ubuntu-latest
+      # Setup Node.js
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '16' # Specify your project's Node.js version
 
-    strategy:
-      matrix:
-        node-version: [18.x]
+      # Install dependencies
+      - name: Install dependencies
+        run: npm install
+        working-directory: cypress
 
-    steps:
-    - uses: actions/checkout@v3
-    - name: Use Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v3
-      with:
-        node-version: ${{ matrix.node-version }}
-    - name: install requirements
-      run: yarn install
-    - name: build docker
-      run: docker-compose build
-    - name: run jest
-      run: sudo yarn test
-        
+      # Cleanup reports and split tests directories
+      - name: Cleanup before test generation
+        run: |
+          rm -rf cypress/cypress/reports
+          rm -rf cypress/cypress/fixtures/splitEndpoints
+          rm -rf cypress/cypress/e2e/splitTests
+        working-directory: cypress
 
+      # Generate tests
+      - name: Generate test files
+        run: npx ts-node splitAndGenerateTests.ts
+        working-directory: cypress
 
-
-
+      # Commit and push generated test files
+      - name: Commit and push changes
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add -A
+          git commit -m "Automatically updated test files" -a || echo "No changes to commit"
+          git push
+        working-directory: cypress

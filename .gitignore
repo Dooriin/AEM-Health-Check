@@ -4,6 +4,9 @@ __pycache__
 collections/
 node_modules/
 crawls/
+!crawls/collections/moodys/pages/all_pages.csv
+!crawls/collections/moodys/pages/non_200_pages.csv
+!crawls/collections/moodys/pages/pages.jsonl
 test-crawls/
 .DS_Store
 cypress/cypress/reports/mocha
