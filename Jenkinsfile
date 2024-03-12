@@ -20,7 +20,7 @@ pipeline {
                                           ls -la
                                         '''
                     // Proceed with Cypress directory setup
-                    dir('/home/project/cypress') {
+                    dir('/cypress') {
                         sh '''
                           echo "Current directory:"
                           pwd
@@ -40,7 +40,7 @@ pipeline {
                 stage('Test Group 1') {
                     steps {
                         script {
-                            dir('/home/project/cypress') {
+                            dir('/cypress') {
                                 sh 'npx cypress run --headless --env split=4,splitIndex=0'
                             }
                         }
@@ -49,7 +49,7 @@ pipeline {
                 stage('Test Group 2') {
                     steps {
                         script {
-                            dir('/home/project/cypress') {
+                            dir('/cypress') {
                                 sh 'npx cypress run --headless --env split=4,splitIndex=1'
                             }
                         }
@@ -59,7 +59,7 @@ pipeline {
 
                     steps {
                         script {
-                            dir('/home/project/cypress') {
+                            dir('/cypress') {
                                 sh 'npx cypress run --headless --env split=4,splitIndex=2'
                             }
                         }
@@ -69,7 +69,7 @@ pipeline {
 
                     steps {
                         script {
-                            dir('/home/project/cypress') {
+                            dir('/cypress') {
                                 sh 'npx cypress run --headless --env split=4,splitIndex=3'
                             }
                         }
@@ -84,7 +84,7 @@ pipeline {
 def sendNotification() {
     // Define the node within the function to avoid "No such DSL method 'node' found" error
     node {
-        dir('/home/project/cypress') {
+        dir('/cypress') {
             sh 'npm run merge-reports'
             sh 'npm run generate-report'
 
