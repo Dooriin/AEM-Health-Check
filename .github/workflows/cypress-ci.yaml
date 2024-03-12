@@ -1,34 +1,42 @@
-# https://cypress.tips/courses/cypress-plugins/lessons/m3
-stages:
-  - build
-  - test
+name: Cypress Tests
 
-## Set environment variables for folders in "cache" job settings for npm modules and Cypress binary
-variables:
-  npm_config_cache: '$CI_PROJECT_DIR/.npm'
-  CYPRESS_CACHE_FOLDER: '$CI_PROJECT_DIR/cache/Cypress'
+on: [push, pull_request]
 
-# Cache using branch name
-# https://gitlab.com/help/ci/caching/index.md
-cache:
-  key: ${CI_COMMIT_REF_SLUG}
-  paths:
-    - .cache/*
-    - .npm/*
-    - cache/Cypress
-    - node_modules
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        containers: [1, 2, 3] # Define the number of parallel containers you want. Adjust this number based on your needs.
 
-install:
-  image: cypress/base:16.14.2-slim
-  stage: build
-  script:
-    # install dependencies
-    - npm ci
+    steps:
+      - uses: actions/checkout@v2
 
-test:
-  image: cypress/base:16.14.2-slim
-  stage: test
-  parallel: 3
-  script:
-    - npm start &
-    - npx cypress run --env split=true
+      - name: Use Node.js
+        uses: actions/setup-node@v1
+        with:
+          node-version: '14' # Set this to your project's node version
+
+      - name: Cache Node modules
+        uses: actions/cache@v2
+        env:
+          cache-name: cache-node-modules
+        with:
+          path: ./cypress/node_modules
+          key: ${{ runner.os }}-build-${{ env.cache-name }}-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-build-${{ env.cache-name }}-
+            ${{ runner.os }}-build-
+            ${{ runner.os }}-
+
+      - name: Install Dependencies
+        run: npm ci
+        working-directory: ./cypress
+
+      - name: Split and Run Tests
+        run: npx cypress-split run --group ${{ matrix.containers }} --total ${{ strategy.matrix.containers.length }}
+        working-directory: ./cypress
+        env:
+          CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
