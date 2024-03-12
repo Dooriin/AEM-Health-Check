@@ -1,40 +1,29 @@
-name: Cypress Tests Preparation and Execution
-on: [push]
+name: Run Cypress Tests Hourly in Parallel
+on:
+  schedule:
+    - cron: '0 * * * *'
 
 jobs:
-  prepare-tests:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout Repository
-        uses: actions/checkout@v3
-
-      # Add other steps for setting up Node, installing dependencies,
-      # cleaning up and generating test files, and committing those files
-      # as discussed in the previous setup.
-
-  run-tests-in-parallel:
-    needs: prepare-tests
+  run-tests:
     runs-on: ubuntu-latest
     strategy:
       fail-fast: false
       matrix:
-        container: [1, 2, 3] # Define the number of parallel jobs you want to run
+        # Adjust 'include' array based on how many parallel jobs you want
+        include:
+          - container: 1
+          - container: 2
+          - container: 3
     steps:
-      - name: Checkout Repository
-        uses: actions/checkout@v3
-
-      - name: Set up Node.js
+      - uses: actions/checkout@v3
+      - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: '16' # Specify your project's Node.js version
-
-      - name: Install dependencies
+          node-version: '16'
+      - name: Install Dependencies
         run: npm install
-        working-directory: cypress
-
-      # Running Cypress tests in parallel
+        working-directory: ./cypress
       - name: Run Cypress Tests
-        run: npx cypress run --env split=true,SPLIT=${{ matrix.container.length }},SPLIT_INDEX=${{ matrix.container }}
-        working-directory: cypress
-        env:
-        # Define any environment variables required for your Cypress tests
+        run: npx cypress run --env split=true,SPLIT=${{ matrix.include.length }},SPLIT_INDEX=${{ matrix.container }}
+        working-directory: ./cypress
+        # Make sure to adjust 'SPLIT' and 'SPLIT_INDEX' as per your specific setup and splitting strategy

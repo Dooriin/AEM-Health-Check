@@ -33,12 +33,12 @@ jobs:
         run: npx ts-node splitAndGenerateTests.ts
         working-directory: cypress
 
-      # Commit and push generated test files
-      - name: Commit and push changes
-        run: |
-          git config --local user.email "action@github.com"
-          git config --local user.name "GitHub Action"
-          git add -A
-          git commit -m "Automatically updated test files" -a || echo "No changes to commit"
-          git push
-        working-directory: cypress
+#      # Commit and push generated test files
+#      - name: Commit and push changes
+#        run: |
+#          git config --local user.email "action@github.com"
+#          git config --local user.name "GitHub Action"
+#          git add -A
+#          git commit -m "Automatically updated test files" -a || echo "No changes to commit"
+#          git push
+#        working-directory: cypress
