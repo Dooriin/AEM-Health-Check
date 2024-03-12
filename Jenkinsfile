@@ -13,12 +13,12 @@ pipeline {
         stage('Prepare Xvfb and Install Dependencies') {
             steps {
                 script {
-                    // Start Xvfb on different display numbers for each parallel group
-                    sh 'Xvfb :99 -screen 0 1280x1024x24 &'
-                    sh 'Xvfb :100 -screen 0 1280x1024x24 &'
-                    sh 'Xvfb :101 -screen 0 1280x1024x24 &'
-                    sh 'Xvfb :102 -screen 0 1280x1024x24 &'
-
+                                        sh '''
+                                          echo "Current directory:"
+                                          pwd
+                                          echo "Files in the current directory:"
+                                          ls -la
+                                        '''
                     // Proceed with Cypress directory setup
                     dir('/home/project/cypress') {
                         sh '''
@@ -38,9 +38,6 @@ pipeline {
         stage('Cypress Parallel Tests') {
             parallel {
                 stage('Test Group 1') {
-                    environment {
-                        DISPLAY = ':99'
-                    }
                     steps {
                         script {
                             dir('/home/project/cypress') {
@@ -50,9 +47,6 @@ pipeline {
                     }
                 }
                 stage('Test Group 2') {
-                    environment {
-                        DISPLAY = ':100'
-                    }
                     steps {
                         script {
                             dir('/home/project/cypress') {
@@ -62,9 +56,7 @@ pipeline {
                     }
                 }
                 stage('Test Group 3') {
-                    environment {
-                        DISPLAY = ':101'
-                    }
+
                     steps {
                         script {
                             dir('/home/project/cypress') {
@@ -74,9 +66,7 @@ pipeline {
                     }
                 }
                 stage('Test Group 4') {
-                    environment {
-                        DISPLAY = ':102'
-                    }
+
                     steps {
                         script {
                             dir('/home/project/cypress') {
@@ -89,24 +79,6 @@ pipeline {
         }
     }
 
-    post {
-        success {
-            script {
-                sendNotification()
-            }
-        }
-        failure {
-            script {
-                sendNotification()
-            }
-        }
-        aborted {
-            script {
-                // Actions to perform if the job is aborted
-                sh 'pkill Xvfb' // Cleanup action
-            }
-        }
-    }
 }
 
 def sendNotification() {
