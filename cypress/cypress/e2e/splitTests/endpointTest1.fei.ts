@@ -4,7 +4,7 @@ import { whitelistPages } from '../../fixtures/whitelistPages';
 import { generalPages } from '../../pageObjects/general.pageObjects';
 import { skipPages } from '../../fixtures/skipPages';
 
-describe('Endpoint Health Checks - Part 1', () => {
+describe('Endpoint Health Checks - Part Nr 1', () => {
   const allFailedAssets = [];
   const failedPages = [];
   const fileName = 'cypress/downloads/failedAssetsV3.txt';
