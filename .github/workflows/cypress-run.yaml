@@ -1,0 +1,31 @@
+name: ci
+on: push
+
+jobs:
+  test-split:
+    runs-on: ubuntu-22.04
+    strategy:
+      fail-fast: false
+      matrix:
+        containers: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+    steps:
+      - name: Checkout 🛎
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '18' # Adjust this to your project's Node.js version
+
+      - name: Install Dependencies
+        run: npm i
+        working-directory: cypress
+
+      - name: Run split Cypress tests 🧪
+        uses: cypress-io/github-action@v6
+        with:
+          working-directory: cypress
+          publish-summary: false
+        env:
+          CONTAINER_INDEX: ${{ matrix.containers }}
+          TOTAL_CONTAINERS: 10
