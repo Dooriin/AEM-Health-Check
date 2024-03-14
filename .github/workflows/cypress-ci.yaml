@@ -3,7 +3,7 @@ on: push
 
 jobs:
   test-split:
-    runs-on: ubuntu-22.04
+    runs-on: self-hosted
     strategy:
       fail-fast: false
       matrix:
@@ -43,7 +43,7 @@ jobs:
 
   merge-reports:
     needs: test-split
-    runs-on: ubuntu-22.04
+    runs-on: self-hosted
     steps:
       - name: Checkout 🛎
         uses: actions/checkout@v4
