@@ -1,9 +1,0 @@
-{
-  "endpoints": [
-    "https://www.moodys.com/web/en/us/kyc/solutions/automation.html",
-    "https://www.moodys.com/web/en/us/kyc/solutions/entity-ownership.html",
-    "https://www.moodys.com/web/en/us/kyc/solutions/screen-monitor.html",
-    "https://www.moodys.com/web/en/us/kyc/sectors/asset-management.html",
-    "https://www.moodys.com/web/en/us/kyc/resources.html"
-  ]
-}

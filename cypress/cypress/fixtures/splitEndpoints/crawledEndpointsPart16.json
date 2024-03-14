@@ -1,9 +1,0 @@
-{
-  "endpoints": [
-    "https://www.moodys.com/web/en/us/esgview.html",
-    "https://www.moodys.com/web/en/us/capabilities/company-reference-data/data-applications/corporate-finance.html",
-    "https://www.moodys.com/web/en/us/about/insights/data-stories/oil-and-gas-2023-windfall.html",
-    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-kyc-decoded.html",
-    "https://www.moodys.com/web/en/us/about/insights/data-stories/reinsurers-mitigate-lower-profits.html"
-  ]
-}

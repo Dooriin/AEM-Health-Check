@@ -1,9 +1,0 @@
-{
-  "endpoints": [
-    "https://www.moodys.com/web/en/us/kyc/sectors.html",
-    "https://www.moodys.com/web/en/us/kyc/sectors/professional-services.html",
-    "https://www.moodys.com/web/en/us/kyc/sectors/fintech.html",
-    "https://www.moodys.com/web/en/us/kyc/sectors/banking.html",
-    "https://www.moodys.com/web/en/us/kyc/about.html"
-  ]
-}

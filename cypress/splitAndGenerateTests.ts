@@ -161,10 +161,6 @@ describe('Endpoint Health Checks - Part ${chunkIndex + 1}', () => {
   const verifyLogo = true;
   const verifyImages = true;
 
-  function customLog(message) {
-    allLogs.push(message);
-    cy.log(message);
-  }
 
   function sanitizeUrl(assetUrl) {
     try {
@@ -193,7 +189,6 @@ describe('Endpoint Health Checks - Part ${chunkIndex + 1}', () => {
     let currentFailedAssets = []; // Array to store failed assets for the current URL
 
     if (skipPages.includes(url)) {
-      customLog(\`Skipping entire verification for URL: \${url}\`);
       return; // Skip the rest of the function
     }
 
@@ -214,11 +209,9 @@ describe('Endpoint Health Checks - Part ${chunkIndex + 1}', () => {
         .filter(isValidAssetUrl);
 
       if (assets.length === 0 && !retry) {
-        customLog(\`No assets found, retrying for URL: \${url}\`);
-        cy.wait(5000); // Wait for 5 seconds before retrying
+        cy.wait(2000); // Wait for 5 seconds before retrying
         return checkAssets(url, true);
       } else if (assets.length === 0) {
-        customLog(\`No assets found after retry for URL: \${url}\`);
         failedPages.push(url);
         expect(assets.length, \`At least one asset should be present for \${url}\`).to.be.greaterThan(0);
       } else {
@@ -234,12 +227,9 @@ describe('Endpoint Health Checks - Part ${chunkIndex + 1}', () => {
 
           const asset = assets[index];
           if (!isValidAssetUrl(asset)) {
-            customLog(\`Invalid or non-Moody's asset URL skipped: \${asset}\`);
             processAsset(index + 1);
             return;
           }
-
-          customLog(\`Checking asset: \${asset}\`);
 
           cy.request({ url: asset, failOnStatusCode: false }).then(response => {
             if (response.status !== 200) {
@@ -258,9 +248,8 @@ describe('Endpoint Health Checks - Part ${chunkIndex + 1}', () => {
   }
 
   endpoints.forEach(url => {
-    it(\`Validating page and assets for - \${url}\`, () => {
+    it(\`Validating page & assets - \${url}\`, () => {
       if (url.endsWith('.pdf')) {
-        customLog(\`Skipping PDF endpoint: \${url}\`);
         return;
       }
 
