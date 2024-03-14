@@ -1,0 +1,9 @@
+{
+  "endpoints": [
+    "https://www.moodys.com/web/en/us/kyc/resources/insights.html?type=blog",
+    "https://www.moodys.com/web/en/us/kyc/sectors/asset-management.html",
+    "https://www.moodys.com/web/en/us/kyc/about/help.html",
+    "https://www.moodys.com/web/en/us/kyc/sectors/professional-services.html",
+    "https://www.moodys.com/web/en/us/kyc/resources/alliances.html"
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "endpoints": [
+    "https://www.moodys.com/web/en/us/about/insights/podcasts.html",
+    "https://www.moodys.com/web/en/us/about/insights/infographics.html",
+    "https://www.moodys.com/web/en/us/about-us/our-companies-and-affiliates.html",
+    "https://www.moodys.com/web/en/us/about-us.html",
+    "https://www.moodys.com/web/en/us/capabilities/structured-finance.html"
+  ]
+}

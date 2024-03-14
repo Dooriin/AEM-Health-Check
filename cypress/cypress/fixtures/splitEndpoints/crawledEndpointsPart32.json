@@ -1,0 +1,9 @@
+{
+  "endpoints": [
+    "https://www.moodys.com/web/en/us/kyc/resources/insights.html",
+    "https://www.moodys.com/web/en/us/kyc/about/terms-conditions-ma.html",
+    "https://www.moodys.com/web/en/us/site-assets/ma-kyc-whitepaper-beneficial-ownership_LOWRES.pdf",
+    "https://www.moodys.com/web/en/us/kyc/about.html",
+    "https://www.moodys.com/web/en/us/kyc/products/review.html"
+  ]
+}

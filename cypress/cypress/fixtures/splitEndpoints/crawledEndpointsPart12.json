@@ -1,0 +1,9 @@
+{
+  "endpoints": [
+    "https://www.moodys.com/web/en/us/kyc/resources/insights.html?type=whitepaper",
+    "https://www.moodys.com/web/en/us/supplier-risk.html",
+    "https://www.moodys.com/web/en/us/innovation/research-assistant.html",
+    "https://www.moodys.com/web/en/us/kyc/sectors/corporates.html",
+    "https://www.moodys.com/web/en/us/kyc/resources/infographics.html"
+  ]
+}

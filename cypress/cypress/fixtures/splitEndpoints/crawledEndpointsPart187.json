@@ -1,0 +1,9 @@
+{
+  "endpoints": [
+    "https://www.moodys.com/web/en/us/kyc/products/grid.html?cid=62EFF960F8A17507&gclid=CjwKCAjw-vmkBhBMEiwAlrMeF-F9MJxFZwHcGt7mH2zFwL0HoHtUfPoGRkv4er-xqf0DhZ88k5gSCRoCEJQQAvD_BwE&gclsrc=aw.ds",
+    "https://www.moodys.com/web/en/us/kyc/resources/insights/regulations-boost-fight-against-modern-slavery.html",
+    "https://www.moodys.com/web/en/us/kyc/resources/insights/six-crucial-facts-you-need-know-modern-slavery.html",
+    "https://www.moodys.com/web/en/us/kyc/resources/insights/detecting-modern-slavery-crypto-transactions.html",
+    "https://www.moodys.com/web/en/us/kyc/resources/insights/money-laundering-and-modern-slavery.html"
+  ]
+}
