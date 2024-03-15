@@ -1,9 +1,9 @@
 {
   "endpoints": [
+    "https://www.moodys.com/web/en/us/kyc/request-a-demo.html",
     "https://www.moodys.com/web/en/us/kyc/resources/faq.html",
-    "https://www.moodys.com/web/en/us/kyc/sectors/fintech.html",
-    "https://www.moodys.com/web/en/us/site-assets/AI-Review-Intelligent-Screening.pdf",
-    "https://www.moodys.com/web/en/us/site-assets/ma-kyc-the-rising-tide-of-third-party-risk-management-report-LOWRES.pdf",
-    "https://www.moodys.com/web/en/us/kyc/resources/insights/how-uncover-shell-companies-use-money-laundering-techniques.html"
+    "https://www.moodys.com/web/en/us/about/what-we-do/quantum-computing/quantum-survey-report.html",
+    "https://www.moodys.com/web/en/us/kyc/solutions/fraud-prevention.html",
+    "https://www.moodys.com/web/en/us/kyc/products/review.html"
   ]
 }

@@ -1,9 +1,9 @@
 {
   "endpoints": [
-    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-focus-on-finance/cyber-insurance-as-losses-rise-the-industry-ponders-uninsurable-risks.html",
-    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-focus-on-finance/global-life-and-pc-insurance-outlooks-stable-as-economies-recover.html",
-    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-focus-on-finance/growth-of-private-credit-has-systemic-implications.html",
-    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-focus-on-finance/technology-is-driving-new-business-models-for-insurance.html",
-    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-focus-on-finance/covid-19-resurgence-raises-asset-risks-for-southeast-asian-and-indian-banks.html"
+    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-kyc-decoded/entity-resolution-data.html",
+    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-kyc-decoded/sanctions-miniseries-part-2-going-beyond-the-lists.html",
+    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-kyc-decoded/sanctions-miniseries-part-3-networks-defeat-networks.html",
+    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-kyc-decoded/sanctions-miniseries-part-4-sanctions-crypto.html",
+    "https://www.moodys.com/web/en/us/kyc/resources/insights/looking-inside-the-shell.html"
   ]
 }

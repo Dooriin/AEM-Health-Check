@@ -1,9 +1,9 @@
 {
   "endpoints": [
-    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-inside-economics/gigawatts-and-ev-jitters.html",
-    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-inside-economics/bonus-episiode-mark-donovan.html",
-    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-inside-economics/mayer-on-mortgages-and-multifamily.html",
-    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-inside-economics/robert-dietz.html",
-    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-inside-economics/bonds-baseball-and-warm-blankies.html"
+    "https://www.moodys.com/web/en/us/banking-system",
+    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-focus-on-finance/pandemic-amps-up-banks-cyber-risk-jolts-money-fund-markets.html",
+    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-focus-on-finance/policy-shift-risks-transforming-us-health-insurers-global-insurers-gird-for-climate-risk.html",
+    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-focus-on-finance/pandemic-drives-negative-outlook-for-global-asset-managers-emerging-markets-financial-institutions.html",
+    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-focus-on-finance/test.html"
   ]
 }

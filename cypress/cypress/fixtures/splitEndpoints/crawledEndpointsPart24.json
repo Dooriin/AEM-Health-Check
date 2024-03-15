@@ -1,9 +1,9 @@
 {
   "endpoints": [
-    "https://www.moodys.com/web/en/us/help-support/use-of-moodys-content.html",
-    "https://www.moodys.com/web/en/us/private-credit-risk-analysis.html",
-    "https://www.moodys.com/web/en/us.html",
-    "https://www.moodys.com/web/en/us/private-credit/moodys-ratings-capabilities.html",
-    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-emerging-markets-decoded.html"
+    "https://www.moodys.com/web/en/us/capabilities/company-reference-data/data-applications/corporate-finance.html",
+    "https://www.moodys.com/web/en/us/about/insights/data-stories/stablecoins-instability.html",
+    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-securitization-spotlight.html",
+    "https://www.moodys.com/web/en/us/about-us/leadership/robert-fauber.html",
+    "https://www.moodys.com/web/en/us/about-us/leadership/tameka-alsop.html"
   ]
 }

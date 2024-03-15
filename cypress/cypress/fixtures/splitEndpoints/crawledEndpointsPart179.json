@@ -1,9 +1,9 @@
 {
   "endpoints": [
-    "https://www.moodys.com/web/en/us/site-assets/ma-kyc-french-new-frontier-sanctions-awareness-compliance-12Dec.pdf",
-    "https://www.moodys.com/web/en/us/site-assets/ma-kyc-politically-exposed-persons-peps-the-banking-and-finance-vip-challenge-whitepaper.pdf",
-    "https://www.moodys.com/web/en/us/site-assets/ma-kyc-german-new-frontier-sanctions-awareness-compliance-12Dec.pdf",
     "https://www.moodys.com/web/en/us/site-assets/ma-kyc-japanese-new-frontier-sanctions-awareness-compliance-12Dec.pdf",
-    "https://www.moodys.com/web/en/us/kyc/resources/thought-leadership/the-infinite-game.html"
+    "https://www.moodys.com/web/en/us/site-assets/ma-kyc-korean-new-frontier-sanctions-awareness-compliance-12Dec.pdf",
+    "https://www.moodys.com/web/en/us/kyc/resources/insights/six-steps-more-effective-peps-screening.html",
+    "https://www.moodys.com/web/en/us/kyc/resources/insights/pep-screening-to-strengthen-kyc-processes.html",
+    "https://www.moodys.com/web/en/us/site-assets/ma-kyc-spanish-new-frontier-sanctions-awareness-compliance-12Dec.pdf"
   ]
 }

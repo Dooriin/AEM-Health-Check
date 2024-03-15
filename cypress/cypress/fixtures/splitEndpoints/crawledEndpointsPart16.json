@@ -1,9 +1,9 @@
 {
   "endpoints": [
-    "https://www.moodys.com/web/en/us/esgview.html",
-    "https://www.moodys.com/web/en/us/insights/exponential-risk/navigating-the-new-era-of-risk.html",
-    "https://www.moodys.com/web/en/us/insights/exponential-risk/case-studies.html",
-    "https://www.moodys.com/web/en/us/insights/exponential-risk/the-future-of-risk.html",
-    "https://www.moodys.com/web/en/us/who-we-serve/buy-side.html"
+    "https://www.moodys.com/web/en/us/hosted-assets/bx22159-esg-incidents-2023-in-review.pdf",
+    "https://www.moodys.com/web/en/us/about/insights/data-stories/us-rental-housing-affordability.html",
+    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-kyc-decoded.html",
+    "https://www.moodys.com/web/en/us/private-credit.html?cid=7380D0F05C817753",
+    "https://www.moodys.com/web/en/us/capabilities/company-reference-data/data-applications/tax-and-transfer-pricing-solutions.html"
   ]
 }

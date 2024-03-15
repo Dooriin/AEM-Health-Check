@@ -1,9 +1,9 @@
 {
   "endpoints": [
-    "https://www.moodys.com/web/en/us/about/insights/data-stories/stablecoins-instability.html",
-    "https://www.moodys.com/web/en/us/capabilities/company-reference-data/data-applications/corporate-finance.html",
-    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-emerging-markets-decoded/a-focus-on-west-africa-where-bright-spots-shine-through-political-security-and-climate-risks.html",
-    "https://www.moodys.com/web/en/us/about/insights/data-stories/q3-2023-rental-affordability.html",
-    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-inside-economics/153.html"
+    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-the-big-picture.html",
+    "https://www.moodys.com/web/en/us/about/insights/data-stories/changing-shape-of-supply-chain-risk.html",
+    "https://www.moodys.com/web/en/us/about/insights/data-stories/kyc-ai-risk-and-compliance-survey.html",
+    "https://www.moodys.com/web/en/us/about/insights/data-stories.html?p=2",
+    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-perspectivas-latinoamerica.html"
   ]
 }

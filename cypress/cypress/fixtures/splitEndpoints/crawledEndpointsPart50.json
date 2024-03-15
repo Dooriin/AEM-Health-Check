@@ -1,9 +1,9 @@
 {
   "endpoints": [
-    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-focus-on-finance/biggest-banks-emerge-stronger-from-pandemic-and-ready-to-face-heightened-competition.html",
-    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-focus-on-finance/insurers-bet-on-illiquid-assets-global-banks-step-up-cybersecurity.html",
-    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-focus-on-finance/reinsurance-outlook-is-back-to-stable-fintech-adoption-jolts-koreas-insurers.html",
-    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-focus-on-finance/decrypting-coinbase-financial-strength-supports-credit-in-emerging-uncertain-sector.html",
-    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-focus-on-finance/koreas-kakao-bank-demonstrates-big-techs-potential-threat-to-incumbent-lenders.html"
+    "https://www.moodys.com/web/en/us/kyc/resources/insights/new-frontier-sanctions-awareness-compliance.html",
+    "https://www.moodys.com/web/en/us/kyc/resources/insights/supply-chain-due-diligence.html",
+    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-kyc-decoded/suisse-secrets-reaction.html",
+    "https://www.moodys.com/web/en/us/kyc/resources/insights/changes-eu-aml-framework.html",
+    "https://www.moodys.com/web/en/us/kyc/resources/insights/digital-transformation-kyc-effective-client-lifecycle-management.html"
   ]
 }

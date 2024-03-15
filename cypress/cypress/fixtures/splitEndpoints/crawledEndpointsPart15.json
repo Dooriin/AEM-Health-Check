@@ -1,9 +1,9 @@
 {
   "endpoints": [
-    "https://www.moodys.com/web/en/us/kyc/sectors/financial.html",
-    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-kyc-decoded.html",
-    "https://www.moodys.com/web/en/us/capabilities/company-reference-data/data-applications/trade-credit.html",
-    "https://www.moodys.com/web/en/us/hosted-assets/bx22159-esg-incidents-2023-in-review.pdf",
+    "https://www.moodys.com/web/en/us/banking-system/understand-bank-risk.html",
+    "https://www.moodys.com/web/en/us/kyc/sectors/government.html",
+    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-focus-on-finance/as-growth-of-private-credit-in-europe-picks-up-so-does-competition-from-banks.html",
+    "https://www.moodys.com/web/en/us/kyc/sectors/insurance.html",
     "https://www.moodys.com/web/en/us/coverage-expansion.html"
   ]
 }

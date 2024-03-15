@@ -1,9 +1,9 @@
 {
   "endpoints": [
-    "https://www.moodys.com/web/en/us/kyc/resources/case-studies.html",
+    "https://www.moodys.com/web/en/us/kyc/sectors/professional-services.html",
+    "https://www.moodys.com/web/en/us/kyc/sectors/banking.html",
+    "https://www.moodys.com/web/en/us/kyc/sectors/fintech.html",
     "https://www.moodys.com/web/en/us/kyc/about/contact-us.html",
-    "https://www.moodys.com/web/en/us/kyc/request-a-demo.html",
-    "https://www.moodys.com/web/en/us/kyc/about/passfort-terms-and-conditions.html",
-    "https://www.moodys.com/web/en/us/kyc/resources/thought-leadership.html"
+    "https://www.moodys.com/web/en/us/kyc/about/passfort-terms-and-conditions.html"
   ]
 }

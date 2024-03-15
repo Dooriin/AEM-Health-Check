@@ -1,9 +1,9 @@
 {
   "endpoints": [
-    "https://www.moodys.com/web/en/us/hosted-assets/trusted-intelligence-capabilities-for-national-security_brochure.pdf",
+    "https://www.moodys.com/web/en/us/v3/pdf/banking-teachers-federal-credit-union-builds-a-robust-credit-and-treasury-function-enabled-by-moodys.pdf",
+    "https://www.moodys.com/web/en/us/innovation/research-assistant.html",
     "https://www.moodys.com/web/en/us/hosted-assets/ma-kyc-shell-company-indicator-brochure.pdf",
-    "https://www.moodys.com/web/en/us/kyc/resources/insights/european-commission-moodys-analytics-modernise-anti-fraud-activity.html",
-    "https://www.moodys.com/web/en/us/kyc/sectors/insurance.html",
-    "https://www.moodys.com/web/en/us/site-assets/ma-kyc-a-new-frontier-in-sanctions-awareness-and-compliance.pdf"
+    "https://www.moodys.com/web/en/us/hosted-assets/trusted-intelligence-capabilities-for-national-security_brochure.pdf",
+    "https://www.moodys.com/web/en/us/capabilities/company-reference-data/data-applications/trade-credit.html"
   ]
 }

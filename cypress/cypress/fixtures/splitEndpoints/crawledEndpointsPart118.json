@@ -1,9 +1,9 @@
 {
   "endpoints": [
-    "https://www.moodys.com/web/en/us/about/insights/data-stories.html?p=1",
-    "https://www.moodys.com/web/en/us/insights/exponential-risk/russias-war-in-ukraine.html",
-    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-credit-in-perspective/against-the-gods-a-story-of-risk.html",
-    "https://www.moodys.com/web/en/us/kyc/resources/thought-leadership/ai-in-compliance.html",
-    "https://www.moodys.com/web/en/us/capabilities/esg/resources/insights/earth-day-2023.html"
+    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-the-big-picture/covid-19-and-inequality-same-storm-different-boats.html",
+    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-the-big-picture/storms-droughts-and-wildfires-point-to-rising-global-climate-risks.html",
+    "https://www.moodys.com/web/en/us/v3/about-us/master",
+    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-perspectivas-latinoamerica/el-nino-un-fenomeno-climatico-com-consequencias-variadas-para-a-regiao.html",
+    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-the-big-picture/europes-economic-challenges-are-growing-as-the-war-in-ukraine-reaches-a-grim-milestone.html"
   ]
 }

@@ -1,9 +1,9 @@
 {
   "endpoints": [
-    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-focus-on-finance/crypto-firms-fortunes-ebb-but-technology-advances-russias-aircraft-seizures-grip-stakeholders.html",
-    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-focus-on-finance/chinas-post-covid-reopening-is-positive-for-domestic-mortgage-borrowers-some-asia-pacific-banks-fof.html",
-    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-focus-on-finance/emerging-markets-banks-go-digital-to-counter-fintech-threat.html",
-    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-focus-on-finance/antitrust-fears-weaken-insurers-net-zero-alliance.html",
-    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-focus-on-finance/with-markets-on-edge-credit-suisse-rescue-protects-senior-creditors-plus-some-fintechs-thrive.html"
+    "https://www.moodys.com/web/en/us/credit-risk-insights.html",
+    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-kyc-decoded/pros-cons-and-predictions-which-european-city-will-be-the-new-home-for-the-amla.html",
+    "https://www.moodys.com/web/en/us/kyc/resources/insights/trade-based-money-laundering-do-you-know-signs.html",
+    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-kyc-decoded/removing-bias-from-kyc-the-ai-advantage.html",
+    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-kyc-decoded/todays-global-sanctions-environment-whats-new-in-russian-sanctions.html"
   ]
 }

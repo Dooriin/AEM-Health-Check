@@ -1,9 +1,9 @@
 {
   "endpoints": [
-    "https://www.moodys.com/web/en/us/kyc/solutions/ultimate-beneficial-owners.html",
-    "https://www.moodys.com/web/en/us/kyc/products/grid.html",
     "https://www.moodys.com/web/en/us/kyc/solutions/pkyc.html",
-    "https://www.moodys.com/web/en/us/kyc/resources/insights/financial-fraud-fight-many-fronts.html",
-    "https://www.moodys.com/web/en/us/kyc/resources/insights/research-reveals-low-public-understanding-politically-exposed-persons-peps.html"
+    "https://www.moodys.com/web/en/us/supplier-risk.html",
+    "https://www.moodys.com/web/en/us/trending-topics.html",
+    "https://www.moodys.com/web/en/us/kyc/resources/insights/2023-q3-roundup-focus-on-fighting-fraud.html",
+    "https://www.moodys.com/web/en/us/capabilities/company-reference-data/data-applications/master-data-management.html"
   ]
 }

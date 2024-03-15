@@ -1,9 +1,9 @@
 {
   "endpoints": [
-    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-credit-in-perspective/origins-of-the-edf.html",
-    "https://www.moodys.com/web/en/us/about/insights/data-stories/rapid-growth-of-virtual-banks-puts-new-verve-into-old-banking-systems.html",
-    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-credit-in-perspective/modern-quantification-of-credit-risk.html",
-    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-emerging-markets-decoded/chinas-soft-economic-recovery-raises-contingent-liability-risks-from-lgfvs.html",
-    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-emerging-markets-decoded/emerging-market-central-banks-lower-rates-while-us-fed-signals-rate-cuts-are-not-imminent.html"
+    "https://www.moodys.com/web/en/us/insights/exponential-risk/banking-at-a-crossroads.html",
+    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-perspectivas-latinoamerica/cfg-outlook-2023-pt.html",
+    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-perspectivas-latinoamerica/perspectivas-mexico-y-mercados-emergentes-de-latinoamerica.html",
+    "https://www.moodys.com/web/en/us/insights/exponential-risk/commercial-real-estate.html",
+    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-perspectivas-latinoamerica/inflacion.html"
   ]
 }

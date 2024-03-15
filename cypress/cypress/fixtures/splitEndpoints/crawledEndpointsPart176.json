@@ -1,9 +1,9 @@
 {
   "endpoints": [
-    "https://www.moodys.com/web/en/us/capabilities/esg.html",
-    "https://www.moodys.com/web/en/us/site-assets/ma-kyc-peps-and-peps-by-association-report.pdf",
-    "https://www.moodys.com/web/en/us/about/what-we-do/quantum-computing/ethz-qec-hack-2023-recap.html",
-    "https://www.moodys.com/web/en/us/kyc/resources/insights/pep-screening-to-strengthen-kyc-processes.html",
-    "https://www.moodys.com/web/en/us/kyc/resources/insights/six-steps-more-effective-peps-screening.html"
+    "https://www.moodys.com/web/en/us/site-assets/review-brochure-february2023-LOWRES.pdf",
+    "https://www.moodys.com/web/en/us/site-assets/ma-kyc-navigating-the-ai-landscape-report.pdf",
+    "https://www.moodys.com/web/en/us/hosted-assets/digital-asset-monitor-methodology.pdf",
+    "https://www.moodys.com/web/en/us/kyc/resources/insights/understanding-and-evaluating-supplier-risk.html",
+    "https://www.moodys.com/web/en/us/kyc/resources/thought-leadership/the-infinite-game.html"
   ]
 }

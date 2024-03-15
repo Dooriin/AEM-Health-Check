@@ -1,9 +1,9 @@
 {
   "endpoints": [
-    "http://moodys.com/web/en/us/about/insights/podcasts/moodys-talks-kyc-decoded/todays-global-sanctions-environment-whats-new-in-russian-sanctions.html",
-    "https://www.moodys.com/web/en/us/about/insights/infographics.html?p=4",
-    "https://www.moodys.com/web/en/us/kyc/resources/insights/blockchain-based-solutions-combat-modern-slavery.html",
-    "https://www.moodys.com/web/en/us/kyc/resources/insights/human-trafficking-forced-labor-in-food-supply-chain.html",
-    "https://www.moodys.com/web/en/us/kyc/resources/insights/are-you-ready-to-meet-bill-s-211-requirements.html"
+    "https://www.moodys.com/web/en/us/datahub/contact-us.html",
+    "https://www.moodys.com/web/en/us/datahub/data-sets.html",
+    "https://www.moodys.com/web/en/us/kyc/resources/insights/uncover-hidden-risk-adverse-media-screening.html",
+    "https://www.moodys.com/web/en/us/kyc/resources/insights/journey-to-perpetual-kyc.html",
+    "https://www.moodys.com/web/en/us/kyc/resources/insights/year-on-introduction-german-supply-chain-due-diligence-act.html"
   ]
 }

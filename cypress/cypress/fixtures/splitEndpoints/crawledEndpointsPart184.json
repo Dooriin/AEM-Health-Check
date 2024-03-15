@@ -1,9 +1,9 @@
 {
   "endpoints": [
-    "https://www.moodys.com/web/en/us/hosted-assets/MA_DS_Data-Interoperability-FinlSvcs-Report.pdf",
+    "https://www.moodys.com/web/en/us/kyc/campaigns/pkyc.html",
+    "https://www.moodys.com/web/en/us/kyc/resources/insights/meet-regulatory-expectations-on-artificial-intelligence-led-aml.html",
+    "https://www.moodys.com/web/en/us/kyc/resources/insights/power-natural-language-processing.html",
     "https://www.moodys.com/web/en/us/kyc/resources/insights/three-questions-driving-efficiency-ai-powered-screening.html",
-    "https://www.moodys.com/web/en/us/kyc/resources/insights.html?topic=Artificial+Intelligence",
-    "https://www.moodys.com/web/en/us/kyc/resources/insights/uncover-hidden-risk-adverse-media-screening.html",
-    "https://www.moodys.com/web/en/us/kyc/campaigns/pkyc.html"
+    "https://www.moodys.com/web/en/us/hosted-assets/MA_DS_Data-Interoperability-FinlSvcs-Report.pdf"
   ]
 }

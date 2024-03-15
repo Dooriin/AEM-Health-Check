@@ -1,9 +1,9 @@
 {
   "endpoints": [
-    "https://www.moodys.com/web/en/us/site-assets/ma-kyc-kor-ubo-whitepaper.pdf",
-    "https://www.moodys.com/web/en/us/site-assets/ma-kyc-whitepaper-beneficial-ownership_LOWRES_JA.pdf",
-    "https://www.moodys.com/web/en/us/site-assets/sanctions-one-year-on-feb2023-LOWRES.pdf",
-    "https://www.moodys.com/web/en/us/site-assets/ma-kyc-jp-tprm-report.pdf",
-    "https://www.moodys.com/web/en/us/site-assets/ma-kyc-kor-tprm-report.pdf"
+    "https://www.moodys.com/web/en/us/innovation/ai-principles.html",
+    "https://www.moodys.com/web/en/us/kyc/resources/insights/substantial-control-is-being-added-to-us-regulatory-regime.html",
+    "https://www.moodys.com/web/en/us/kyc/resources/faq/know-your-customer-compliance.html",
+    "https://www.moodys.com/web/en/us/site-assets/ma-kyc-german-new-frontier-sanctions-awareness-compliance-12Dec.pdf",
+    "https://www.moodys.com/web/en/us/site-assets/ma-kyc-french-new-frontier-sanctions-awareness-compliance-12Dec.pdf"
   ]
 }

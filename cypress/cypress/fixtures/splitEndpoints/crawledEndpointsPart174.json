@@ -1,9 +1,9 @@
 {
   "endpoints": [
-    "https://www.moodys.com/web/en/us/kyc/resources/insights/get-proactive-financial-crime-compliance-2024.html",
-    "https://www.moodys.com/web/en/us/kyc/resources/insights/know-your-business-5-obligations-relating-digital-services-act.html",
-    "https://www.moodys.com/web/en/us/kyc/resources/insights/new-eu-aml-measures-bringing-soccer-scope-anti-money-laundering-laws.html",
+    "https://www.moodys.com/web/en/us/kyc/products/kompany/ubo-discovery.html",
     "https://www.moodys.com/web/en/us/kyc/resources/insights/new-moodys-data-sheds-light-on-rise-modern-slavery-money-laundering.html",
-    "https://www.moodys.com/web/en/us/kyc/resources/insights/todays-global-sanctions-environment-whats-new-russian-sanctions.html"
+    "https://www.moodys.com/web/en/us/kyc/resources/insights/todays-global-sanctions-environment-whats-new-russian-sanctions.html",
+    "https://www.moodys.com/web/en/us/datahub.html",
+    "https://www.moodys.com/web/en/us/kyc/resources/insights/fatf-announces-decision-remove-united-arab-emirates-grey-list.html"
   ]
 }

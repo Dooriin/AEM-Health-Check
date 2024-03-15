@@ -1,9 +1,9 @@
 {
   "endpoints": [
-    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-focus-on-finance/physical-climate-risks-cloud-insurers-risk-management-enhanced-climate-disclosures-benefit-banks.html",
-    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-focus-on-finance/digital-bonds-a-potentially-disruptive-technology-slowly-gets-off-the-ground.html",
-    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-focus-on-finance/japans-banks-ready-for-rate-rise-swedens-face-real-estate-risk-swiss-local-deposits-are-stable.html",
-    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-focus-on-finance/china-property-outlook-turns-stable-from-negative-insurers-and-mortgage-lenders-face-limited-credit-risk-from-the-property.html",
-    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-focus-on-finance/commercial-real-estate-downturn-could-weaken-us-life-insurers-portfolio-asset-quality.html"
+    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-kyc-decoded/ubos-and-why-they-matter.html",
+    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-kyc-decoded/how-to-spot-a-fraudster.html",
+    "https://www.moodys.com/web/en/us/site-assets/ma-kyc-JAP-final-money-laundering-101.pdf",
+    "https://www.moodys.com/web/en/us/site-assets/ma-kyc-kor-money-laundering-101-how-criminals-launder-money.pdf",
+    "https://www.moodys.com/web/en/us/kyc/resources/insights/ubos-what-they-are-disclosure-requirements-data-challenge.html"
   ]
 }

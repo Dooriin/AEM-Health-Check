@@ -1,9 +1,9 @@
 {
   "endpoints": [
-    "https://www.moodys.com/web/en/us/kyc/sectors.html",
+    "https://www.moodys.com/web/en/us/kyc/solutions.html",
     "https://www.moodys.com/web/en/us/kyc/solutions/automation.html",
-    "https://www.moodys.com/web/en/us/kyc/solutions/fraud-prevention.html",
-    "https://www.moodys.com/web/en/us/kyc/sectors/banking.html",
-    "https://www.moodys.com/web/en/us/kyc/resources.html"
+    "https://www.moodys.com/web/en/us/kyc/resources.html",
+    "https://www.moodys.com/web/en/us/private-credit/moodys-ratings-capabilities.html",
+    "https://www.moodys.com/web/en/us/kyc/resources/case-studies.html"
   ]
 }

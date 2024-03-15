@@ -1,9 +1,9 @@
 {
   "endpoints": [
-    "https://www.moodys.com/web/en/us/credit-risk-insights.html",
-    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-focus-on-finance/emerging-markets-banks-face-decarbonization-risks-global-reinsurers-price-hikes-boost-profits.html",
-    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-focus-on-finance/middle-market-clos-bdcs-and-closed-end-funds-present-different-credit-risks-fof.html",
-    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-focus-on-finance/real-estate-sector-stress-raises-risks-for-banks-in-china-and-vietnam.html",
-    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-focus-on-finance/moodys-us-insurance-and-asset-management-conference-featuring-guggenheim-cio-anne-walsh.html"
+    "https://www.moodys.com/web/en/us/kyc/resources/insights/nrrp-anti-fraud-measures-intensify-across-eu.html",
+    "https://www.moodys.com/web/en/us/about-us/innovation-technology/gen-ai.html",
+    "https://www.moodys.com/web/en/us/about-us/innovation-technology/digital-finance/digital-asset-monitor.html",
+    "https://www.moodys.com/web/en/us/kyc/resources/insights/understanding-four-risks-sanctions-detections-today.html",
+    "https://www.moodys.com/web/en/us/kyc/resources/insights/new-ubo-rule-changes-in-asia-pacific.html"
   ]
 }

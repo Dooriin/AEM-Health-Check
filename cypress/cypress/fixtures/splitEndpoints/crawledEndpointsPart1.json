@@ -2,8 +2,8 @@
   "endpoints": [
     "undefined",
     "https://www.moodys.com/",
-    "https://www.moodys.com/web/en/us/solutions/lending.html",
-    "https://www.moodys.com/web/en/us/solutions/ratings.html",
-    "https://www.moodys.com/web/en/us/solutions/compliance-third-party-risk.html"
+    "https://www.moodys.com/web/en/us/who-we-serve/corporations.html",
+    "https://www.moodys.com/web/en/us/solutions/compliance-third-party-risk.html",
+    "https://www.moodys.com/web/en/us/solutions/investment-research.html"
   ]
 }

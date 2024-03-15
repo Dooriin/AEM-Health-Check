@@ -1,9 +1,9 @@
 {
   "endpoints": [
-    "https://www.moodys.com/web/en/us/site-assets/kompanyapi-brochure-february2023-LOWRES.pdf",
-    "https://www.moodys.com/web/en/us/site-assets/kompanykycworkspace-brochure-february2023-LOWRES.pdf",
-    "https://www.moodys.com/web/en/us/site-assets/ma-kyc-sanctions360-brochure.pdf",
-    "https://www.moodys.com/web/en/us/site-assets/passfort-lifecycle-brochure-february2023-LOWRES.pdf",
-    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-securitization-spotlight/new-rules-for-qualified-mortgages-will-add-riskier-collateral-to-us-rmbs.html"
+    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-securitization-spotlight/libor-transition-looms-larger-for-some-asset-classes-than-others.html",
+    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-securitization-spotlight/new-rules-for-qualified-mortgages-will-add-riskier-collateral-to-us-rmbs.html",
+    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-securitization-spotlight/securitization-spotlight-trailer.html",
+    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-securitization-spotlight/structured-finance-backs-lending-around-the-globe-sme-abs-performance-will-depend-on-duration-of-sme-support-measures.html",
+    "https://www.moodys.com/web/en/us/hosted-assets/BX19664_CSRD-Infographic.pdf"
   ]
 }
