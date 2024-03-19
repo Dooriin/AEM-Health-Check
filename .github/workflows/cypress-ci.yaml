@@ -8,7 +8,6 @@ jobs:
       fail-fast: false
       matrix:
         containers: [1, 2, 3, 4, 5]
-#        containers: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21]
     steps:
       - name: Checkout 🛎
         uses: actions/checkout@v4
@@ -58,23 +57,25 @@ jobs:
       - name: Download all artifacts
         uses: actions/download-artifact@v3
         with:
-          path: cypress
+          path: .
 
       - name: Install Dependencies
         run: npm install
         working-directory: cypress
 
       - name: Create Reports Directory
-        run: mkdir -p cypress/reports
-        # This step ensures the cypress/reports directory exists
+        run: mkdir -p ./cypress/reports
+        # Adjusting to ensure we're in the correct relative path to the GitHub workspace
 
       - name: Merge Test Results
         run: npm run merge-reports
         working-directory: cypress
+        # Ensures npm scripts run in the correct directory
 
       - name: Generate Final Test Report
         run: npm run generate-report
         working-directory: cypress
+        # Ensures npm scripts run in the correct directory
 
       - name: Configure Git
         run: |
@@ -83,9 +84,9 @@ jobs:
 
       - name: Commit Combined Report
         run: |
-          git add cypress/reports/combined-report.json
+          git add ./cypress/reports/combined-report.json
           git commit -m "Update combined report with latest test results" || true
-          # The commit will be skipped if there are no changes
+          # Adjusted path and added conditional to handle no changes scenario
 
       - name: Push Changes
         run: git push
