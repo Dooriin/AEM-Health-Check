@@ -7,9 +7,9 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        containers: [1, 2, 3, 4, 5]
+        containers: [1, 2, 3, 4, 5] # Adjusted for demonstration
     steps:
-      - name: Checkout 🛎
+      - name: Checkout 🛎️
         uses: actions/checkout@v4
 
       - name: Set up Node.js
@@ -18,7 +18,7 @@ jobs:
           node-version: '18'
 
       - name: Install Dependencies
-        run: npm i
+        run: npm install
         working-directory: cypress
 
       - name: Run split Cypress tests 🧪
@@ -46,7 +46,7 @@ jobs:
     if: always()
     runs-on: ubuntu-22.04
     steps:
-      - name: Checkout 🛎
+      - name: Checkout 🛎️
         uses: actions/checkout@v4
 
       - name: Set up Node.js
@@ -65,17 +65,15 @@ jobs:
 
       - name: Create Reports Directory
         run: mkdir -p ./cypress/reports
-        # Adjusting to ensure we're in the correct relative path to the GitHub workspace
+        # Ensures the cypress/reports directory exists
 
       - name: Merge Test Results
         run: npm run merge-reports
         working-directory: cypress
-        # Ensures npm scripts run in the correct directory
 
       - name: Generate Final Test Report
         run: npm run generate-report
         working-directory: cypress
-        # Ensures npm scripts run in the correct directory
 
       - name: Configure Git
         run: |
@@ -86,7 +84,8 @@ jobs:
         run: |
           git add ./cypress/reports/combined-report.json
           git commit -m "Update combined report with latest test results" || true
-          # Adjusted path and added conditional to handle no changes scenario
+          # The commit will be skipped if there are no changes
 
       - name: Push Changes
         run: git push
+        # Pushes the commit made in the previous step back to the repository
