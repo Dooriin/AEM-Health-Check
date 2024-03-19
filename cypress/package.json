@@ -70,8 +70,8 @@
     "cy:run": "cypress run",
     "cy:run:record": "cypress run --record",
     "cy:open": "cypress open",
-    "merge-reports": "mochawesome-merge 'cypress/reports/mocha/mochawesome_*.json' > cypress/reports/combined-report.json",
-    "generate-report": "npx mochawesome-report-generator cypress/reports/combined-report.json"
+    "merge-reports": "mochawesome-merge 'cypress/cypress/reports/mocha/mochawesome_*.json' > cypress/cypress/reports/combined-report.json",
+    "generate-report": "npx mochawesome-report-generator cypress/cypress/reports/combined-report.json"
   },
   "keywords": [
     "testing"

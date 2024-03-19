@@ -64,19 +64,19 @@ jobs:
         working-directory: cypress
 
       - name: Create Nested Cypress Reports Directory
-        run: mkdir -p cypress/cypress/reports
+        run: mkdir -p ./cypress/cypress/reports
         working-directory: cypress
-        # Corrects the directory path for the nested structure
+        # Ensures the correct nested directory structure is prepared for the reports
 
       - name: Merge Test Results
         run: npm run merge-reports
         working-directory: cypress
-        # Adjusted to run in the correct directory with nested structure
+        # Executes the merge-reports script, assuming the updated script in package.json to reflect the nested structure
 
       - name: Generate Final Test Report
         run: npm run generate-report
         working-directory: cypress
-        # Adjusted for nested structure
+        # Executes the generate-report script, assuming the updated script in package.json
 
       - name: Configure Git
         run: |
@@ -87,7 +87,8 @@ jobs:
         run: |
           git add ./cypress/cypress/reports/combined-report.json
           git commit -m "Update combined report with latest test results" || true
-          # Path adjusted for nested structure
+          # Adds the combined report to the staging area and commits it, handling cases where there might be no changes
 
       - name: Push Changes
         run: git push
+        # Pushes the commit to the repository
