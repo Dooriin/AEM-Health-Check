@@ -7,7 +7,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        containers: [1, 2, 3, 4, 5] # Adjusted for demonstration
+        containers: [1, 2, 3, 4, 5]
     steps:
       - name: Checkout 🛎️
         uses: actions/checkout@v4
@@ -64,8 +64,12 @@ jobs:
         working-directory: cypress
 
       - name: Create Reports Directory
-        run: mkdir -p ./cypress/reports
-        # Ensures the cypress/reports directory exists
+        run: mkdir -p cypress/reports
+        # Adding debug command to list the directory after creation
+        run: |
+          mkdir -p cypress/reports
+          ls -lah cypress/
+        working-directory: .
 
       - name: Merge Test Results
         run: npm run merge-reports
@@ -82,10 +86,8 @@ jobs:
 
       - name: Commit Combined Report
         run: |
-          git add ./cypress/reports/combined-report.json
+          git add cypress/reports/combined-report.json
           git commit -m "Update combined report with latest test results" || true
-          # The commit will be skipped if there are no changes
 
       - name: Push Changes
         run: git push
-        # Pushes the commit made in the previous step back to the repository
