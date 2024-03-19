@@ -36,9 +36,9 @@ jobs:
         with:
           name: cypress-results-${{ strategy.job-index }}
           path: |
-            cypress/cypress/screenshots
-            cypress/cypress/videos
-            cypress/cypress/results
+            cypress/screenshots
+            cypress/videos
+            cypress/results
           if-no-files-found: ignore
 
   merge-reports:
@@ -57,26 +57,26 @@ jobs:
       - name: Download all artifacts
         uses: actions/download-artifact@v3
         with:
-          path: cypress/
+          path: cypress/cypress/
 
       - name: Install Dependencies
         run: npm install
         working-directory: cypress
 
       - name: Create Nested Cypress Reports Directory
-        run: mkdir -p ./cypress/cypress/reports
-        working-directory: cypress
-        # Ensures the correct nested directory structure is prepared for the reports
+        run: mkdir -p ./cypress/reports
+        working-directory: cypress/cypress
+        # Corrects the directory path for report generation within the nested structure
 
       - name: Merge Test Results
         run: npm run merge-reports
-        working-directory: cypress
-        # Executes the merge-reports script, assuming the updated script in package.json to reflect the nested structure
+        working-directory: cypress/cypress
+        # Adjusted to run in the correct directory within the nested structure
 
       - name: Generate Final Test Report
         run: npm run generate-report
-        working-directory: cypress
-        # Executes the generate-report script, assuming the updated script in package.json
+        working-directory: cypress/cypress
+        # Adjusted for nested structure within the cypress directory
 
       - name: Configure Git
         run: |
@@ -85,9 +85,9 @@ jobs:
 
       - name: Commit Combined Report
         run: |
-          git add ./cypress/cypress/reports/combined-report.json
+          git add ./cypress/reports/combined-report.json
           git commit -m "Update combined report with latest test results" || true
-          # Adds the combined report to the staging area and commits it, handling cases where there might be no changes
+          # Path adjusted to reference the combined report within the nested structure correctly
 
       - name: Push Changes
         run: git push
