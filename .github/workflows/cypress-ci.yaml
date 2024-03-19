@@ -44,6 +44,7 @@ jobs:
 
   merge-reports:
     needs: test-split
+    if: always()
     runs-on: ubuntu-22.04
     steps:
       - name: Checkout 🛎
