@@ -36,9 +36,9 @@ jobs:
         with:
           name: cypress-results-${{ strategy.job-index }}
           path: |
-            cypress/screenshots
-            cypress/videos
-            cypress/results
+            cypress/cypress/screenshots
+            cypress/cypress/videos
+            cypress/cypress/results
           if-no-files-found: ignore
 
   merge-reports:
@@ -57,27 +57,26 @@ jobs:
       - name: Download all artifacts
         uses: actions/download-artifact@v3
         with:
-          path: .
+          path: cypress/
 
       - name: Install Dependencies
         run: npm install
         working-directory: cypress
 
-      - name: Create Reports Directory
-        run: mkdir -p cypress/reports
-        # Adding debug command to list the directory after creation
-        run: |
-          mkdir -p cypress/reports
-          ls -lah cypress/
-        working-directory: .
+      - name: Create Nested Cypress Reports Directory
+        run: mkdir -p cypress/cypress/reports
+        working-directory: cypress
+        # Corrects the directory path for the nested structure
 
       - name: Merge Test Results
         run: npm run merge-reports
         working-directory: cypress
+        # Adjusted to run in the correct directory with nested structure
 
       - name: Generate Final Test Report
         run: npm run generate-report
         working-directory: cypress
+        # Adjusted for nested structure
 
       - name: Configure Git
         run: |
@@ -86,8 +85,9 @@ jobs:
 
       - name: Commit Combined Report
         run: |
-          git add cypress/reports/combined-report.json
+          git add ./cypress/cypress/reports/combined-report.json
           git commit -m "Update combined report with latest test results" || true
+          # Path adjusted for nested structure
 
       - name: Push Changes
         run: git push
