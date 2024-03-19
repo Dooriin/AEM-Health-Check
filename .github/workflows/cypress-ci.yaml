@@ -44,25 +44,28 @@ jobs:
 
   merge-reports:
     needs: test-split
-    if: always()
     runs-on: ubuntu-22.04
     steps:
       - name: Checkout 🛎
         uses: actions/checkout@v4
-
-      - name: Download all artifacts
-        uses: actions/download-artifact@v3
-        with:
-          path: cypress/merged-results
 
       - name: Set up Node.js
         uses: actions/setup-node@v2
         with:
           node-version: '18'
 
+      - name: Download all artifacts
+        uses: actions/download-artifact@v3
+        with:
+          path: cypress
+
       - name: Install Dependencies
         run: npm install
         working-directory: cypress
+
+      - name: Create Reports Directory
+        run: mkdir -p cypress/reports
+        # This step ensures the cypress/reports directory exists
 
       - name: Merge Test Results
         run: npm run merge-reports
@@ -81,9 +84,7 @@ jobs:
         run: |
           git add cypress/reports/combined-report.json
           git commit -m "Update combined report with latest test results" || true
-          # The || true ensures the step doesn't fail if there are no changes to commit
+          # The commit will be skipped if there are no changes
 
       - name: Push Changes
-        run: git push || true
-        # The || true ensures the step doesn't fail if there's nothing to push
-
+        run: git push
