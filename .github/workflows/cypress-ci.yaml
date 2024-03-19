@@ -48,22 +48,25 @@ jobs:
       - name: Checkout 🛎
         uses: actions/checkout@v4
 
-      - name: Download all artifacts
-        uses: actions/download-artifact@v3
-        with:
-          path: merged-results
+      # Previous steps (Node.js setup, Download artifacts, Install dependencies, Merge reports, Generate report)
 
-      - name: Install Mochawesome Merge and Marge
-        run: npm install -g mochawesome-merge mochawesome-report-generator
+      - name: Generate Final Test Report
+        run: npm run generate-report
+        working-directory: cypress
 
-      - name: Merge Mochawesome JSON reports
-        run: mochawesome-merge 'merged-results/*/cypress/results/*.json' > merged-results/merged.json
+      # Configure Git and commit the combined report file
+      - name: Configure Git
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
 
-      - name: Generate Mochawesome HTML report
-        run: marge merged-results/merged.json --reportDir ./merged-results --reportFilename index.html
+      - name: Commit Combined Report
+        run: |
+          git add cypress/reports/combined-report.json
+          git commit -m "Update combined report with latest test results"
+          # The commit will be skipped if there are no changes
 
-      - name: Upload Merged Report
-        uses: actions/upload-artifact@v4
-        with:
-          name: merged-report
-          path: merged-results
+      # Push the commit back to the repository
+      - name: Push Changes
+        run: git push
+        # This command pushes the commit made in the previous step back to the repository
