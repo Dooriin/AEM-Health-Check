@@ -14,7 +14,7 @@ jobs:
         id: set-matrix
         uses: bahmutov/gh-build-matrix@main
         with:
-          n: 5 # Number of containers to output, adjust as needed
+          n: 5 # Number of containers to output
 
   test-split:
     needs: prepare
@@ -26,14 +26,22 @@ jobs:
       - name: Checkout 🛎
         uses: actions/checkout@v4
 
-      - name: Run split Cypress tests 🧪
-        uses: cypress-io/github-action@v5
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
         with:
-          working-directory: cypress
+          node-version: '18'
+
+      - name: Install Dependencies
+        run: npm install
+        working-directory: cypress
+
+      - name: Run split Cypress tests 🧪
+        run: npx cypress run --env split=${{ strategy.job-total }},splitIndex=${{ matrix.container }}
+        working-directory: cypress
         env:
+          DEBUG: 'cypress-split'
           SPLIT: ${{ strategy.job-total }}
           SPLIT_INDEX: ${{ matrix.container }}
-          DEBUG: cypress-split
 
       - name: Upload Results for Merging
         uses: actions/upload-artifact@v4
@@ -41,9 +49,9 @@ jobs:
         with:
           name: cypress-results-${{ matrix.container }}
           path: |
-            cypress/cypress/screenshots
-            cypress/cypress/videos
-            cypress/cypress/results
+            cypress/screenshots
+            cypress/videos
+            cypress/results
           if-no-files-found: ignore
 
   merge-reports:
@@ -57,7 +65,7 @@ jobs:
       - name: Download all artifacts
         uses: actions/download-artifact@v3
         with:
-          path: cypress/cypress/
+          path: cypress/
 
       - name: Install Dependencies
         run: npm install
@@ -65,12 +73,12 @@ jobs:
 
       - name: Merge Test Results
         run: npm run merge-reports
-        working-directory: cypress/cypress
+        working-directory: cypress
         # Ensure you have a script in your package.json for merging reports
 
       - name: Generate Final Test Report
         run: npm run generate-report
-        working-directory: cypress/cypress
+        working-directory: cypress
         # Ensure you have a script in your package.json for generating the final report
 
       - name: Configure Git
@@ -82,8 +90,6 @@ jobs:
         run: |
           git add ./reports/combined-report.json
           git commit -m "Update combined report with latest test results" || true
-        working-directory: cypress/cypress
 
       - name: Push Changes
         run: git push
-        working-directory: cypress/cypress
