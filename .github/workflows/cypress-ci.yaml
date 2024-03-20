@@ -36,9 +36,9 @@ jobs:
         with:
           name: cypress-results-${{ strategy.job-index }}
           path: |
-            cypress/screenshots
-            cypress/videos
-            cypress/results
+            cypress/cypress/screenshots
+            cypress/cypress/videos
+            cypress/cypress/results
           if-no-files-found: ignore
 
   merge-reports:
@@ -57,7 +57,7 @@ jobs:
       - name: Download all artifacts
         uses: actions/download-artifact@v3
         with:
-          path: cypress/
+          path: cypress/cypress/
 
       - name: Install Dependencies
         run: npm install
@@ -65,20 +65,18 @@ jobs:
 
       - name: Create Nested Cypress Reports Directory
         run: mkdir -p ./cypress/reports
-        working-directory: cypress
-        # Ensures the correct nested directory structure is prepared for the reports
+        working-directory: cypress/cypress
+        # Corrects the directory path for the nested structure
 
       - name: Merge Test Results
-        run: |
-          npm run merge-reports
-        working-directory: cypress
-        # Executes the merge-reports script, assuming the updated script in package.json to reflect the nested structure
+        run: npm run merge-reports
+        working-directory: cypress/cypress
+        # Ensures the merge-reports script runs in the correct directory
 
       - name: Generate Final Test Report
-        run: |
-          npm run generate-report
-        working-directory: cypress
-        # Executes the generate-report script, assuming the updated script in package.json
+        run: npm run generate-report
+        working-directory: cypress/cypress
+        # Ensures the generate-report script runs in the correct directory
 
       - name: Configure Git
         run: |
@@ -89,7 +87,9 @@ jobs:
         run: |
           git add ./cypress/reports/combined-report.json
           git commit -m "Update combined report with latest test results" || true
+        working-directory: cypress/cypress
 
       - name: Push Changes
         run: git push
-        # Pushes the commit to the repository
+        working-directory: cypress/cypress
+        # Ensures git commands run in the correct directory
