@@ -17,13 +17,13 @@ jobs:
           n: 5 # Number of containers to output
 
   test-split:
-    needs: prepare
     runs-on: ubuntu-22.04
     strategy:
       fail-fast: false
-      matrix: ${{ fromJson(needs.prepare.outputs.matrix) }}
+      matrix:
+        containers: [ 1, 2, 3, 4, 5 ]
     steps:
-      - name: Checkout 🛎
+      - name: Checkout
         uses: actions/checkout@v4
 
       - name: Set up Node.js
@@ -35,13 +35,17 @@ jobs:
         run: npm install
         working-directory: cypress
 
-      - name: Run split Cypress tests 🧪
-        run: npx cypress run --env split=${{ strategy.job-total }},splitIndex=${{ matrix.container }}
+      - name: Determine Specs to Run
+        id: get-specs
+        run: |
+          # Hypothetical script/command to list and split your test specs based on SPLIT and SPLIT_INDEX
+          SPECS_TO_RUN=$(node determine-specs.js --total ${{ strategy.job-total }} --index ${{ strategy.job-index }})
+          echo "Specs to run: $SPECS_TO_RUN"
+          echo "::set-output name=specs::$SPECS_TO_RUN"
+
+      - name: Run Split Cypress Tests
+        run: npx cypress run --spec ${{ steps.get-specs.outputs.specs }}
         working-directory: cypress
-        env:
-          DEBUG: 'cypress-split'
-          SPLIT: ${{ strategy.job-total }}
-          SPLIT_INDEX: ${{ matrix.container }}
 
       - name: Upload Results for Merging
         uses: actions/upload-artifact@v4
