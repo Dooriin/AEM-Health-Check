@@ -7,7 +7,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        containers: [1, 2, 3, 4, 5]
+        containers: [1, 2, 3]
     steps:
       - name: Checkout 🛎️
         uses: actions/checkout@v4
@@ -22,12 +22,9 @@ jobs:
         working-directory: cypress
 
       - name: Run split Cypress tests 🧪
-        run: npx cypress-split run --spec '${{ env.SPLIT }}' '${{ env.SPLIT_INDEX }}'
+        run: npx cypress run --env split=${{ matrix.containers }},splitIndex=${{ matrix.containers }}
         working-directory: cypress
-        env:
-          SPLIT: ${{ strategy.job-total }}
-          SPLIT_INDEX: ${{ strategy.job-index }}
-          # Include other necessary environment variables here
+
 
       - name: Upload Results for Merging
         uses: actions/upload-artifact@v4
@@ -62,17 +59,15 @@ jobs:
         run: npm install
         working-directory: cypress
 
-      - name: Create Nested Cypress Reports Directory
-        run: mkdir -p ./cypress/reports
-        working-directory: cypress/cypress
-
       - name: Merge Test Results
         run: npm run merge-reports
         working-directory: cypress/cypress
+        # Ensure you have a script in your package.json for merging reports
 
       - name: Generate Final Test Report
         run: npm run generate-report
         working-directory: cypress/cypress
+        # Ensure you have a script in your package.json for generating the final report
 
       - name: Configure Git
         run: |
@@ -81,8 +76,9 @@ jobs:
 
       - name: Commit Combined Report
         run: |
-          git add ./cypress/reports/combined-report.json
+          git add ./reports/combined-report.json
           git commit -m "Update combined report with latest test results" || true
+        working-directory: cypress/cypress
 
       - name: Push Changes
         run: git push
