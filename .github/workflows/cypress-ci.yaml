@@ -10,40 +10,80 @@ jobs:
       - name: Checkout 🛎
         uses: actions/checkout@v4
 
-      - name: Set up Node.js
-        uses: actions/setup-node@v2
-        with:
-          node-version: '18'
-
-      - name: Install dependencies
-        run: npm install
-
-      - name: Prepare matrix for test splitting
+      - name: Create matrix for test splitting
         id: set-matrix
-        run: |
-          echo "::set-output name=matrix::{\"include\":[{\"container\":1}, {\"container\":2}, {\"container\":3}, {\"container\":4}, {\"container\":5}]}"
+        uses: bahmutov/gh-build-matrix@main
+        with:
+          n: 5 # Number of containers to output, adjust as needed
 
   test-split:
     needs: prepare
     runs-on: ubuntu-22.04
     strategy:
       fail-fast: false
-      matrix: ${{fromJson(needs.prepare.outputs.matrix)}}
+      matrix: ${{ fromJson(needs.prepare.outputs.matrix) }}
     steps:
       - name: Checkout 🛎
         uses: actions/checkout@v4
 
-      - name: Set up Node.js
-        uses: actions/setup-node@v2
+      - name: Run split Cypress tests 🧪
+        uses: cypress-io/github-action@v5
         with:
-          node-version: '18'
+          working-directory: cypress
+        env:
+          SPLIT: ${{ strategy.job-total }}
+          SPLIT_INDEX: ${{ matrix.container }}
+          DEBUG: cypress-split
 
-      - name: Install dependencies
+      - name: Upload Results for Merging
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: cypress-results-${{ matrix.container }}
+          path: |
+            cypress/cypress/screenshots
+            cypress/cypress/videos
+            cypress/cypress/results
+          if-no-files-found: ignore
+
+  merge-reports:
+    needs: test-split
+    if: always()
+    runs-on: ubuntu-22.04
+    steps:
+      - name: Checkout 🛎
+        uses: actions/checkout@v4
+
+      - name: Download all artifacts
+        uses: actions/download-artifact@v3
+        with:
+          path: cypress/cypress/
+
+      - name: Install Dependencies
         run: npm install
         working-directory: cypress
 
-      - name: Run split Cypress tests 🧪
-        run: npx cypress run --env split=${{ strategy.job-total }},splitIndex=${{ matrix.container }}
-        working-directory: cypress
-        env:
-          DEBUG: cypress-split
+      - name: Merge Test Results
+        run: npm run merge-reports
+        working-directory: cypress/cypress
+        # Ensure you have a script in your package.json for merging reports
+
+      - name: Generate Final Test Report
+        run: npm run generate-report
+        working-directory: cypress/cypress
+        # Ensure you have a script in your package.json for generating the final report
+
+      - name: Configure Git
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+      - name: Commit Combined Report
+        run: |
+          git add ./reports/combined-report.json
+          git commit -m "Update combined report with latest test results" || true
+        working-directory: cypress/cypress
+
+      - name: Push Changes
+        run: git push
+        working-directory: cypress/cypress
