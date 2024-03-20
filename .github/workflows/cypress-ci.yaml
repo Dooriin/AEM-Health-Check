@@ -22,13 +22,12 @@ jobs:
         working-directory: cypress
 
       - name: Run split Cypress tests 🧪
-        uses: cypress-io/github-action@v6
-        with:
-          working-directory: cypress
-          publish-summary: false
+        run: npx cypress-split run --spec '${{ env.SPLIT }}' '${{ env.SPLIT_INDEX }}'
+        working-directory: cypress
         env:
           SPLIT: ${{ strategy.job-total }}
           SPLIT_INDEX: ${{ strategy.job-index }}
+          # Include other necessary environment variables here
 
       - name: Upload Results for Merging
         uses: actions/upload-artifact@v4
@@ -66,17 +65,14 @@ jobs:
       - name: Create Nested Cypress Reports Directory
         run: mkdir -p ./cypress/reports
         working-directory: cypress/cypress
-        # Corrects the directory path for the nested structure
 
       - name: Merge Test Results
         run: npm run merge-reports
         working-directory: cypress/cypress
-        # Ensures the merge-reports script runs in the correct directory
 
       - name: Generate Final Test Report
         run: npm run generate-report
         working-directory: cypress/cypress
-        # Ensures the generate-report script runs in the correct directory
 
       - name: Configure Git
         run: |
@@ -87,9 +83,7 @@ jobs:
         run: |
           git add ./cypress/reports/combined-report.json
           git commit -m "Update combined report with latest test results" || true
-        working-directory: cypress/cypress
 
       - name: Push Changes
         run: git push
         working-directory: cypress/cypress
-        # Ensures git commands run in the correct directory
