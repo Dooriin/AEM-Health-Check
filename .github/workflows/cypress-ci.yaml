@@ -2,28 +2,14 @@ name: ci
 on: push
 
 jobs:
-  prepare:
-    runs-on: ubuntu-22.04
-    outputs:
-      matrix: ${{ steps.set-matrix.outputs.matrix }}
-    steps:
-      - name: Checkout 🛎
-        uses: actions/checkout@v4
-
-      - name: Create matrix for test splitting
-        id: set-matrix
-        uses: bahmutov/gh-build-matrix@main
-        with:
-          n: 5 # Number of containers to output
-
   test-split:
     runs-on: ubuntu-22.04
     strategy:
       fail-fast: false
       matrix:
-        containers: [ 1, 2, 3, 4, 5 ]
+        containers: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21]
     steps:
-      - name: Checkout
+      - name: Checkout 🛎
         uses: actions/checkout@v4
 
       - name: Set up Node.js
@@ -32,26 +18,23 @@ jobs:
           node-version: '18'
 
       - name: Install Dependencies
-        run: npm install
+        run: npm i
         working-directory: cypress
 
-      - name: Determine Specs to Run
-        id: get-specs
-        run: |
-          # Hypothetical script/command to list and split your test specs based on SPLIT and SPLIT_INDEX
-          SPECS_TO_RUN=$(node determine-specs.js --total ${{ strategy.job-total }} --index ${{ strategy.job-index }})
-          echo "Specs to run: $SPECS_TO_RUN"
-          echo "::set-output name=specs::$SPECS_TO_RUN"
-
-      - name: Run Split Cypress Tests
-        run: npx cypress run --spec ${{ steps.get-specs.outputs.specs }}
-        working-directory: cypress
+      - name: Run split Cypress tests 🧪
+        uses: cypress-io/github-action@v6
+        with:
+          working-directory: cypress
+          publish-summary: false
+        env:
+          SPLIT: ${{ strategy.job-total }}
+          SPLIT_INDEX: ${{ strategy.job-index }}
 
       - name: Upload Results for Merging
         uses: actions/upload-artifact@v4
         if: always()
         with:
-          name: cypress-results-${{ matrix.container }}
+          name: cypress-results-${{ strategy.job-index }}
           path: |
             cypress/screenshots
             cypress/videos
@@ -60,7 +43,6 @@ jobs:
 
   merge-reports:
     needs: test-split
-    if: always()
     runs-on: ubuntu-22.04
     steps:
       - name: Checkout 🛎
@@ -69,31 +51,20 @@ jobs:
       - name: Download all artifacts
         uses: actions/download-artifact@v3
         with:
-          path: cypress/
+          path: merged-results
 
-      - name: Install Dependencies
-        run: npm install
-        working-directory: cypress
+      - name: Install Mochawesome Merge and Marge
+        run: npm install -g mochawesome-merge mochawesome-report-generator
 
-      - name: Merge Test Results
-        run: npm run merge-reports
-        working-directory: cypress
-        # Ensure you have a script in your package.json for merging reports
+      - name: Merge Mochawesome JSON reports
+        run: mochawesome-merge 'merged-results/*/cypress/results/*.json' > merged-results/merged.json
 
-      - name: Generate Final Test Report
-        run: npm run generate-report
-        working-directory: cypress
-        # Ensure you have a script in your package.json for generating the final report
+      - name: Generate Mochawesome HTML report
+        run: marge merged-results/merged.json --reportDir ./merged-results --reportFilename index.html
 
-      - name: Configure Git
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
+      - name: Upload Merged Report
+        uses: actions/upload-artifact@v4
+        with:
+          name: merged-report
+          path: merged-results
 
-      - name: Commit Combined Report
-        run: |
-          git add ./reports/combined-report.json
-          git commit -m "Update combined report with latest test results" || true
-
-      - name: Push Changes
-        run: git push
