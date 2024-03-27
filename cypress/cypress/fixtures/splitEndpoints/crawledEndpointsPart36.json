@@ -1,9 +1,9 @@
 {
   "endpoints": [
-    "https://www.moodys.com/web/en/us/insights/exponential-risk/geopolitical-and-supply-chains.html",
-    "https://www.moodys.com/web/en/us/site-assets/ma-kyc-whitepaper-beneficial-ownership_LOWRES.pdf",
-    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-kyc-decoded/pkyc-miniseries-part-1.html",
-    "https://www.moodys.com/web/en/us/kyc/resources/insights/sanctions-compliance-sanctions-evasion-increased-enforcement-evolving-tactics.html",
-    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-kyc-decoded/pkyc-miniseries-part-2.html"
+    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-kyc-decoded/how-to-spot-a-fraudster.html",
+    "https://www.moodys.com/web/en/us/site-assets/ma-kyc-grid-brochure-feb2024.pdf",
+    "https://www.moodys.com/web/en/us/kyc/products/review.html",
+    "https://www.moodys.com/web/en/us/kyc/resources/insights/nrrp-anti-fraud-measures-intensify-across-eu.html",
+    "https://www.moodys.com/web/en/us/kyc/resources/insights/how-spot-sanctions-evasion.html"
   ]
 }

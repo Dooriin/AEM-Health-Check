@@ -1,0 +1,9 @@
+{
+  "endpoints": [
+    "https://www.moodys.com/web/en/us/datahub.html",
+    "https://www.moodys.com/web/en/us/about/what-we-do/quantum-computing/playing-quantum-chess-to-understand-quantum-computing.html",
+    "https://www.moodys.com/web/en/us/about/what-we-do/quantum-computing/quantum-report.html",
+    "https://www.moodys.com/web/en/us/about/what-we-do/quantum-computing/moodys-at-mit-quantum-hackathon.html",
+    "https://www.moodys.com/web/en/us/about/what-we-do/quantum-computing/rsa-and-diffie-hellman.html"
+  ]
+}

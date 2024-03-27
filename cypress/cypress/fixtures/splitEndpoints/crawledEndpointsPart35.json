@@ -1,9 +1,9 @@
 {
   "endpoints": [
-    "https://www.moodys.com/web/en/us/site-assets/ma-kyc-grid-brochure-feb2024.pdf",
     "https://www.moodys.com/web/en/us/site-assets/pkyc-report.pdf",
-    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-kyc-decoded/third-party-risk-management-knowing-the-right-thing-doing-the-right-thing.html",
-    "https://www.moodys.com/web/en/us/kyc/resources/insights/how-spot-sanctions-evasion.html",
-    "https://www.moodys.com/web/en/us/kyc/resources/insights/seven-indicators-shell-company-risk.html"
+    "https://www.moodys.com/web/en/us/kyc/about/terms-conditions-ma.html",
+    "https://www.moodys.com/web/en/us/kyc/resources/insights.html",
+    "https://www.moodys.com/web/en/us/kyc/resources/insights/new-moodys-data-sheds-light-on-rise-modern-slavery-money-laundering.html",
+    "https://www.moodys.com/web/en/us/kyc/resources/insights/moodys-two-category-winner-new-chartis-research-report.html"
   ]
 }

@@ -1,9 +1,9 @@
 {
   "endpoints": [
-    "https://www.moodys.com/web/en/us/hosted-assets/SEC-ERBA-analysis-of-tranche-maturity-calculation-methods.pdf",
-    "https://www.moodys.com/web/en/us/about/insights/data-stories/q3-2023-rental-affordability.html",
-    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-muniland.html",
-    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-outlook-connections.html",
-    "https://www.moodys.com/web/en/us/about/insights/infographics.html?p=2"
+    "https://www.moodys.com/web/en/us/private-credit-risk-analysis.html",
+    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-credit-in-perspective.html",
+    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-perspectivas-latinoamerica.html",
+    "https://www.moodys.com/web/en/us.html",
+    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-magnify.html"
   ]
 }

@@ -1,9 +1,9 @@
 {
   "endpoints": [
-    "https://www.moodys.com/web/en/us/kyc/about.html",
-    "https://www.moodys.com/web/en/us.html",
+    "https://www.moodys.com/web/en/us/kyc/resources.html",
     "https://www.moodys.com/web/en/us/kyc/about/help.html",
-    "https://www.moodys.com/web/en/us/kyc/resources/thought-leadership.html",
-    "https://www.moodys.com/web/en/us/kyc/about/terms-conditions-ma.html"
+    "https://www.moodys.com/web/en/us/kyc/sectors/fintech.html",
+    "https://www.moodys.com/web/en/us/about-us/innovation-technology/quantum.html",
+    "https://www.moodys.com/web/en/us/kyc/about/passfort-terms-and-conditions.html"
   ]
 }

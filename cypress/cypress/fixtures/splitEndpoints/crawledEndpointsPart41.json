@@ -1,7 +1,9 @@
 {
   "endpoints": [
-    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-kyc-decoded/human-trafficking-a-call-to-arms-for-anti-financial-crime-and-risk-professionals.html",
     "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-kyc-decoded/revisiting-the-us-corporate-transparency-act-where-are-we-now.html",
-    "https://www.moodys.com/web/en/us/kyc/solutions/screen-monitor/peps.html"
+    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-kyc-decoded/reflecting-on-the-ecjs-ruling-on-access-to-beneficial-ownership-information-one-year-on.html",
+    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-kyc-decoded/a-kyc-origin-story-chapter-one-grid.html",
+    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-kyc-decoded/feel-the-burn-why-compliance-professionals-are-struggling-with-burnout.html",
+    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-kyc-decoded/risky-business-the-indicators-of-shell-company-risk.html"
   ]
 }

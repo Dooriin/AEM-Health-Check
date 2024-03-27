@@ -1,9 +1,9 @@
 {
   "endpoints": [
-    "https://www.moodys.com/web/en/us/who-we-serve/buy-side.html",
     "https://www.moodys.com/web/en/us/solutions/ratings.html",
-    "https://www.moodys.com/web/en/us/who-we-serve/banking.html",
     "https://www.moodys.com/web/en/us/who-we-serve/public-sector.html",
-    "https://www.moodys.com/web/en/us/who-we-serve/insurance.html"
+    "https://www.moodys.com/web/en/us/who-we-serve/insurance.html",
+    "https://www.moodys.com/web/en/us/who-we-serve/buy-side.html",
+    "https://www.moodys.com/web/en/us/who-we-serve/banking.html"
   ]
 }

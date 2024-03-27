@@ -1,9 +1,9 @@
 {
   "endpoints": [
-    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-the-big-picture.html",
-    "https://www.moodys.com/web/en/us/about/insights/data-stories/changing-shape-of-supply-chain-risk.html",
+    "https://www.moodys.com/web/en/us/about/insights/data-stories/stablecoins-instability.html",
     "https://www.moodys.com/web/en/us/about/insights/data-stories/kyc-ai-risk-and-compliance-survey.html",
-    "https://www.moodys.com/web/en/us/about/insights/data-stories.html?p=2",
-    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-perspectivas-latinoamerica.html"
+    "https://www.moodys.com/web/en/us/hosted-assets/SEC-ERBA-analysis-of-tranche-maturity-calculation-methods.pdf",
+    "https://www.moodys.com/web/en/us/hosted-assets/WeWork-CMBS-Exposure-Update-09-25-23.pdf",
+    "https://www.moodys.com/web/en/us/about/insights/data-stories/q3-2023-rental-affordability.html"
   ]
 }

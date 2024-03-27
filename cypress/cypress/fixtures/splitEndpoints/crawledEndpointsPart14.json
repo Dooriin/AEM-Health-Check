@@ -1,9 +1,9 @@
 {
   "endpoints": [
-    "https://www.moodys.com/web/en/us/kyc/resources/infographics.html",
+    "https://www.moodys.com/web/en/us/capabilities/company-reference-data/data-applications/trade-credit.html",
     "https://www.moodys.com/web/en/us/site-assets/ma-kyc-a-new-frontier-in-sanctions-awareness-and-compliance.pdf",
-    "https://www.moodys.com/web/en/us/kyc/sectors/asset-management.html",
-    "https://www.moodys.com/web/en/us/kyc/resources/insights/european-commission-moodys-analytics-modernise-anti-fraud-activity.html",
-    "https://www.moodys.com/web/en/us/kyc/sectors/financial.html"
+    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-kyc-decoded.html",
+    "https://www.moodys.com/web/en/us/private-credit.html?cid=7380D0F05C817753",
+    "https://www.moodys.com/web/en/us/v3/pdf/banking-momentum-metropolitan-chooses-portfoliostudio-for-confident-portfolio-steering.pdf"
   ]
 }

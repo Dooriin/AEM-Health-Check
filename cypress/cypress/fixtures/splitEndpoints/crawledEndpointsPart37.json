@@ -1,9 +1,9 @@
 {
   "endpoints": [
-    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-kyc-decoded/pkyc-miniseries-part-3.html",
-    "https://www.moodys.com/web/en/us/kyc/resources/insights/how-uncover-shell-companies-use-money-laundering-techniques.html",
-    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-kyc-decoded/the-abcs-of-cta.html",
-    "https://www.moodys.com/web/en/us/site-assets/AI-Review-Intelligent-Screening.pdf",
-    "https://www.moodys.com/web/en/us/kyc/resources/insights/how-identify-ultimate-beneficial-owners-why-they-matter.html"
+    "https://www.moodys.com/web/en/us/site-assets/ma-kyc-the-rising-tide-of-third-party-risk-management-report-LOWRES.pdf",
+    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-kyc-decoded/pkyc-miniseries-part-1.html",
+    "https://www.moodys.com/web/en/us/kyc/resources/insights/sanctions-compliance-sanctions-evasion-increased-enforcement-evolving-tactics.html",
+    "https://www.moodys.com/web/en/us/kyc/resources/insights/seven-indicators-shell-company-risk.html",
+    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-kyc-decoded/pkyc-miniseries-part-2.html"
   ]
 }

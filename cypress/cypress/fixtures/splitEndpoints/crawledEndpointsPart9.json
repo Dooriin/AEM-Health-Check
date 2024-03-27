@@ -1,9 +1,9 @@
 {
   "endpoints": [
-    "https://www.moodys.com/web/en/us/kyc/solutions/third-party-risk-management.html",
-    "https://www.moodys.com/web/en/us/kyc/sectors/corporates.html",
-    "https://www.moodys.com/web/en/us/about-us/innovation-technology.html",
-    "https://www.moodys.com/web/en/us/kyc/solutions/sanctions.html",
-    "https://www.moodys.com/web/en/us/kyc/products/grid.html"
+    "https://www.moodys.com/web/en/us/kyc.html",
+    "https://www.moodys.com/web/en/us/kyc/resources/thought-leadership/the-infinite-game.html",
+    "https://www.moodys.com/web/en/us/kyc/resources/insights/2023-q3-roundup-focus-on-fighting-fraud.html",
+    "https://www.moodys.com/web/en/us/kyc/solutions/pkyc.html",
+    "https://www.moodys.com/web/en/us/trending-topics.html"
   ]
 }

@@ -1,9 +1,9 @@
 {
   "endpoints": [
-    "https://www.moodys.com/web/en/us/kyc/solutions.html",
-    "https://www.moodys.com/web/en/us/kyc/solutions/automation.html",
-    "https://www.moodys.com/web/en/us/kyc/resources.html",
-    "https://www.moodys.com/web/en/us/private-credit/moodys-ratings-capabilities.html",
-    "https://www.moodys.com/web/en/us/kyc/resources/case-studies.html"
+    "https://www.moodys.com/web/en/us/capabilities/company-reference-data/data-applications/corporate-finance.html",
+    "https://www.moodys.com/web/en/us/kyc/products/kompany.html",
+    "https://www.moodys.com/web/en/us/kyc/products/compliance-catalyst.html",
+    "https://www.moodys.com/web/en/us/about-us/innovation-technology/digital-finance/digital-asset-monitor.html",
+    "https://www.moodys.com/web/en/us/kyc/solutions.html"
   ]
 }

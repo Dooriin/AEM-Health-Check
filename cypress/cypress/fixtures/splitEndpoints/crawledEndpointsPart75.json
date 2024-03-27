@@ -1,0 +1,9 @@
+{
+  "endpoints": [
+    "https://www.moodys.com/web/en/us/v3/about-us/master",
+    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-inside-economics/housing-market-360.html",
+    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-inside-economics/the-immaculate-disinflation.html",
+    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-inside-economics/153.html",
+    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-the-big-picture/corporate-default-rate-will-ease-in-2024-while-remaining-near-its-long-term-average.html"
+  ]
+}

@@ -1,9 +1,9 @@
 {
   "endpoints": [
-    "https://www.moodys.com/web/en/us/kyc/resources/insights.html",
-    "https://www.moodys.com/web/en/us/digital-transformation.html",
-    "https://www.moodys.com/web/en/us/site-assets/ma-kyc-the-rising-tide-of-third-party-risk-management-report-LOWRES.pdf",
-    "https://www.moodys.com/web/en/us/kyc/resources/insights/study-ai-compliance.html",
-    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-kyc-decoded/third-party-risk-management-control-culture-and-competitive-advantage.html"
+    "https://www.moodys.com/web/en/us/kyc/resources/insights.html?type=blog",
+    "https://www.moodys.com/web/en/us/kyc/request-a-demo.html",
+    "https://www.moodys.com/web/en/us/kyc/resources/thought-leadership.html",
+    "https://www.moodys.com/web/en/us/kyc/about.html",
+    "https://www.moodys.com/web/en/us/site-assets/AI-Review-Intelligent-Screening.pdf"
   ]
 }

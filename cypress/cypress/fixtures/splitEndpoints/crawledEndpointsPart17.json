@@ -1,9 +1,9 @@
 {
   "endpoints": [
-    "https://www.moodys.com/web/en/us/esgview.html",
-    "https://www.moodys.com/web/en/us/private-credit",
-    "https://www.moodys.com/web/en/us/commercial-real-estate/report.html",
-    "https://www.moodys.com/web/en/us/insights/exponential-risk/navigating-the-new-era-of-risk.html",
-    "https://www.moodys.com/web/en/us/insights/exponential-risk/meeting-the-challenge-of-risk.html"
+    "https://www.moodys.com/web/en/us/capabilities/climate-risk.html",
+    "https://www.moodys.com/web/en/us/about/insights/data-stories/us-rental-housing-affordability.html",
+    "https://www.moodys.com/web/en/us/banking-system/understand-bank-risk.html",
+    "https://www.moodys.com/web/en/us/capabilities/company-reference-data.html",
+    "https://www.moodys.com/web/en/us/insights/exponential-risk/navigating-the-new-era-of-risk.html"
   ]
 }

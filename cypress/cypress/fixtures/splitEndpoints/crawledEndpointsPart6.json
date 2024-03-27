@@ -1,9 +1,9 @@
 {
   "endpoints": [
-    "https://www.moodys.com/web/en/us/capabilities/company-reference-data/orbis.html",
-    "https://www.moodys.com/web/en/us/about/insights/infographics.html",
-    "https://www.moodys.com/web/en/us/capabilities/company-reference-data/data-applications.html",
     "https://www.moodys.com/web/en/us/capabilities/structured-finance.html",
-    "https://www.moodys.com/web/en/us/about-us.html"
+    "https://www.moodys.com/web/en/us/about/insights/podcasts.html",
+    "https://www.moodys.com/web/en/us/private-credit.html",
+    "https://www.moodys.com/web/en/us/about-us.html",
+    "https://www.moodys.com/web/en/us/capabilities/company-reference-data/orbis.html"
   ]
 }

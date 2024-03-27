@@ -1,9 +1,9 @@
 {
   "endpoints": [
-    "https://www.moodys.com/web/en/us/banking-system/understand-bank-risk.html",
+    "https://www.moodys.com/web/en/us/v3/pdf/banking-teachers-federal-credit-union-builds-a-robust-credit-and-treasury-function-enabled-by-moodys.pdf",
     "https://www.moodys.com/web/en/us/kyc/sectors/government.html",
-    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-focus-on-finance/as-growth-of-private-credit-in-europe-picks-up-so-does-competition-from-banks.html",
     "https://www.moodys.com/web/en/us/kyc/sectors/insurance.html",
-    "https://www.moodys.com/web/en/us/coverage-expansion.html"
+    "https://www.moodys.com/web/en/us/kyc/sectors/asset-management.html",
+    "https://www.moodys.com/web/en/us/esgview.html"
   ]
 }

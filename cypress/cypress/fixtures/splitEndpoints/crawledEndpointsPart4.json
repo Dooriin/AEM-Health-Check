@@ -1,9 +1,9 @@
 {
   "endpoints": [
+    "https://www.moodys.com/web/en/us/capabilities/cyber-risk.html",
+    "https://www.moodys.com/web/en/us/solutions/underwriting.html",
     "https://www.moodys.com/web/en/us/capabilities/economic-data.html",
     "https://www.moodys.com/web/en/us/capabilities/esg-risk.html",
-    "https://www.moodys.com/web/en/us/solutions/portfolio-management.html",
-    "https://www.moodys.com/web/en/us/capabilities/climate-risk.html",
-    "https://www.moodys.com/web/en/us/capabilities/commercial-properties.html"
+    "https://www.moodys.com/web/en/us/commercial-real-estate.html"
   ]
 }

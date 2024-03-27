@@ -1,9 +1,9 @@
 {
   "endpoints": [
-    "https://www.moodys.com/web/en/us/kyc/solutions/screen-monitor.html",
-    "https://www.moodys.com/web/en/us/kyc/resources/alliances.html",
-    "https://www.moodys.com/web/en/us/kyc/resources/insights.html?type=blog",
-    "https://www.moodys.com/web/en/us/kyc/sectors.html",
-    "https://www.moodys.com/web/en/us/private-credit-risk-analysis.html"
+    "https://www.moodys.com/web/en/us/about-us/innovation-technology/gen-ai.html",
+    "https://www.moodys.com/web/en/us/kyc/solutions/entity-ownership.html",
+    "https://www.moodys.com/web/en/us/kyc/products/passfort.html",
+    "https://www.moodys.com/web/en/us/kyc/products/shell-company-indicator.html",
+    "https://www.moodys.com/web/en/us/kyc/solutions/automation.html"
   ]
 }

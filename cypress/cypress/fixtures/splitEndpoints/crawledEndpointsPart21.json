@@ -1,9 +1,9 @@
 {
   "endpoints": [
-    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-credit-in-perspective.html",
-    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-magnify.html",
-    "https://www.moodys.com/web/en/us/about/insights/data-stories/2023-environmental-credit-risk-exposure.html",
-    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-behind-the-bonds.html",
-    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-emerging-markets-decoded.html"
+    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-the-big-picture.html",
+    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-inside-economics.html",
+    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-inside-economics/episode-156.html",
+    "https://www.moodys.com/web/en/us/about/insights/podcasts/moodys-talks-kyc-decoded/what-will-disrupt-kyc.html",
+    "https://www.moodys.com/web/en/us/about/insights/infographics.html?p=2"
   ]
 }

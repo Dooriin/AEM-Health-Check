@@ -1,9 +1,9 @@
 {
   "endpoints": [
+    "https://www.moodys.com/web/en/us/solutions/balance-sheet-management.html",
     "https://www.moodys.com/web/en/us/solutions/lending.html",
-    "https://www.moodys.com/web/en/us/solutions/regulatory-calculation-reporting.html",
-    "https://www.moodys.com/web/en/us/solutions/underwriting.html",
-    "https://www.moodys.com/web/en/us/banking-system.html",
-    "https://www.moodys.com/web/en/us/capabilities/credit-risk.html"
+    "https://www.moodys.com/web/en/us/solutions/portfolio-management.html",
+    "https://www.moodys.com/web/en/us/capabilities/credit-risk.html",
+    "https://www.moodys.com/web/en/us/solutions/regulatory-calculation-reporting.html"
   ]
 }
